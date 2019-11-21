@@ -1,0 +1,588 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for discussion papers and final revised papers.
+
+%% 2-column papers and discussion papers
+\documentclass[journal abbreviation, manuscript]{copernicus}
+
+
+
+%% Journal abbreviations (please use the same for discussion papers and final revised papers)
+
+
+% Advances in Geosciences (adgeo)
+% Advances in Radio Science (ars)
+% Advances in Science and Research (asr)
+% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
+% Annales Geophysicae (angeo)
+% Archives Animal Breeding (aab)
+% ASTRA Proceedings (ap)
+% Atmospheric Chemistry and Physics (acp)
+% Atmospheric Measurement Techniques (amt)
+% Biogeosciences (bg)
+% Climate of the Past (cp)
+% DEUQUA Special Publications (deuquasp)
+% Drinking Water Engineering and Science (dwes)
+% Earth Surface Dynamics (esurf)
+% Earth System Dynamics (esd)
+% Earth System Science Data (essd)
+% E&G Quaternary Science Journal (egqsj)
+% European Journal of Mineralogy (ejm)
+% Fossil Record (fr)
+% Geochronology (gchron)
+% Geographica Helvetica (gh)
+% Geoscience Communication (gc)
+% Geoscientific Instrumentation, Methods and Data Systems (gi)
+% Geoscientific Model Development (gmd)
+% History of Geo- and Space Sciences (hgss)
+% Hydrology and Earth System Sciences (hess)
+% Journal of Micropalaeontology (jm)
+% Journal of Sensors and Sensor Systems (jsss)
+% Mechanical Sciences (ms)
+% Natural Hazards and Earth System Sciences (nhess)
+% Nonlinear Processes in Geophysics (npg)
+% Ocean Science (os)
+% Primate Biology (pb)
+% Proceedings of the International Association of Hydrological Sciences (piahs)
+% Scientific Drilling (sd)
+% SOIL (soil)
+% Solid Earth (se)
+% The Cryosphere (tc)
+% Weather and Climate Dynamics (wcd)
+% Web Ecology (we)
+% Wind Energy Science (wes)
+
+
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+\usepackage{tabularx}
+%\usepackage{cancel}
+\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+
+\usepackage{booktabs}
+
+\begin{document}
+
+\title{Do AeroCom phase III / CMIP6 models reproduce the observed aerosol trends over the last two decades?}
+
+
+% \Author[affil]{given_name}{surname}
+
+\Author[1]{Augustin}{Mortier}
+\Author[1]{Jonas}{Gliss}
+\Author[1]{Michael}{Schulz}
+\Author[2]{others}{}
+\affil[1]{Norwegian Meteorological Institute}
+\affil[2]{ADDRESS}
+
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
+
+%% If an author is deceased, please add a further affiliation and mark the respective author name(s) with a dagger, e.g. "\Author[2,$\dag$]{Anton}{Aman}" with the affiliations "\affil[2]{University of ...}" and "\affil[$\dag$]{deceased, 1 July 2019}"
+
+
+\correspondence{Mortier (augustinm@met.no)}
+
+\runningtitle{Aerosol Trends}
+
+\runningauthor{Augustin Mortier}
+
+
+
+
+
+\received{}
+\pubdiscuss{} %% only important for two-stage journals
+\revised{}
+\accepted{}
+\published{}
+
+%% These dates will be inserted by Copernicus Publications during the typesetting process.
+
+
+\firstpage{1}
+
+\maketitle
+
+\tableofcontents
+
+\begin{abstract}
+ TEXT
+\end{abstract}
+
+
+\copyrightstatement{TEXT}
+
+
+\introduction  %% \introduction[modified heading if necessary]
+TEXT
+\begin{itemize}
+ \item importance of aerosols for health, climate..
+ \item aerosols uncertainty due to high variability in space and time at different scales
+ \item also, variability at a long time-scale --> trends
+ \item what do the aerosol trends look like as seen from observation networks?
+ \item do the models reproduce the aerosol trends?
+ \item can we use models to assess the global aerosol trends?
+\end{itemize}
+
+
+\section{Datasets}
+
+\begin{table}
+ \begin{tabularx}{\textwidth}{llX}
+  \tophline
+  Parameter   & Observation Network & Models                                                                                                           \\
+  \middlehline
+  AE          & AeronetSunV3Lev2    & ECMWF-Rean; OsloCTM3; CAM5-ATRAS; GFDL-AM4$^{*}$; GEOS; ECHAM-HAM                                                \\
+  AOD         & AeronetSunV3Lev2    & ECMWF-Rean; OsloCTM3; NorESM2; CAM5-ATRAS; GFDL-AM4$^{*}$; CanESM5; CESM2; IPSL-CM6A; GEOS; ECHAM-HAM; BCC-CUACE \\
+  AOD>1µm     & AeronetSDAV3Lev2    & ECMWF-Rean; OsloCTM3; BCC-CUACE; CAM5-ATRAS; GFDL-AM4$^{*}$; ECHAM-HAM                                           \\
+  AOD<1µm     & AeronetSDAV3Lev2    & GFDL-AM4$^{*}$; GEOS; ECHAM-HAM                                                                                  \\
+  PM10        & EBASMC              & ECMWF-Rean$^{*}$; GEOS; ECHAM-HAM                                                                                \\
+  PM2.5       & EBASMC              & ECMWF-Rean$^{*}$                                                                                                 \\
+  SO4         & GAWTADsubsetAasEtAl & ECMWF-Rean; GEOS$^{*}$; OsloCTM3; ECHAM-HAM; BCC-CUACE                                                           \\
+  Scat. Coef. & EBASMC              & -                                                                                                                \\
+  Abs. Coef.  & EBASMC              & -                                                                                                                \\
+  \bottomhline
+ \end{tabularx}
+ %\caption{List of observation and model datasets used in this study. $^{0}$: Models of group Reanalysis. $^{1}$: Models of group AP3. $^{2}$: Models of group CMIP6. $^{*}$: Model used in the representativity study.}
+ \caption{List of observation and model datasets used in this study. $^{*}$: Model used in the representativity study.}
+ \label{datasets}
+\end{table}
+
+\subsection{Observations}
+\begin{itemize}
+ \item  AERONET: level2, version 3
+       \begin{itemize}
+        \item AOD
+        \item AOD<1µm
+        \item AOD>1µm
+        \item AE
+       \end{itemize}
+ \item EBAS: level 2, use nan flags, and remove outliers
+       \begin{itemize}
+        \item PM10
+        \item PM2.5
+        \item Scattering coefficient
+        \item Absorption coefficient: removed Alert station (unit issue)
+       \end{itemize}
+ \item Aas et al.,: $SO_{4}$ surface concentration - GAW/TAD + EANET
+\end{itemize}
+
+\subsection{Models}
+TEXT
+
+\begin{tabular}{lllll}
+ \tophline
+ Model      & Group     & Emission & Meteorology & Resolution \\
+ \middlehline
+ ECMWF-Rean & CAMS-Rean & ?        & ?           & ?          \\
+ GEOS       & AP3       & ?        & ?           & ?          \\
+ OsloCTM3   & AP3       & ?        & ?           & ?          \\
+ NorESM2    & AP3       & ?        & ?           & ?          \\
+ CAM5-ATRAS & AP3       & ?        & ?           & ?          \\
+ GFDL-AM4   & AP3       & ?        & ?           & ?          \\
+ ECHAM-HAM  & AP3       & ?        & ?           & ?          \\
+ BCC-CUACE  & AP3       & ?        & ?           & ?          \\
+ CanESM5    & CMIP6     & ?        & ?           & ?          \\
+ CESM2      & CMIP6     & ?        & ?           & ?          \\
+ IPSL-CM6A  & CMIP6     & ?        & ?           & ?          \\
+ \bottomhline
+\end{tabular}
+
+\section{Methods}
+TEXT
+
+
+\subsection{Regional time series}
+TEXT
+
+\subsubsection{Regions definition}
+TEXT
+\begin{figure}
+ \includegraphics[width=\columnwidth]{../scripts/figs/maps/av_obs.png}
+ \caption{Observations used in this study.}
+ \label{map_obs}
+\end{figure}
+
+\subsubsection{Constrains}
+Filtering ephemere stations: at least 300 days (get rid of AERONET DRAGON stations)
+Minimum number of points required in one timestamp: 3
+Then, computation of median, first and third quartiles
+\begin{figure}
+ \includegraphics[width=\columnwidth]{../scripts/figs/ts/panel-od550aer.png}
+ \caption{Regional time series of observed AOD.}
+ \label{ts_aod}
+\end{figure}
+
+
+
+\subsection{Trends calculation}
+
+\subsubsection{Regional time series computation}
+The trends are calculated using the time series constructed with the yearly averages. This allows to prevent any disturbance in the calculation of the trend slope that would be induced by the presence of seasonal cycles, which are observed for most of the aerosol parameters. The computation of the yearly averages is obtained by applying step-by-step time constrains in order to insure the robustness of these averages. Starting with the finest resolution available, monthly, seasonal and yearly averages are computed as following:
+\begin{itemize}
+ \item monthly average if at least 5 days are available in the month (when daily observations are available).
+ \item seasonal average if 1 month is available in the season.
+ \item yearly average if 4 seasons are available in the year.
+\end{itemize}
+Compromise between availability of the measurements and the robustness of the yearly statistics.
+
+\subsubsection{Trends computation}
+Use of yearly averages. Computation if at least 7 points in the time series (50\% of time coverage). That's why, even though 25 stations provide AOD measurements in SAFRICA, no trend is provded in this region.
+
+Trends significance with Mann-Kendall.
+Slope calclation: Theil-Sen estimator.
+Uncertainty on the slope: combination of the Theil-Sen slope error and the error on the residuals.
+The trend is provided as a relative trends (\%/yr) as respect to the first year of the time period (2000).
+
+\subsection{Representativity of the trends}
+The number of available points used to compute the regional time series is not constant in time. Usually, more stations are integrated within the observations networks in time, but also can be affected by the season depending on the nature of the measurements. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD: time representativity.
+Also, one provides the trends for large regions, but data are available over a limited number of stations: space representativity.
+In order to investigate both these source of uncertainties, one use model data in two experiments for each of whom the trends computed over one reference ($Ref$) and one experiment ($Exp$) will be compared together.
+\begin{itemize}
+ \item Time representativity experiment
+       \begin{itemize}
+        \item $Ref_{t}$: Collocation in space and time
+        \item $Exp_{t}$: Collocation in space using complete time-series
+       \end{itemize}
+ \item Space representativity experiment
+       \begin{itemize}
+        \item $Ref_{s}$: Collocation in space using complete time-series (=$Exp_{t}$)
+        \item $Exp_{s}$: All grid-points in region using full time-series
+       \end{itemize}
+\end{itemize}
+
+For each parameter and over each region, one calculates the mean difference in the relative trends of these experiments is then converted into a score by using a normal distribution $f(\mu=0, \sigma=0.5)$. For a given parameter $p$ and a region $r$, the Representativity $Rep(p,r)$ is calculated as following
+
+\begin{equation}
+ Rep(p, r) = f\left( \frac{\left| s_{Exp_{t}(p, r)}-s_{Ref_{t}(p, r)} \right| + \left| s_{Exp_{s}(p, r)}-s_{Ref_{s}(p, r)}\right| }{2} \right)
+\end{equation}
+
+where $s$ corresponds to the relative trend of each dataset.
+
+By doing so, a difference of 0.0\%/yr is giving a representativity of 100\%, and a difference of 0.5\%/yr is giving a representativity of 50\%.
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{../scripts/figs/representativity.png}
+ \caption{Representativity of regional AOD time series for the computation of trends.}
+ \label{representativity}
+\end{figure}
+
+There is no filtering of the ocean grid-points while computing the representativity of the different parameters in the different regions. For this region, the regions that contain a larger proportion of ocean grid-points, where the trends are most likely to differ from the trends observed over land, will have a lower spatial representativity. This is the case for NAMERICA and WORLD.
+
+Give some main results on the representativity itself:
+- AE has a better representativity than AOD event though same number of observations.
+- Insitu measurements, has usually a good time representativity, since regular measurements in every season, but low space representativity (few stations).
+
+\section{Results}
+TEXT
+
+
+\subsection{Trends in observations}
+TEXT
+Usually, the highest p-values are associated with the lowest uncertainties.
+In the text, comment values mentioning both p-value (significant or not) and errors.
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{../scripts/figs/heatmaps/OBS.png}
+ \caption{Regional trends of aerosol properties in observation datasets.}
+ \label{obs_trends}
+\end{figure}
+
+
+\subsection{Evaluation of model trends against observations}
+TEXT
+Given uncertainties, match between observed and modeled trends. For parameters:
+
+Some variability in the model trends. Especially:
+
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{../scripts/figs/heatmaps/BARS.png}
+ \caption{Regional trends of aerosol properties in both observations and models.}
+ \label{bars}
+\end{figure}
+
+\subsection{Trends in models}
+
+\subsubsection{Global trends}
+
+Since we know how well we the model trends compare to the trends in the observations, one compute in this section the trends from the models for the whole time period and at a global scale. With the representativity study, we've seen that the trends computed at the stations could lead to a different trend than the computed in this region when all grid-points were considered. How do these both time and spacial representativity affect the computation of the global trends?
+
+Since global trends, here we just process the average of all the trends computed at each grid-point (and at each grid-point where an observation station is located).
+
+Trends computed with model regridded at a 5x5 degree resolution.
+
+\begin{figure}
+ \includegraphics[width=\columnwidth]{../scripts/figs/trends_map.png}
+ \caption{Global trends of aerosol properties in models datasets. The numbers reported in the left and right lower part of each map indicate the mean and the standard deviation of the trends respectively obtained by averaging the trends over the grid-points where a relevant observation station (Mean@stations), and over all the grid-points (Mean).}
+ \label{mod_trends}
+\end{figure}
+
+\subsubsection{Can we explain the trends in AOD?}
+NOPE
+\begin{figure}
+ \includegraphics[width=\columnwidth]{../scripts/figs/species_trends.png}
+ \caption{Trends in OD and emissions for different species.}
+ \label{species_abs_trends}
+\end{figure}
+
+
+\conclusions  %% \conclusions[modified heading if necessary]
+TEXT
+Great differences in global trends when considering only observation stations or using all grid-points. Use of satellites..
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+\codeavailability{TEXT} %% use this section when having only software code available
+
+
+\dataavailability{TEXT} %% use this section when having only data sets available
+
+
+\codedataavailability{TEXT} %% use this section when having data sets and software code available
+
+
+\sampleavailability{TEXT} %% use this section when having geoscientific samples available
+
+
+\videosupplement{TEXT} %% use this section when having video supplements available
+
+
+\appendix
+\section{}    %% Appendix A
+
+\subsection{}     %% Appendix A1, A2, etc.
+
+
+\noappendix       %% use this to mark the end of the appendix section
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+\appendixfigures  %% needs to be added in front of appendix figures
+
+\appendixtables   %% needs to be added in front of appendix tables
+
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+
+
+
+\authorcontribution{TEXT} %% this section is mandatory
+
+\competinginterests{TEXT} %% this section is mandatory even if you declare that no competing interests are present
+
+\disclaimer{TEXT} %% optional section
+
+\begin{acknowledgements}
+ TEXT
+\end{acknowledgements}
+
+
+
+
+%% REFERENCES
+
+%% The reference list is compiled as follows:
+
+\begin{thebibliography}{}
+
+ \bibitem[AUTHOR(YEAR)]{LABEL1}
+ REFERENCE 1
+
+ \bibitem[AUTHOR(YEAR)]{LABEL2}
+ REFERENCE 2
+
+\end{thebibliography}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+%% authors experienced with BibTeX only have to include the following two lines:
+%%
+%% \bibliographystyle{copernicus}
+%% \bibliography{example.bib}
+%%
+%% URLs and DOIs can be entered in your BibTeX file as:
+%%
+%% URL = {http://www.xyz.org/~jones/idx_g.htm}
+%% DOI = {10.5194/xyz}
+
+
+%% LITERATURE CITATIONS
+%%
+%% command                        & example result
+%% \citet{jones90}|               & Jones et al. (1990)
+%% \citep{jones90}|               & (Jones et al., 1990)
+%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
+%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
+%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
+%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
+%% \citeauthor{jones90}|          & Jones et al.
+%% \citeyear{jones90}|            & 1990
+
+
+
+%% FIGURES
+
+%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
+%% between bibliography and first table and/or figure as well as between each table and/or figure.
+
+
+%% ONE-COLUMN FIGURES
+
+%%f
+%\begin{figure}[t]
+%\includegraphics[width=8.3cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure}
+%
+%%% TWO-COLUMN FIGURES
+%
+%%f
+%\begin{figure*}[t]
+%\includegraphics[width=12cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure*}
+%
+%
+%%% TABLES
+%%%
+%%% The different columns must be seperated with a & command and should
+%%% end with \\ to identify the column brake.
+%
+%%% ONE-COLUMN TABLE
+%
+%%t
+%\begin{table}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table}
+%
+%%% TWO-COLUMN TABLE
+%
+%%t
+%\begin{table*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table*}
+%
+%%% LANDSCAPE TABLE
+%
+%%t
+%\begin{sidewaystable*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{sidewaystable*}
+%
+%
+%%% MATHEMATICAL EXPRESSIONS
+%
+%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
+%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
+%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
+%%%
+%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
+%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
+%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
+%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
+%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
+%%% Vectors are identified in bold italic font using \vec{x}
+%%% Matrices are identified in bold roman font
+%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
+%%% The character * should not be applied as mutliplication sign
+%
+%
+%%% EQUATIONS
+%
+%%% Single-row equation
+%
+%\begin{equation}
+%
+%\end{equation}
+%
+%%% Multiline equation
+%
+%\begin{align}
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8
+%\end{align}
+%
+%
+%%% MATRICES
+%
+%\begin{matrix}
+%x & y & z\\
+%x & y & z\\
+%x & y & z\\
+%\end{matrix}
+%
+%
+%%% ALGORITHM
+%
+%\begin{algorithm}
+%\caption{...}
+%\label{a1}
+%\begin{algorithmic}
+%...
+%\end{algorithmic}
+%\end{algorithm}
+%
+%
+%%% CHEMICAL FORMULAS AND REACTIONS
+%
+%%% For formulas embedded in the text, please use \chem{}
+%
+%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
+%
+%\begin{reaction}
+%%% \rightarrow should be used for normal (one-way) chemical reactions
+%%% \rightleftharpoons should be used for equilibria
+%%% \leftrightarrow should be used for resonance structures
+%\end{reaction}
+%
+%
+%%% PHYSICAL UNITS
+%%%
+%%% Please use \unit{} and apply the exponential notation
+
+
+\end{document}
