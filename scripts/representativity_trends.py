@@ -57,9 +57,16 @@ for var in vars:
         pklfile.close()
     else:
         reader = pya.io.ReadGridded(mod_source)
-        mod_data = reader.read_var(mod_var, ts_type='daily')
+        if (var=='scatc550dryaer'):
+            mod_data = reader.read_var(mod_var, ts_type='daily', aux_fun=pya.io.aux_read_cubes.subtract_cubes, aux_vars=['ec550dryaer', 'absc550aer'])
+        else:
+            mod_data = reader.read_var(mod_var, ts_type='daily')
+        #if cube has 4 dimensions, extract first level
+        if mod_var in ['concso4', 'concpm10', 'concpm25', 'scatc550dryaer', 'absc550aer'] and len(np.shape(mod_data))==4:
+            print('cube has 4 dimension, extract first layer')
+            mod_data = mod_data.extract_surface_level()
         mod_data = mod_data.resample_time(to_ts_type='monthly')
-
+        
         #write picke file in cache directory
         pklfile = open(fn, 'ab')
 
