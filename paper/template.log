@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  21 NOV 2019 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  24 NOV 2019 12:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3414,75 +3414,88 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 160.
  [2] [3]
-<../scripts/figs/maps/av_obs.png, id=71, 731.3724pt x 365.2044pt>
+<../scripts/figs/maps/av_obs.png, id=72, 776.9025pt x 396.0396pt>
 File: ../scripts/figs/maps/av_obs.png Graphic file (type png)
 <use ../scripts/figs/maps/av_obs.png>
-Package pdftex.def Info: ../scripts/figs/maps/av_obs.png  used on input line 214.
-(pdftex.def)             Requested size: 503.61377pt x 251.4842pt.
-<../scripts/figs/ts/panel-od550aer.png, id=73, 965.0454pt x 533.3526pt>
+Package pdftex.def Info: ../scripts/figs/maps/av_obs.png  used on input line 218.
+(pdftex.def)             Requested size: 503.61377pt x 256.73376pt.
+<../scripts/figs/ts/panel-od550aer.png, id=74, 965.0454pt x 533.3526pt>
 File: ../scripts/figs/ts/panel-od550aer.png Graphic file (type png)
 <use ../scripts/figs/ts/panel-od550aer.png>
-Package pdftex.def Info: ../scripts/figs/ts/panel-od550aer.png  used on input line 224.
+Package pdftex.def Info: ../scripts/figs/ts/panel-od550aer.png  used on input line 228.
 (pdftex.def)             Requested size: 503.61377pt x 278.32968pt.
  [4 <../scripts/figs/maps/av_obs.png>] [5 <../scripts/figs/ts/panel-od550aer.png>]
-<../scripts/figs/representativity.png, id=86, 957.5775pt x 460.119pt>
+<../scripts/figs/representativity.png, id=87, 957.5775pt x 460.119pt>
 File: ../scripts/figs/representativity.png Graphic file (type png)
 <use ../scripts/figs/representativity.png>
-Package pdftex.def Info: ../scripts/figs/representativity.png  used on input line 278.
+Package pdftex.def Info: ../scripts/figs/representativity.png  used on input line 282.
 (pdftex.def)             Requested size: 503.61377pt x 241.98734pt.
  [6]
-<../scripts/figs/heatmaps/OBS.png, id=97, 579.1236pt x 477.4638pt>
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:322: Too many }'s.
+l.322 \end{table}}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+<../scripts/figs/heatmaps/OBS.png, id=98, 579.1236pt x 477.4638pt>
 File: ../scripts/figs/heatmaps/OBS.png Graphic file (type png)
 <use ../scripts/figs/heatmaps/OBS.png>
-Package pdftex.def Info: ../scripts/figs/heatmaps/OBS.png  used on input line 299.
+Package pdftex.def Info: ../scripts/figs/heatmaps/OBS.png  used on input line 329.
 (pdftex.def)             Requested size: 503.61377pt x 415.22258pt.
-<../scripts/figs/heatmaps/BARS.png, id=98, 1090.0725pt x 909.3975pt>
+[7 <../scripts/figs/representativity.png>] [8 <../scripts/figs/heatmaps/OBS.png>]
+<../scripts/figs/heatmaps/BARS.png, id=112, 1090.0725pt x 909.3975pt>
 File: ../scripts/figs/heatmaps/BARS.png Graphic file (type png)
 <use ../scripts/figs/heatmaps/BARS.png>
-Package pdftex.def Info: ../scripts/figs/heatmaps/BARS.png  used on input line 313.
+Package pdftex.def Info: ../scripts/figs/heatmaps/BARS.png  used on input line 343.
 (pdftex.def)             Requested size: 503.61377pt x 420.13185pt.
- [7 <../scripts/figs/representativity.png>] [8 <../scripts/figs/heatmaps/OBS.png>] [9 <../scripts/figs/heatmaps/BARS.png>]
-<../scripts/figs/trends_map.png, id=118, 910.602pt x 581.7735pt>
+
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:376: Too many }'s.
+l.376 \end{table}}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+<../scripts/figs/trends_map.png, id=113, 910.602pt x 581.7735pt>
 File: ../scripts/figs/trends_map.png Graphic file (type png)
 <use ../scripts/figs/trends_map.png>
-Package pdftex.def Info: ../scripts/figs/trends_map.png  used on input line 329.
+Package pdftex.def Info: ../scripts/figs/trends_map.png  used on input line 379.
 (pdftex.def)             Requested size: 503.61377pt x 321.75185pt.
-<../scripts/figs/species_trends.png, id=119, 1145.9613pt x 597.9138pt>
-File: ../scripts/figs/species_trends.png Graphic file (type png)
-<use ../scripts/figs/species_trends.png>
-Package pdftex.def Info: ../scripts/figs/species_trends.png  used on input line 337.
+<../scripts/figs/rel_species_trends.png, id=114, 1145.9613pt x 597.9138pt>
+File: ../scripts/figs/rel_species_trends.png Graphic file (type png)
+<use ../scripts/figs/rel_species_trends.png>
+Package pdftex.def Info: ../scripts/figs/rel_species_trends.png  used on input line 391.
 (pdftex.def)             Requested size: 503.61377pt x 262.76357pt.
- [10 <../scripts/figs/trends_map.png>] [11 <../scripts/figs/species_trends.png>] [12pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+[9] [10 <../scripts/figs/heatmaps/BARS.png>] [11 <../scripts/figs/trends_map.png>] [12 <../scripts/figs/rel_species_trends.png>] [13pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.406 \begin{thebibliography}{}
+l.460 \begin{thebibliography}{}
                                pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.406 \begin{thebibliography}{}
-                               ] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 588.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 588.
+l.460 \begin{thebibliography}{}
+                               ] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 642.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 642.
  (/home/augustinm/Dev/pyaerocom/trends/paper/template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 588.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 588.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 588.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 642.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 642.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 642.
  ) 
 Here is how much of TeX's memory you used:
- 13016 strings out of 492982
- 166506 string characters out of 6134896
- 302049 words of memory out of 5000000
- 16294 multiletter control sequences out of 15000+600000
+ 13023 strings out of 492982
+ 166623 string characters out of 6134896
+ 306284 words of memory out of 5000000
+ 16297 multiletter control sequences out of 15000+600000
  42489 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,40p,547b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (13 pages, 4749302 bytes).
+Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (14 pages, 4728270 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 64 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
