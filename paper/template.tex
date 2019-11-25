@@ -143,21 +143,21 @@ TEXT
 \begin{table}
  \begin{tabularx}{\textwidth}{llX}
   \tophline
-  Parameter   & Observation Network & Models                                                                                                           \\
+  Parameter   & Observation Network & Models                                                                                                    \\
   \middlehline
-  AE          & AeronetSunV3Lev2    & ECMWF-Rean; OsloCTM3; CAM5-ATRAS; GFDL-AM4$^{*}$; GEOS; ECHAM-HAM                                                \\
-  AOD         & AeronetSunV3Lev2    & ECMWF-Rean; OsloCTM3; NorESM2; CAM5-ATRAS; GFDL-AM4$^{*}$; CanESM5; CESM2; IPSL-CM6A; GEOS; ECHAM-HAM; BCC-CUACE \\
-  AOD>1µm     & AeronetSDAV3Lev2    & ECMWF-Rean; OsloCTM3; BCC-CUACE; CAM5-ATRAS; GFDL-AM4$^{*}$; ECHAM-HAM                                           \\
-  AOD<1µm     & AeronetSDAV3Lev2    & GFDL-AM4$^{*}$; GEOS; ECHAM-HAM                                                                                  \\
-  PM10        & EBASMC              & ECMWF-Rean$^{*}$; GEOS; ECHAM-HAM                                                                                \\
-  PM2.5       & EBASMC              & ECMWF-Rean$^{*}$                                                                                                 \\
-  SO4         & GAWTADsubsetAasEtAl & ECMWF-Rean; GEOS$^{*}$; OsloCTM3; ECHAM-HAM; BCC-CUACE                                                           \\
-  Scat. Coef. & EBASMC              & -                                                                                                                \\
-  Abs. Coef.  & EBASMC              & -                                                                                                                \\
+  AOD         & AeronetSunV3Lev2    & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4; BCC-CUACE; CanESM5; CESM2; IPSL-CM6A \\
+  AOD<1µm     & AeronetSDAV3Lev2    & NorESM2; SPRINTARS; ECHAM-HAM; GEOS; GFDL-AM4                                                             \\
+  AOD>1µm     & AeronetSDAV3Lev2    & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; OsloCTM3; GFDL-AM4; BCC-CUACE                                  \\
+  AE          & AeronetSunV3Lev2    & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4                                       \\
+  PM2.5       & EBASMC              & ECMWF-Rean; NorESM2                                                                                       \\
+  PM10        & EBASMC              & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS                                                           \\
+  SO4         & GAWTADsubsetAasEtAl & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; BCC-CUACE                                      \\
+  Scat. Coef. & EBASMC              & NorESM2                                                                                                   \\
+  Abs. Coef.  & EBASMC              & NorESM2; SPRINTARS                                                                                        \\
   \bottomhline
  \end{tabularx}
  %\caption{List of observation and model datasets used in this study. $^{0}$: Models of group Reanalysis. $^{1}$: Models of group AP3. $^{2}$: Models of group CMIP6. $^{*}$: Model used in the representativity study.}
- \caption{List of observation and model datasets used in this study. $^{*}$: Model used in the representativity study.}
+ \caption{List of observation and model datasets used in this study.}
  \label{datasets}
 \end{table}
 
@@ -184,23 +184,23 @@ TEXT
 TEXT
 
 \begin{table}
- \begin{tabular}{lllll}
+ \begin{tabularx}{\textwidth}{lllllX}
   \tophline
-  Model      & Group     & Emission & Meteorology & Resolution \\
+  Model      & Group     & Emission & Meteorology & Resolution (LatxLon) & References                                                                                                                                                                                          \\
   \middlehline
-  ECMWF-Rean & CAMS-Rean & ?        & ?           & ?          \\
-  GEOS       & AP3       & ?        & ?           & ?          \\
-  OsloCTM3   & AP3       & ?        & ?           & ?          \\
-  NorESM2    & AP3       & ?        & ?           & ?          \\
-  CAM5-ATRAS & AP3       & ?        & ?           & ?          \\
-  GFDL-AM4   & AP3       & ?        & ?           & ?          \\
-  ECHAM-HAM  & AP3       & ?        & ?           & ?          \\
-  BCC-CUACE  & AP3       & ?        & ?           & ?          \\
-  CanESM5    & CMIP6     & ?        & ?           & ?          \\
-  CESM2      & CMIP6     & ?        & ?           & ?          \\
-  IPSL-CM6A  & CMIP6     & ?        & ?           & ?          \\
+  ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                                                                                                                                                   \\
+  NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                                                                                                                                                   \\
+  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & Takemura et al. (J. Geophys. Res., 2000, 17853-17873) (J. Climate, 2002, 333-352) (J. Geophys. Res., 2005, 2004JD005029) (Atmos. Chem. Phys., 9, 3061-3073)                                         \\
+  ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88            & -                                                                                                                                                                                                   \\
+  GEOS       & AP3       & ?        & ?           & 1.00x1.00            & -                                                                                                                                                                                                   \\
+  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & Lund et al., 2018 (GMD, 11, 4909-4931)                                                                                                                      & Myhre et al. 2009 (ACP, 9, 1365-1392) \\
+  GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25            & -                                                                                                                                                                                                   \\
+  BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81            & -                                                                                                                                                                                                   \\
+  CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81            & Geophysical Model Development Special issue on CanESM5 (https://www.geosci-model-dev.net/special\_issues.html)                                                                                      \\
+  CESM2      & CMIP6     & ?        & ?           & 0.94x1.25            & -                                                                                                                                                                                                   \\
+  IPSL-CM6A  & CMIP6     & ?        & ?           & 1.27x2.50            & -                                                                                                                                                                                                   \\
   \bottomhline
- \end{tabular}
+ \end{tabularx}
  \caption{}
  \label{models}
 \end{table}
@@ -244,10 +244,10 @@ The trends are calculated using the time series constructed with the yearly aver
 Compromise between availability of the measurements and the robustness of the yearly statistics.
 
 \subsubsection{Trends computation}
-Use of yearly averages. Computation if at least 7 points in the time series (50\% of time coverage). That's why, even though 25 stations provide AOD measurements in SAFRICA, no trend is provded in this region.
+Use of yearly averages. Computation if at least 7 points in the time series (50\% of time coverage). That's why, even though 25 stations provide AOD measurements in SAFRICA, no trend is provided in this region. For the models which provide output every 5 years (in addition to 2014), the trends are computed using 4 points (2000, 2005, 2010 and 2014).
 
 Trends significance with Mann-Kendall.
-Slope calclation: Theil-Sen estimator.
+Slope calculation: Theil-Sen estimator.
 Uncertainty on the slope: combination of the Theil-Sen slope error and the error on the residuals.
 The trend is provided as a relative trends (\%/yr) as respect to the first year of the time period (2000).
 
@@ -341,7 +341,7 @@ Some variability in the model trends. Especially:
 
 \begin{figure}
  \includegraphics[width=\columnwidth]{../scripts/figs/heatmaps/BARS.png}
- \caption{Regional trends of the aerosol properties in both observations and models. The error bars correspond to the uncertainty of the trend as computed using both the uncertainty on the Theil−Sen slope and the residuals.}
+ \caption{Regional trends of the aerosol properties in both observations and models. The error bars correspond to the uncertainty of the trend as computed using both the uncertainty on the Theil−Sen slope and the residuals. The models are ordered according to the number of output used in this study.}
  \label{bars}
 \end{figure}
 
@@ -358,31 +358,30 @@ Trends computed with model regridded at a 2x2 degree resolution.
 \begin{table}
  \begin{tabular}{lll}
   \tophline
-                          & Mean for 2000 & Trend (\%/yr) \\
+                     & Mean_{2000} & Trend (\%/yr) \\
   \middlehline
-  AOD                     & (0.23) 0.12   & (-1.07) +0.19 \\
-  AOD<1µm                 & (0.09) 0.06   & (-0.80) +0.27 \\
-  AOD>1µm                 & (0.05) 0.06   & (+0.03) -0.07 \\
-  AE                      & (1.01) 0.67   & (+0.15) +0.09 \\
-  PM10 (1e-09 m-3.kg)     & (34.7) 16.9   & (-1.54) +0.18 \\
-  PM2.5                   & (0.0) 0.0     & (-1.58) +0.16 \\
-  SO4                     & (0.00) 0.00   & (-1.05) -0.02 \\
-  Scat. Coef. (1e-06 m-1) & (28.0) 21.2   & (+0.29) +0.20 \\
-  Abs. Coef. (1e-06 m-1)  & (3.1) 0.9     & (+1.75) +1.54 \\
+  AOD                & (0.16) 0.14 & (+0.1) +0.2   \\
+  AOD<1µm            & (0.09) 0.05 & (+0.4) +0.6   \\
+  AOD>1µm            & (0.06) 0.09 & (-0.2) +0.1   \\
+  AE                 & (0.78) 0.43 & (+0.2) +0.3   \\
+  PM2.5 (µg m-3)     & (12.4) 9.1  & (+0.2) +0.2   \\
+  PM10 (µg m-3)      & (19.3) 18.7 & (+0.1) +0.1   \\
+  SO4 (µg m-3)       & (2.33) 0.64 & (-1.1) +0.4   \\
+  Scat. Coef. (1/Mm) & (28.0) 21.2 & (+0.3) +0.2   \\
+  Abs. Coef. (1/Mm)  & (3.1) 0.9   & (+1.8) +1.5   \\
   \bottomhline
  \end{tabular}
- \caption{Global means and trends of aerosol parameters using model data. The value in parenthesis is obtained by aggregating only grid-points where observation stations are located. The relative trends are calculated by averaging the absolute trends within the considered grid-points and normalizing it to the global mean for 2000.**CHECK AVERAGED VALUES AND UNITS - ONLY USE NORESEM?**}
+ \caption{Global means and trends of aerosol parameters using model data. The value in parenthesis is obtained by aggregating only grid-points where observation stations are located. The relative trends are calculated by averaging the absolute trends within the considered grid-points and normalizing it to the global mean for 2000.}
  \label{mod_tab_trends}
 \end{table}
 
 \begin{figure}
  \includegraphics[width=\columnwidth]{../scripts/figs/trends_map.png}
- \caption{Global trends of aerosol properties in models datasets. The black dots indicate significant trends.}
+ \caption{Global trends of aerosol properties using NorESM2 data regridded at a 5x5 resolution. The black dots indicate significant trends.}
  \label{mod_map_trends}
 \end{figure}
 
 \subsubsection{Can we explain the trends in AOD?}
-NOPE
 
 REMARK: the trends in od550so4 and in concso4 have opposite directions in both GEOS and ECHAM-HAM models (see website)!
 AND we also observe opposite trends in SO OD and emissions =)
@@ -396,7 +395,13 @@ AND we also observe opposite trends in SO OD and emissions =)
 
 \conclusions  %% \conclusions[modified heading if necessary]
 TEXT
-Great differences in global trends when considering only observation stations or using all grid-points. Use of satellites..
+\begin{itemize}
+ \item Ground based observation networks are more or less representative for computing regional trends.
+ \item The models reproduce pretty well the observed trends. Some examples with best/worst match.
+ \item Great differences in global trends when considering only observation stations or using all grid-points --> Use of satellites. How long are the time series now?
+ \item What about seasonal trends?
+\end{itemize}
+
 
 %% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
 %% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
