@@ -4,7 +4,8 @@ from matplotlib.ticker import (
 import os
 import pickle
 from trends_functions import *
-
+from warnings import filterwarnings
+filterwarnings('ignore')
 
 # - - - - run observations - - - - - -
 # 'ang4487aer' 'od550aer' 'od550gt1aer' 'od550lt1aer' 'concpm10' 'concpm25' 'sconcso4'
@@ -37,60 +38,45 @@ for var in vars:
 
     # - - - - run models - - - - - -
     MOD_MAP, MOD_DF = {}, {}
+
+    mod_var = var
     params['kind'] = 'mod'
 
     all_mods = list(get_all_mods().keys())
 
-    # prepare colors
-    current_palette = sns.color_palette("deep", 12)
-    all_colors = {}
-    for i, mod in enumerate(all_mods):
-        all_colors[mod] = current_palette[i]
-
-    sources = {
-        'all': all_mods,
-        'colors': all_colors,
-    }
-    
     #for the models, set mon_dim to zero
     params['min_dim'] = 0
+    params['min_ntrend'] = 4
     mod_var = params['mod_var']
-    
+
     #mod_sources = sources[var]
     mod_sources = params['models']
-    if 'BCC-CUACE_HIST' in mod_sources:
-        mod_sources.remove('BCC-CUACE_HIST')
 
     for mod_source in mod_sources:
-        print(mod_source)
-        print()
         params['source'] = mod_source
-        #for the models, set min_dim to zero and min_ntrend to 4 since some models provide data every 5 years
-        params['min_dim'] = 0
-        params['min_ntrend'] = 4
 
-        # check if model in cache
-        fn = 'cache/' + mod_source + '_' + var + '.pkl'
+        #check if model in cache
+        fn = 'cache/'+mod_source+'_'+var+'.pkl'
         if os.path.isfile(fn):
-            print('use pickle')
-            # for reading also binary mode is important
-            pklfile = open(fn, 'rb')
-            mod_data = pickle.load(pklfile)
+            print(mod_source,'use pickle')
+            # for reading also binary mode is important 
+            pklfile = open(fn, 'rb')      
+            mod_data = pickle.load(pklfile) 
             pklfile.close()
         else:
+            print(mod_source,'read netcdf data')
             reader = pya.io.ReadGridded(mod_source)
-            try:
-                if (var=='scatc550dryaer'):
-                    mod_data = reader.read_var(mod_var, ts_type='daily', aux_fun=pya.io.aux_read_cubes.subtract_cubes, aux_vars=['ec550dryaer', 'absc550aer'])
-                else:
-                    mod_data = reader.read_var(mod_var, ts_type='daily')
-                #if cube has 4 dimensions, extract first level
-                if mod_var in ['concso4', 'concpm10', 'concpm25', 'scatc550dryaer', 'absc550aer'] and len(np.shape(mod_data))==4:
-                    print('cube has 4 dimension, extract first layer')
-                    mod_data = mod_data.extract_surface_level()
-                mod_data = mod_data.resample_time(to_ts_type='monthly')
-            except:
-                mod_data = np.nan
+            if (var=='scatc550dryaer'):
+                mod_data = reader.read_var(mod_var, ts_type='daily', aux_fun=pya.io.aux_read_cubes.subtract_cubes, aux_vars=['ec550dryaer', 'absc550aer'])
+            else:
+                mod_data = reader.read_var(mod_var, ts_type='daily')
+
+            #if cube has 4 dimensions, extract first level
+            if mod_var in ['concso4', 'concpm10', 'concpm25', 'scatc550dryaer', 'absc550aer'] and len(np.shape(mod_data))==4:
+                print('cube has 4 dimension, extract first layer')
+                mod_data = mod_data.extract_surface_level()
+
+            mod_data = mod_data.resample_time(to_ts_type='monthly')
 
             #write picke file in cache directory
             pklfile = open(fn, 'ab') 
@@ -108,6 +94,7 @@ for var in vars:
         else:
             #crop the cube to interest period, so can handle WORLD region
             mod_data = mod_data.crop(time_range=(params['period'].split('-')[0], str(int(params['period'].split('-')[1])+1)))
+
             #full colocation
             _, MOD_MAP[mod_source], MOD_DF[mod_source], = process_trend(
                 mod_data, params, obs=obs_data,
@@ -115,7 +102,6 @@ for var in vars:
                 OBS_DF = OBS_DF,
                 plot=False, show_plot=False, save_plot=False, write_json=False
             )
-
     # - - - - - - - - - - - - - - - - - - - -
 
     # - - - - plot sime series - - - - - -
@@ -194,8 +180,7 @@ for var in vars:
                                         xt = js2date(mod_trend[mod_seg]['jsdate'])
                                         yt = mod_trend[mod_seg]['data']
 
-                                        #color = current_palette[i]
-                                        color = sources['colors'][mod_source]
+                                        color = get_color_mod(mod_source)
                                         colors.append(color)
                                         if typlot != 'vlts':
                                             plt.plot(xm, ym, color=color, linewidth=1.0, alpha=0.4, zorder=i+1, label = mod_source)
@@ -278,8 +263,9 @@ for var in vars:
                 rel_slps = [rel_slp]
                 colors = [color]
                 if len(MOD_MAP.keys())>0:
-                    for i, mod_source in enumerate(mod_sources):
-                        if region in MOD_MAP[mod_source]:
+                    for i, mod_source in enumerate(all_mods):
+                        color = get_color_mod(mod_source)
+                        if mod_source in MOD_MAP and region in MOD_MAP[mod_source]:
                             xm = js2date(MOD_MAP[mod_source][region]['trends']['monthly']['jsdate'])
                             ym = MOD_MAP[mod_source][region]['trends']['monthly']['data']
                             xy = js2date(MOD_MAP[mod_source][region]['trends']['yearly']['jsdate'])
@@ -299,9 +285,6 @@ for var in vars:
                                     pval = mod_trend[mod_seg]['pval']
                                     xt = js2date(mod_trend[mod_seg]['jsdate'])
                                     yt = mod_trend[mod_seg]['data']
-
-                                    #color = current_palette[i]
-                                    color = sources['colors'][mod_source]
                                     colors.append(color)
                                 else:
                                     rel_slps.append(np.nan)
@@ -315,7 +298,6 @@ for var in vars:
 
 
                 ticks = ['OBS']
-                #ticks.extend(mod_sources)
                 y_pos = [0+0.4*nseg]
                 heights = [0.8]
                 # loop over all the models, so each model stays at each level
@@ -324,6 +306,11 @@ for var in vars:
                         ticks.append(all_mods[i])
                         y_pos.append(2+i+0.4*nseg) #the first tick is allocated to OBS
                         heights.append(0.8)
+                    else:
+                        ticks.append(all_mods[i])
+                        y_pos.append(2+i+0.4*nseg) #the first tick is allocated to OBS
+                        heights.append(np.nan)
+
                 #y_pos = [0+0.4*nseg]
                 #y_pos.extend(np.arange(len(rel_slps)-1)+2+0.4*nseg)
                 #height = [0.8]
@@ -366,18 +353,18 @@ for var in vars:
             ax.xaxis.set_minor_locator(MultipleLocator(1))
             ax.axes.get_yaxis().set_visible(False)
 
+
             #plot labels to the right in different colors
             #prepare left axis
             ticks = ['OBS']
             #ticks.extend(mod_sources)
             y_pos = [0+0.4*nseg]
             height = [0.8]
-            # loop over all the models, so each model stays at each level
+            # loop over all the models, so each model stays at right level
             for i, mod in enumerate(all_mods):
                 ticks.append(all_mods[i])
                 y_pos.append(2+i+0.4*nseg) #the first tick is allocated to OBS
                 height.append(0.8)
-
 
             #write slope and source
             for i, _ in enumerate(ticks):
@@ -385,7 +372,7 @@ for var in vars:
                 if tick=='OBS':
                     color = 'black'
                 else:
-                    color = all_colors[ticks[i]]
+                    color = colors[i]
                 tick = tick.split('_')[0]
                 tick = tick.split('-')[0]
                 ax.text(-0.075, (len(y_pos)+1-y_pos[i])/(len(y_pos)+2), tick, horizontalalignment='right', verticalalignment='center',

@@ -55,10 +55,10 @@ def fill_params(params, var):
         params['ylabel'] = 'AOD'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
-                 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'CanESM5_historical', 
+                 'GFDL-AM4-amip_HIST', 'CanESM5_historical', 
                  'CESM2_historical', 'IPSL-CM6A-LR_historical', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
-                 'BCC-CUACE_AP3-HIST']
-        params['ref_model'] = 'GFDL-AM4-amip_HIST'
+                 'BCC-CUACE_AP3-HIST', 'MIROC-SPRINTARS_AP3-HIST']
+        params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GFDL-AM4-amip_HIST'
     if var == 'ang4487aer':
         params['unit'] = ''
         params['source'] = 'AeronetSunV3Lev2.daily'
@@ -67,8 +67,9 @@ def fill_params(params, var):
         params['ylabel'] = 'AE'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
-                   'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST']
-        params['ref_model'] = 'GFDL-AM4-amip_HIST'
+                   'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
+                    'MIROC-SPRINTARS_AP3-HIST']
+        params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GFDL-AM4-amip_HIST'
     if var == 'od550gt1aer':
         params['source'] = 'AeronetSDAV3Lev2.daily'
         params['unit'] = ''
@@ -77,8 +78,9 @@ def fill_params(params, var):
         params['ylabel'] = 'AOD>1µm'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
-                    'BCC-CUACE_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST']
-        params['ref_model'] = 'GFDL-AM4-amip_HIST'
+                    'BCC-CUACE_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
+                           'MIROC-SPRINTARS_AP3-HIST']
+        params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GFDL-AM4-amip_HIST'
     if var == 'od550lt1aer':
         params['source'] = 'AeronetSDAV3Lev2.daily'
         params['unit'] = ''
@@ -86,9 +88,9 @@ def fill_params(params, var):
         params['ymax'] = 0.8
         params['ylabel'] = 'AOD<1µm'
         params['min_dim'] = 5
-        #params['models'] = ['OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST']
-        params['models'] = ['NorESM2-CPL-NEWTEST_HIST', 'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST']
-        params['ref_model'] = 'GFDL-AM4-amip_HIST'
+        params['models'] = ['NorESM2-CPL-NEWTEST_HIST', 'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
+                           'MIROC-SPRINTARS_AP3-HIST']
+        params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GFDL-AM4-amip_HIST'
     #==========================================
     if var == 'concpm10':
         params['source'] = 'EBASMC'
@@ -97,8 +99,8 @@ def fill_params(params, var):
         params['ymax'] = 60
         params['ylabel'] = 'PM10'
         params['min_dim'] = 4  # weekly measurements
-        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST']
-        params['ref_model'] = 'ECMWF_CAMS_REAN'
+        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','MIROC-SPRINTARS_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
     if var == 'concpm25':
         params['source'] = 'EBASMC'
         params['unit'] = 'µg.m-3'
@@ -107,7 +109,7 @@ def fill_params(params, var):
         params['ylabel'] = 'PM2.5'
         params['min_dim'] = 4  # weekly measurements
         params['models'] = ['ECMWF_CAMS_REAN', 'NorESM2-CPL-NEWTEST_HIST']
-        params['ref_model'] = 'ECMWF_CAMS_REAN'
+        params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'ECMWF_CAMS_REAN'
     #==========================================
     if var == 'concso4':
         params['source'] = 'GAWTADsubsetAasEtAl'
@@ -117,8 +119,8 @@ def fill_params(params, var):
         params['ylabel'] = 'SO4'
         params['min_dim'] = 0  # monthly measurements
         params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
-                           'BCC-CUACE_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST'] #['GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST']   
-        params['ref_model'] = 'GEOS-i33p2_HIST'
+                           'BCC-CUACE_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 'MIROC-SPRINTARS_AP3-HIST']
+        params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GEOS-i33p2_HIST'
     if var == 'scatc550dryaer':
         params['source'] = 'EBASMC'
         params['unit'] = '1/Mm'
@@ -137,7 +139,7 @@ def fill_params(params, var):
         params['ylabel'] = 'Abs. Coef.'
         params['min_dim'] = 5
         params['min_nstat'] = 2
-        params['models'] = ['NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['NorESM2-CPL-NEWTEST_HIST','MIROC-SPRINTARS_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
         params['exclude_stations'] = ['Alert']
     #==========================================
@@ -147,70 +149,70 @@ def fill_params(params, var):
         params['ymax'] = 0.8
         params['ylabel'] = 'Dust_OD'
         params['min_dim'] = 0
-        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'od550ss':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'SeaSalt_OD'
         params['min_dim'] = 0
-        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'od550so4':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'SO4_OD'
         params['min_dim'] = 0
-        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'od550oa':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'OA_OD'
         params['min_dim'] = 0
-        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'od550bc':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'BC_OD'
         params['min_dim'] = 0
-        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'emidust':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'Dust_Emis'
         params['min_dim'] = 0
-        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'emiss':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'SeaSalt_Emis'
         params['min_dim'] = 0
-        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'BCC-CUACE_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'emiso4':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'SO4_Emis'
         params['min_dim'] = 0
-        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'emioa':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'OA_Emis'
         params['min_dim'] = 0
-        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','NorESM2-CPL-NEWTEST_HIST']
     if var == 'emibc':
         params['source'] = 'AeronetSunV3Lev2.daily'
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'BC_Emis'
         params['min_dim'] = 0
-        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'CAM5-ATRAS_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','NorESM2-CPL-NEWTEST_HIST']
     #==========================================
     return params
 
@@ -220,6 +222,18 @@ def get_all_mods():
             'name': 'ECMWF-Rean',
             'group': 'CAMS-Rean'
         },
+        'NorESM2-CPL-NEWTEST_HIST': {
+            'name': 'NorESM2',
+            'group': 'AP3'
+        },
+        'MIROC-SPRINTARS_AP3-HIST':{
+            'name': 'SPRINTARS',
+            'group': 'AP3'
+        },
+        'ECHAM6.3-HAM2.3-fSST_HIST': {
+            'name': 'ECHAM-HAM',
+            'group': 'AP3'
+        },
         'GEOS-i33p2_HIST': {
             'name': 'GEOS',
             'group': 'AP3'
@@ -228,20 +242,13 @@ def get_all_mods():
             'name': 'OsloCTM3',
             'group': 'AP3'
         },
-        'NorESM2-CPL-NEWTEST_HIST': {
-            'name': 'NorESM2',
-            'group': 'AP3'
-        },
-        'CAM5-ATRAS_AP3-HIST': {
-            'name': 'CAM5-ATRAS',
-            'group': 'AP3'
-        },
+
+        #'CAM5-ATRAS_AP3-HIST': { #CAM5 does not have 2014!
+        #    'name': 'CAM5-ATRAS',
+        #    'group': 'AP3'
+        #},
         'GFDL-AM4-amip_HIST': {
             'name': 'GFDL-AM4',
-            'group': 'AP3'
-        },
-        'ECHAM6.3-HAM2.3-fSST_HIST': {
-            'name': 'ECHAM-HAM',
             'group': 'AP3'
         },
         'BCC-CUACE_AP3-HIST': {
@@ -267,7 +274,7 @@ def get_all_mods():
 
 
 def get_color_mod(mod, alpha=1):
-    #prepare colors
+    #using standard seaborn palette
     current_palette = sns.color_palette("deep", 18)
     colors = {}
     for i, m in enumerate(list(get_all_mods().keys())):
@@ -275,6 +282,49 @@ def get_color_mod(mod, alpha=1):
         colors[m] = (*colors[m], alpha)
     colors['OBS'] = (0, 0, 0, alpha)
     return colors[mod]
+
+def get_color2_mod(model, alpha=1):
+    if model=='OBS':
+        color = (0,0,0,alpha)
+    else:
+        #using different palettes for each group of models
+        models = list(get_all_mods().keys())
+        grp = get_all_mods()[model]['group']
+        #get all models of the same group
+        mods_grp = [mod for mod in models if get_all_mods()[mod]['group']==grp]
+        #get position of model in this group
+        for i, mod in enumerate(mods_grp):
+            if model==mod:
+                imod = i
+        #create palette
+        palette0 = [(76.0, 114.0, 176.0)]
+        palette1 = [(242,210,191),(234,179,148),(226,149,106),(217,119,63),(192,93,38),(149,72,29),(107, 52, 21)]
+        palette2 = [(136,195,150),(103,178,120),(77,152,94)]
+        #other palette
+        pal = sns.color_palette("hls", 48)
+        if grp=='CAMS-Rean':
+            palette = sns.cubehelix_palette(len(mods_grp), start=0, rot=-.2, dark=.4, light=.5, reverse=True)
+            #palette = list(reversed([(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette0]))
+            #palette = [pal[i] for i in [28]]
+            #palette = sns.light_palette("blue", n_colors=len(mods_grp))
+        elif grp=='AP3':
+            palette = sns.cubehelix_palette(len(mods_grp), start=1, rot=-.2, dark=.4, light=.7, reverse=True)
+            #palette = list(reversed([(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette1]))
+            #palette = [pal[i] for i in [0,1,2,3,4,5,6,7]]
+            #palette = sns.light_palette("red", n_colors=len(mods_grp))
+        elif grp=='CMIP6':
+            palette = sns.cubehelix_palette(len(mods_grp), start=2, rot=-.2, dark=.4, light=.7, reverse=True)
+            #palette = list(reversed([(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette2]))
+            #palette = sns.light_palette("green", n_colors=len(mods_grp))
+            #palette = [pal[i] for i in [18,16,12]]
+            
+        color = palette[imod]
+        #replace alpha
+        if len(color)==4:
+            color[3] = alpha
+        else:
+            color = (*color,alpha)
+    return color
 
 def get_regions():
     regions = ['EUROPE', 'ASIA', 'NAMERICA', 'SAMERICA', 'NAFRICA', 'SAFRICA', 'AUSTRALIA', 'WORLD']

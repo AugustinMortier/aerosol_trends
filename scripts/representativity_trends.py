@@ -13,7 +13,9 @@ def norm_dist(diff):
 
 # - - - - - - run observations - - - - - - - -
 # 'ang4487aer' 'od550aer' 'od550gt1aer' 'od550lt1aer' 'sconcpm10' 'sconcpm25' 'sconcso4'
-vars = ['od550aer', 'ang4487aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4']
+#vars = ['od550aer', 'ang4487aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
+vars = ['scatc550dryaer', 'absc550aer']
+
 #vars = ['ang4487aer', 'od550gt1aer', 'od550lt1aer', 'sconcpm10', 'sconcpm25', 'sconcso4']
 for var in vars:
     print('variable: ',var)
@@ -68,11 +70,14 @@ for var in vars:
         mod_data = mod_data.resample_time(to_ts_type='monthly')
         
         #write picke file in cache directory
-        pklfile = open(fn, 'ab')
-
-        # source, destination
-        pickle.dump(mod_data, pklfile)
-        pklfile.close()
+        try:
+            # source, destination 
+            pklfile = open(fn, 'ab')
+            pickle.dump(mod_data, pklfile)                      
+            pklfile.close()
+        except AttributeError:
+            print('AttributeError')
+            os.remove(fn)
     # - - - - - - - - - - - - - - - - - - - - - -
 
     #crop the cube to interest period, so can handle WORLD region
