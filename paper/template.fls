@@ -259,14 +259,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmri8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/maps/av_obs.png
 INPUT ../scripts/figs/maps/av_obs.png
 INPUT ../scripts/figs/maps/av_obs.png
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/ts/panel-od550aer.png
 INPUT ../scripts/figs/ts/panel-od550aer.png
 INPUT ../scripts/figs/ts/panel-od550aer.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmb8t.vf
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/representativity.png
 INPUT ../scripts/figs/representativity.png
 INPUT ../scripts/figs/representativity.png

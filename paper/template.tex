@@ -186,22 +186,22 @@ TEXT
 \begin{table}
  \begin{tabularx}{\textwidth}{lllllX}
   \tophline
-  Model      & Group     & Emission & Meteorology & Resolution (LatxLon) & References                                                                                                                                                                                          \\
+  Model      & Group     & Emission & Meteorology & Resolution (LatxLon) & References                                                                                                                         \\
   \middlehline
-  ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                                                                                                                                                   \\
-  NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                                                                                                                                                   \\
-  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & Takemura et al. (J. Geophys. Res., 2000, 17853-17873) (J. Climate, 2002, 333-352) (J. Geophys. Res., 2005, 2004JD005029) (Atmos. Chem. Phys., 9, 3061-3073)                                         \\
-  ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88            & -                                                                                                                                                                                                   \\
-  GEOS       & AP3       & ?        & ?           & 1.00x1.00            & -                                                                                                                                                                                                   \\
-  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & Lund et al., 2018 (GMD, 11, 4909-4931)                                                                                                                      & Myhre et al. 2009 (ACP, 9, 1365-1392) \\
-  GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25            & -                                                                                                                                                                                                   \\
-  BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81            & -                                                                                                                                                                                                   \\
-  CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81            & Geophysical Model Development Special issue on CanESM5 (https://www.geosci-model-dev.net/special\_issues.html)                                                                                      \\
-  CESM2      & CMIP6     & ?        & ?           & 0.94x1.25            & -                                                                                                                                                                                                   \\
-  IPSL-CM6A  & CMIP6     & ?        & ?           & 1.27x2.50            & -                                                                                                                                                                                                   \\
+  ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                                                                                  \\
+  NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                                                                                  \\
+  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & Takemura et al.                                                                                                                    \\
+  ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88            & -                                                                                                                                  \\
+  GEOS       & AP3       & ?        & ?           & 1.00x1.00            & -                                                                                                                                  \\
+  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & Lund et al., 2018                                                                                              & Myhre et al. 2009 \\
+  GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25            & -                                                                                                                                  \\
+  BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81            & -                                                                                                                                  \\
+  CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81            & Geophysical Model Development Special issue on CanESM5 (https://www.geosci-model-dev.net/special\_issues.html)                     \\
+  CESM2      & CMIP6     & ?        & ?           & 0.94x1.25            & -                                                                                                                                  \\
+  IPSL-CM6A  & CMIP6     & ?        & ?           & 1.27x2.50            & -                                                                                                                                  \\
   \bottomhline
  \end{tabularx}
- \caption{}
+ \caption{Information on models used in this study.}
  \label{models}
 \end{table}
 
@@ -215,7 +215,7 @@ TEXT
 \subsubsection{Regions definition}
 TEXT
 \begin{figure}
- \includegraphics[width=\columnwidth]{../scripts/figs/maps/av_obs.png}
+ \includegraphics[width=8.3cm]{../scripts/figs/maps/av_obs.png}
  \caption{Observations and regions used in this study. The numbers reported within each region correspond to the maximum number of stations given for each observation network.}
  \label{map_obs}
 \end{figure}
@@ -225,7 +225,7 @@ Filtering ephemere stations: at least 300 days (get rid of AERONET DRAGON statio
 Minimum number of points required in one timestamp: 3
 Then, computation of median, first and third quartiles
 \begin{figure}
- \includegraphics[width=\columnwidth]{../scripts/figs/ts/panel-od550aer.png}
+ \includegraphics[width=12cm]{../scripts/figs/ts/panel-od550aer.png}
  \caption{Regional time series of observed AOD. The dark blue line and the light blue envelope correspond respectively to the median and the first and third quartiles of all the points available at the corresponding timestamp. The blue dots correspond to the yearly average, which is used to compute the linear trend, displayed as a continous or dashed line when the trend is significant or not.}
  \label{ts_aod}
 \end{figure}
@@ -278,8 +278,8 @@ where $s$ corresponds to the relative trend of each dataset.
 
 By doing so, a difference of 0.0\%/yr is giving a representativity of 100\%, and a difference of 0.5\%/yr is giving a representativity of 50\%.
 
-\begin{figure}
- \includegraphics[width=\columnwidth]{../scripts/figs/representativity.png}
+\begin{figure}[t]
+ \includegraphics[width=12cm]{../scripts/figs/representativity.png}
  \caption{Representativity of the regional AOD time series for the computation of trends. The upper figures correspond to the number of points used to compute the regional time series. The lower figures show the time series, the trends, and the resulting representa}
  \label{representativity}
 \end{figure}
@@ -325,8 +325,8 @@ TABLE with ANNUAL MEAN FOR 2000
 Usually, the highest p-values are associated with the lowest uncertainties.
 In the text, comment values mentioning both p-value (significant or not) and errors.
 
-\begin{figure}
- \includegraphics[width=\columnwidth]{../scripts/figs/heatmaps/OBS.png}
+\begin{figure}[t]
+ \includegraphics[width=8.3cm]{../scripts/figs/heatmaps/OBS.png}
  \caption{Regional trends of aerosol properties in observation datasets.}
  \label{obs_trends}
 \end{figure}
@@ -339,8 +339,8 @@ Given uncertainties, match between observed and modeled trends. For parameters:
 Some variability in the model trends. Especially:
 
 
-\begin{figure}
- \includegraphics[width=\columnwidth]{../scripts/figs/heatmaps/BARS.png}
+\begin{figure}[t]
+ \includegraphics[width=12cm]{../scripts/figs/heatmaps/BARS.png}
  \caption{Regional trends of the aerosol properties in both observations and models. The error bars correspond to the uncertainty of the trend as computed using both the uncertainty on the Theil−Sen slope and the residuals. The models are ordered according to the number of output used in this study.}
  \label{bars}
 \end{figure}
@@ -358,25 +358,25 @@ Trends computed with model regridded at a 2x2 degree resolution.
 \begin{table}
  \begin{tabular}{lll}
   \tophline
-                     & Mean_{2000} & Trend (\%/yr) \\
+                     & $Mean_{2000}$ & Trend (\%/yr) \\
   \middlehline
-  AOD                & (0.16) 0.14 & (+0.1) +0.2   \\
-  AOD<1µm            & (0.09) 0.05 & (+0.4) +0.6   \\
-  AOD>1µm            & (0.06) 0.09 & (-0.2) +0.1   \\
-  AE                 & (0.78) 0.43 & (+0.2) +0.3   \\
-  PM2.5 (µg m-3)     & (12.4) 9.1  & (+0.2) +0.2   \\
-  PM10 (µg m-3)      & (19.3) 18.7 & (+0.1) +0.1   \\
-  SO4 (µg m-3)       & (2.33) 0.64 & (-1.1) +0.4   \\
-  Scat. Coef. (1/Mm) & (28.0) 21.2 & (+0.3) +0.2   \\
-  Abs. Coef. (1/Mm)  & (3.1) 0.9   & (+1.8) +1.5   \\
+  AOD                & (0.16) 0.14   & (+0.1) +0.2   \\
+  AOD<1µm            & (0.09) 0.05   & (+0.4) +0.6   \\
+  AOD>1µm            & (0.06) 0.09   & (-0.2) +0.1   \\
+  AE                 & (0.78) 0.43   & (+0.2) +0.3   \\
+  PM2.5 (µg m-3)     & (12.4) 9.1    & (+0.2) +0.2   \\
+  PM10 (µg m-3)      & (19.3) 18.7   & (+0.1) +0.1   \\
+  SO4 (µg m-3)       & (2.33) 0.64   & (-1.1) +0.4   \\
+  Scat. Coef. (1/Mm) & (28.0) 21.2   & (+0.3) +0.2   \\
+  Abs. Coef. (1/Mm)  & (3.1) 0.9     & (+1.8) +1.5   \\
   \bottomhline
  \end{tabular}
  \caption{Global means and trends of aerosol parameters using model data. The value in parenthesis is obtained by aggregating only grid-points where observation stations are located. The relative trends are calculated by averaging the absolute trends within the considered grid-points and normalizing it to the global mean for 2000.}
  \label{mod_tab_trends}
 \end{table}
 
-\begin{figure}
- \includegraphics[width=\columnwidth]{../scripts/figs/trends_map.png}
+\begin{figure}[t]
+ \includegraphics[width=12cm]{../scripts/figs/trends_map.png}
  \caption{Global trends of aerosol properties using NorESM2 data regridded at a 5x5 resolution. The black dots indicate significant trends.}
  \label{mod_map_trends}
 \end{figure}
@@ -386,8 +386,8 @@ Trends computed with model regridded at a 2x2 degree resolution.
 REMARK: the trends in od550so4 and in concso4 have opposite directions in both GEOS and ECHAM-HAM models (see website)!
 AND we also observe opposite trends in SO OD and emissions =)
 
-\begin{figure}
- \includegraphics[width=\columnwidth]{../scripts/figs/rel_species_trends.png}
+\begin{figure}[t]
+ \includegraphics[width=12cm]{../scripts/figs/rel_species_trends.png}
  \caption{Trends in OD and emissions for the main aerosol species.}
  \label{species_abs_trends}
 \end{figure}
