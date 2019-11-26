@@ -131,10 +131,13 @@ TEXT
 \begin{itemize}
  \item importance of aerosols for health, climate..
  \item aerosols uncertainty due to high variability in space and time at different scales
- \item in addition to seasonal variability, variability at a long time-scale --> trends
- \item what do the aerosol trends look like as seen from observation networks?
+ \item in addition to seasonal variability, variability at a longer time-scale. Importance of assessing the aerosol trends.
+ \item sources of variability: anthropogenic emissions (development of emergent countries VS environmental protection programs: e.g: Clean Air Act), changes in meteorological conditions that parameterize the emissions of natural aerosols and the wet and dry deposition of aerosols.
+ \item the ground based observation of the aerosols is organized in different networks. The remote sensing networks provide optical properties of the aerosols in the total air column, while in situ measurements provide particles measurements at the surface level. Using both of these information allow to depict a more complete picture of the changes in the aerosol content.
+ \item what do the aerosol trends look like as seen from these observation networks?
  \item do the models reproduce the aerosol trends?
  \item can we use models to assess the global aerosol trends?
+ \item in regards of the availability of the data used in this study, start in 2000. Last year of CMIP6 historical runs: 2000 -> study period: 2000-2014.
 \end{itemize}
 
 
@@ -162,26 +165,39 @@ TEXT
 \end{table}
 
 \subsection{Observations}
+
+A set of 9 optical and micro-physical parameters is used in this study. Coming from different observation networks:
+
 \begin{itemize}
- \item  AERONET: level2, version 3
+ \item **AERONET website** The AERONET (AErosol RObotic NETwork) project is a federation of ground-based remote sensing aerosol networks established by NASA and PHOTONS (PHOtométrie pour le Traitement Opérationnel de Normalisation Satellitaire; Univ. of Lille 1, CNES, and CNRS-INSU) and is greatly expanded by networks (e.g., RIMA, AeroSpan, AEROCAN, and CARSNET) and collaborators from national agencies, institutes, universities, individual scientists, and partners. For more than 25 years, the project has provided long-term, continuous and readily accessible public domain database of aerosol optical, microphysical and radiative properties for aerosol research and characterization, validation of satellite retrievals, and synergism with other databases. The network imposes standardization of instruments, calibration, processing and distribution.
+       ** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3**
        \begin{itemize}
-        \item AOD
-        \item AOD<1µm
-        \item AOD>1µm
-        \item AE
+        \item AOD: od550aer
+        \item AOD<1µm: od550lt1aer
+        \item AOD>1µm: od550lg1aer
+        \item AE: ang4487aer
        \end{itemize}
- \item EBAS: level 2, use nan flags, and remove outliers
+ \item **EBAS website** EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
+ **USED IN THIS STUDY EBAS: level 2, use nan flags, and remove outliers**
        \begin{itemize}
-        \item PM10
-        \item PM2.5
-        \item Scattering coefficient
+        \item PM2.5 (µg.m-3)
+        \item PM10 (µg.m-3)
+        \item Scattering coefficient: dry
         \item Absorption coefficient: removed Alert station (unit issue)
        \end{itemize}
- \item Aas et al.,: $SO_{4}$ surface concentration - GAW/TAD + EANET
+ \item GAW/TAD + EANET (Aas et al.): $SO_{4}$ (µg.m-3): surface concentration
 \end{itemize}
 
 \subsection{Models}
-TEXT
+
+**Describe model groups**
+A set of 11 climate models are used in this study. Their main characteristics are reported in table \ref{table:models}.  One can separate them into three groups:
+\begin{itemize}
+    \item CAMS-Reanalysis: w. data assimilation
+    \item AP3 (historical runs): required output: + additional output for some models, which permits to cover the 9 aerosol parameters
+    \item CMIP6: required output: od550aer time series from xxxx to 2014.
+    Also, nudged / not-nudged within AP3?
+\end{itemize}
 
 \begin{table}
  \begin{tabularx}{\textwidth}{lllllX}
@@ -202,7 +218,7 @@ TEXT
   \bottomhline
  \end{tabularx}
  \caption{Information on models used in this study.}
- \label{models}
+ \label{table:models}
 \end{table}
 
 \section{Methods}
@@ -388,7 +404,7 @@ AND we also observe opposite trends in SO OD and emissions =)
 
 \begin{figure}[t]
  \includegraphics[width=12cm]{../scripts/figs/rel_species_trends.png}
- \caption{Trends in OD and emissions for the main aerosol species.}
+ \caption{Trends in OD and emissions of the main aerosol species computed with NorESM2.}
  \label{species_abs_trends}
 \end{figure}
 
