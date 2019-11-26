@@ -10,13 +10,13 @@
 \contentsline {subsection}{\numberline {3.2}Trends calculation}{5}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Regional time series computation}{5}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Trends computation}{6}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Representativity of the trends}{6}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Representativity of the trends}{7}{subsection.3.3}
 \contentsline {section}{\numberline {4}Results}{8}{section.4}
 \contentsline {subsection}{\numberline {4.1}Trends in observations}{8}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Evaluation of model trends against observations}{8}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Trends in models}{9}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Global trends}{9}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Can we explain the trends in AOD?}{9}{subsubsection.4.3.2}
-\contentsline {section}{\numberline {5}Conclusions}{9}{section.5}
-\contentsline {section}{Appendix A}{12}{appendix.A}
-\contentsline {subsection}{Appendix A1}{12}{subsection.A.1}
+\contentsline {subsection}{\numberline {4.3}Trends in models}{10}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Global trends}{10}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Can we explain the trends in AOD?}{11}{subsubsection.4.3.2}
+\contentsline {section}{\numberline {5}Conclusions}{11}{section.5}
+\contentsline {section}{Appendix A}{13}{appendix.A}
+\contentsline {subsection}{Appendix A1}{13}{subsection.A.1}

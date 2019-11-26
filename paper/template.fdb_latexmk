@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1574764779 "template.tex" "/home/augustinm/Dev/pyaerocom/trends/paper/template.pdf" "template" 1574764785
+["pdflatex"] 1574765629 "template.tex" "/home/augustinm/Dev/pyaerocom/trends/paper/template.pdf" "template" 1574765634
   "../scripts/figs/heatmaps/BARS.png" 1574762267 980776 d643e09e3ab39ef0062aaeffce0422eb ""
   "../scripts/figs/heatmaps/OBS.png" 1574761070 387131 de8ff66be9a30f262f0a80cbc8bf49e6 ""
   "../scripts/figs/maps/av_obs.png" 1574760002 545036 e1ea54a2a93f5ad6a221d2fc3e4533c6 ""
@@ -8,7 +8,7 @@
   "../scripts/figs/trends_map.png" 1574696740 2038163 abb491f46b7ab8ef21ef3d374225fde1 ""
   "../scripts/figs/ts/panel-od550aer.png" 1574245198 1067926 8122df9d3dfed419cabcdcc004dcb87a ""
   "/etc/texmf/web2c/texmf.cnf" 1563181619 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/augustinm/Dev/pyaerocom/trends/paper/template.aux" 1574764785 8734 618135a79e8d0e8a1b16574ac202af44 ""
+  "/home/augustinm/Dev/pyaerocom/trends/paper/template.aux" 1574765634 8738 fa97c3e739451625d5532f1256cd62bc ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -148,13 +148,13 @@
   "copernicus.cfg" 1569994378 46153 f6b6b3cb1ddf83b9418ca1fdbf0aae81 ""
   "copernicus.cls" 1569994716 101501 036329d8d10a917514bfe2b93e3974f0 ""
   "natbib.sty" 1574597529 36061 f2675b2a662f3a410761b7189b6c066e ""
-  "template.aux" 1574764785 8734 618135a79e8d0e8a1b16574ac202af44 ""
-  "template.tex" 1574762425 30034 408522c921908a0d84130d34a6be3c30 ""
-  "template.toc" 1574764785 1720 d02fd9cc5e63adae521b7ff4b1883732 ""
+  "template.aux" 1574765634 8738 fa97c3e739451625d5532f1256cd62bc ""
+  "template.tex" 1574765622 30031 e879507bcab2cf04b277605933a4a82b ""
+  "template.toc" 1574765634 1724 a22db400bbc7e7a3f2d80110a20bd8c6 ""
   (generated)
-  "template.log"
+  "template.pdf"
+  "template.toc"
   "template.aux"
+  "template.log"
   "/home/augustinm/Dev/pyaerocom/trends/paper/template.log"
   "/home/augustinm/Dev/pyaerocom/trends/paper/template.pdf"
-  "template.toc"
-  "template.pdf"
