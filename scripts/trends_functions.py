@@ -300,6 +300,11 @@ def get_color2_mod(model, alpha=1):
         palette0 = [(76.0, 114.0, 176.0)]
         palette1 = [(242,210,191),(234,179,148),(226,149,106),(217,119,63),(192,93,38),(149,72,29),(107, 52, 21)]
         palette2 = [(136,195,150),(103,178,120),(77,152,94)]
+        
+        palette0 = [(76,113,176)]
+        palette1 = [(128,43,26),(159,69,41),(190,98,59),(221,132,82),(234,170,123),(244,197,152),(251,222,188)]
+        palette2 = [(66,144,87),(91,168,104),(133,202,138)]
+        
         #other palette
         pal = sns.color_palette("hls", 48)
         if grp=='CAMS-Rean':
@@ -307,16 +312,25 @@ def get_color2_mod(model, alpha=1):
             #palette = list(reversed([(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette0]))
             #palette = [pal[i] for i in [28]]
             #palette = sns.light_palette("blue", n_colors=len(mods_grp))
+            #palette = [(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette0]
         elif grp=='AP3':
             palette = sns.cubehelix_palette(len(mods_grp), start=1, rot=-.2, dark=.4, light=.7, reverse=True)
             #palette = list(reversed([(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette1]))
             #palette = [pal[i] for i in [0,1,2,3,4,5,6,7]]
             #palette = sns.light_palette("red", n_colors=len(mods_grp))
+            #palette1 = [(221,132,82),(227,145,78),(232,159,75),(238,173,72),(244,186,68),(249,199,65),(255,213,61)]
+            #palette = [(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette1]
+            #palette = [(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette1]
+            #transformed palette to more redish color (with gimp)
+            #palette = [(.51,.17,.17),(.58,.19,.19),(.66,.22,.22),(.73,.24,.24),(.76,.30,.30),(.79,.38,.38),(.82,.46,.46)]
         elif grp=='CMIP6':
             palette = sns.cubehelix_palette(len(mods_grp), start=2, rot=-.2, dark=.4, light=.7, reverse=True)
             #palette = list(reversed([(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette2]))
             #palette = sns.light_palette("green", n_colors=len(mods_grp))
             #palette = [pal[i] for i in [18,16,12]]
+            #palette2 = [(221,132,82),(227,145,78),(232,159,75)]
+            #palette = [(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette2]
+            #palette = [(rgb[0]/255,rgb[1]/255,rgb[2]/255) for rgb in palette2]
             
         color = palette[imod]
         #replace alpha

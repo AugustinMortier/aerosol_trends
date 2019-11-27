@@ -135,7 +135,7 @@ TEXT
  \item sources of variability: anthropogenic emissions (development of emergent countries VS environmental protection programs: e.g: Clean Air Act), changes in meteorological conditions that parameterize the emissions of natural aerosols and the wet and dry deposition of aerosols.
  \item the ground based observation of the aerosols is organized in different networks. The remote sensing networks provide optical properties of the aerosols in the total air column, while in situ measurements provide particles measurements at the surface level. Using both of these information allow to depict a more complete picture of the changes in the aerosol content.
  \item what do the aerosol trends look like as seen from these observation networks?
- \item do the models reproduce the aerosol trends?
+ \item because of the role of aerosol on climate, it is of importance for the models to capture the aerosol trends in order to reproduce the climate trends. How do the models reproduce the aerosol trends?
  \item can we use models to assess the global aerosol trends?
  \item in regards of the availability of the data used in this study, start in 2000. Last year of CMIP6 historical runs: 2000 -> study period: 2000-2014.
 \end{itemize}
@@ -143,60 +143,97 @@ TEXT
 
 \section{Datasets}
 
+A set of 9 optical and in situ aerosol measurements is used in this study. The observation networks and the models providing output for these parameters are reported in Table \ref{table:datasets}.
+
 \begin{table}
- \begin{tabularx}{\textwidth}{llX}
+ \begin{tabularx}{\textwidth}{lllX}
   \tophline
-  Parameter   & Observation Network & Models                                                                                                    \\
+  Parameter   & Type    & Observation network & Models                                                                                                    \\
   \middlehline
-  AOD         & AeronetSunV3Lev2    & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4; BCC-CUACE; CanESM5; CESM2; IPSL-CM6A \\
-  AOD<1µm     & AeronetSDAV3Lev2    & NorESM2; SPRINTARS; ECHAM-HAM; GEOS; GFDL-AM4                                                             \\
-  AOD>1µm     & AeronetSDAV3Lev2    & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; OsloCTM3; GFDL-AM4; BCC-CUACE                                  \\
-  AE          & AeronetSunV3Lev2    & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4                                       \\
-  PM2.5       & EBASMC              & ECMWF-Rean; NorESM2                                                                                       \\
-  PM10        & EBASMC              & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS                                                           \\
-  SO4         & GAWTADsubsetAasEtAl & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; BCC-CUACE                                      \\
-  Scat. Coef. & EBASMC              & NorESM2                                                                                                   \\
-  Abs. Coef.  & EBASMC              & NorESM2; SPRINTARS                                                                                        \\
+  AOD         & Column  & AERONET             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4; BCC-CUACE; CanESM5; CESM2; IPSL-CM6A \\
+  AOD<1µm     & Column  & AERONET             & NorESM2; SPRINTARS; ECHAM-HAM; GEOS; GFDL-AM4                                                             \\
+  AOD>1µm     & Column  & AERONET             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; OsloCTM3; GFDL-AM4; BCC-CUACE                                  \\
+  AE          & Column  & AERONET             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4                                       \\
+  PM2.5       & Surface & GAW                 & ECMWF-Rean; NorESM2                                                                                       \\
+  PM10        & Surface & GAW                 & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS                                                           \\
+  SO4         & Surface & GAW/TAD             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; BCC-CUACE                                      \\
+  Scat. Coef. & Surface & GAW/IMPROVE/ACTRIS  & NorESM2                                                                                                   \\
+  Abs. Coef.  & Surface & GAW/IMPROVE/ACTRIS  & NorESM2; SPRINTARS                                                                                        \\
   \bottomhline
  \end{tabularx}
- %\caption{List of observation and model datasets used in this study. $^{0}$: Models of group Reanalysis. $^{1}$: Models of group AP3. $^{2}$: Models of group CMIP6. $^{*}$: Model used in the representativity study.}
  \caption{List of observation and model datasets used in this study.}
- \label{datasets}
+ \label{table:datasets}
 \end{table}
 
 \subsection{Observations}
 
-A set of 9 optical and micro-physical parameters is used in this study. Coming from different observation networks:
-
+\paragraph{Columnar measurements}
+**AERONET website** The AERONET (AErosol RObotic NETwork) project is a federation of ground-based remote sensing aerosol networks established by NASA and PHOTONS (PHOtométrie pour le Traitement Opérationnel de Normalisation Satellitaire; Univ. of Lille 1, CNES, and CNRS-INSU) and is greatly expanded by networks (e.g., RIMA, AeroSpan, AEROCAN, and CARSNET) and collaborators from national agencies, institutes, universities, individual scientists, and partners. For more than 25 years, the project has provided long-term, continuous and readily accessible public domain database of aerosol optical, microphysical and radiative properties for aerosol research and characterization, validation of satellite retrievals, and synergism with other databases. The network imposes standardization of instruments, calibration, processing and distribution.
+** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3** + remove outliers
 \begin{itemize}
- \item **AERONET website** The AERONET (AErosol RObotic NETwork) project is a federation of ground-based remote sensing aerosol networks established by NASA and PHOTONS (PHOtométrie pour le Traitement Opérationnel de Normalisation Satellitaire; Univ. of Lille 1, CNES, and CNRS-INSU) and is greatly expanded by networks (e.g., RIMA, AeroSpan, AEROCAN, and CARSNET) and collaborators from national agencies, institutes, universities, individual scientists, and partners. For more than 25 years, the project has provided long-term, continuous and readily accessible public domain database of aerosol optical, microphysical and radiative properties for aerosol research and characterization, validation of satellite retrievals, and synergism with other databases. The network imposes standardization of instruments, calibration, processing and distribution.
-       ** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3**
-       \begin{itemize}
-        \item AOD: od550aer
-        \item AOD<1µm: od550lt1aer
-        \item AOD>1µm: od550lg1aer
-        \item AE: ang4487aer
-       \end{itemize}
- \item **EBAS website** EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
- **USED IN THIS STUDY EBAS: level 2, use nan flags, and remove outliers**
-       \begin{itemize}
-        \item PM2.5 (µg.m-3)
-        \item PM10 (µg.m-3)
-        \item Scattering coefficient: dry
-        \item Absorption coefficient: removed Alert station (unit issue)
-       \end{itemize}
- \item GAW/TAD + EANET (Aas et al.): $SO_{4}$ (µg.m-3): surface concentration
+ \item AOD: od550aer - AeronetSun
+ \item AE: ang4487aer - AeronetSun
+ \item AOD<1µm: od550lt1aer - AeronetSDA
+ \item AOD>1µm: od550lg1aer - AeronetSDA
 \end{itemize}
+\end{paragraph}
+
+\paragraph{Surface measurements}
+\begin{flushlefts}
+ All the following data have been downloaded via EBAS.
+ (EBAS website): EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
+ We use the highest quality level available, apply non-validity flags and an outliers range (see corresponding bullet-point).
+\end{flushlefts}
+
+\subparagraph{Particule Matter}
+GAW (GAW website): The Global Atmosphere Watch (GAW) programme of WMO is a partnership involving the Members of WMO, contributing networks and collaborating organizations and bodies which provides reliable scientific data and information on the chemical composition of the atmosphere, its natural and anthropogenic change, and helps to improve the understanding of interactions between the atmosphere, the oceans and the biosphere.
+\begin{itemize}
+ \item PM10 ($µg.m^{-3}$) - Validity range: []
+ \item PM2.5 ($µg.m^{-3}$) - Validity range: []
+\end{itemize}
+
+\subparagraph{SO4 concentration}
+
+(trends website): The global dataset is prepared by the WMO/GAW Science Advisory Group for Total Atmospheric Deposition (SAG-TAD) based on data from different regional and global networks:
+\begin{itemize}
+ \item WMO/GAW: World Data Center for Precipitation Chemistry
+ \item CASTNET: Clean Air Status and Trends Network
+ \item NADP: National Atmospheric Deposition Program
+ \item CAPMoN: The Canadian Air and Precipitation Monitoring Network
+ \item EMEP: The European Monitoring and Evaluation Program
+ \item IDAF/DEBITS: Atmospheric Chemistry Monitoring Network in Africa / DEposition of Biogeochemically Important Trace Species
+ \item EANET: Acid Deposition Network in East Asia
+\end{itemize}
+
+Subset from Aas et al.
+
+The data has been screened to be regional representative and of satisfactory quality:
+
+Precipitation measurements are mainly from wet-only samplers or bulk if proven comparable to wet-only.
+The sampling frequency is 2 weeks or higher –mostly daily measurements, except African data where precipitation is sampled on rain events and SO2 with monthly passive samplers.
+Wet deposition and volume weighted precipitation data are based are based on the standard rain gauge depth if that is measured in parallel. At other sites without rain gauge, the sample depth are used.
+Urban sites are not included, neither sites where the surroundings have changed considerable in the period in question.
+When averaging monthly data with higher sampling frequency than daily, the sample is weighted in accordance to how many days it has been sampled in that month.
+
+
+\subparagraph{Optical measurements}
+(See Jonas paper)
+\begin{itemize}
+ \item Scattering coefficient ($Mm^{-1}$): dry -> RH<30\%? - Validity range: []
+ \item Absorption coefficients ($Mm^{-1}$): validity range: [] - Validity range: []
+\end{itemize}
+
+
 
 \subsection{Models}
 
 **Describe model groups**
 A set of 11 climate models are used in this study. Their main characteristics are reported in table \ref{table:models}.  One can separate them into three groups:
 \begin{itemize}
-    \item CAMS-Reanalysis: w. data assimilation
-    \item AP3 (historical runs): required output: + additional output for some models, which permits to cover the 9 aerosol parameters
-    \item CMIP6: required output: od550aer time series from xxxx to 2014.
-    Also, nudged / not-nudged within AP3?
+ \item CAMS-Reanalysis: w. data assimilation
+ \item AP3 (historical runs): required output: + additional output for some models, which permits to cover the 9 aerosol parameters
+ \item CMIP6: required output: od550aer time series from xxxx to 2014.
+       Also, nudged / not-nudged within AP3?
 \end{itemize}
 
 \begin{table}
@@ -237,6 +274,10 @@ TEXT
 \end{figure}
 
 \subsubsection{Constrains}
+
+Common filtering: use the highest quality level available, and remove outliers (see corresponding bullet point).
++ remove mountains sites
+
 Filtering ephemere stations: at least 300 days (get rid of AERONET DRAGON stations)
 Minimum number of points required in one timestamp: 3
 Then, computation of median, first and third quartiles
@@ -399,14 +440,21 @@ Trends computed with model regridded at a 2x2 degree resolution.
 
 \subsubsection{Can we explain the trends in AOD?}
 
-REMARK: the trends in od550so4 and in concso4 have opposite directions in both GEOS and ECHAM-HAM models (see website)!
-AND we also observe opposite trends in SO OD and emissions =)
+For that,  we look at the absolute trends in OD of the main aerosol species.
 
-\begin{figure}[t]
- \includegraphics[width=16cm]{../scripts/figs/rel_species_trends.png}
- \caption{Relative trends in OD and emissions of the main aerosol species computed with NorESM2. *KEEP ONLY ONE REL/ABS*}
- \label{species_rel_trends}
-\end{figure}
+REMARK: we observe opposite trends in $SO_{4}$ OD and emissions.
+See: https://aerocom-trends.met.no/cmip6/
+\begin{itemize}
+    \item $OD_{SO_{4}}$: +0.5\%/yr
+    \item $Emissions_{SO_{4}}$: -0.2\%/yr
+    \item $Load_{SO_{4}}$: +0.9\%/yr
+\end{itemize}
+
+%\begin{figure}[t]
+% \includegraphics[width=16cm]{../scripts/figs/rel_species_trends.png}
+% \caption{Relative trends in OD and emissions of the main aerosol species computed with NorESM2. *KEEP ONLY ONE REL/ABS*}
+% \label{species_rel_trends}
+%\end{figure}
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/abs_species_trends.png}
@@ -461,7 +509,7 @@ TEXT
 %% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
 %% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
 
-\appendixfigures  %% needs to be added in front of appendix figures
+\appendixfigures  %% needs to be added in front of appendix figuresglobal means and
 
 \appendixtables   %% needs to be added in front of appendix tables
 
