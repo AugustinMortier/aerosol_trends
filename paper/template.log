@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  27 NOV 2019 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  27 NOV 2019 15:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3388,23 +3388,23 @@ LaTeX Info: Redefining \ref on input line 77.
 LaTeX Info: Redefining \pageref on input line 77.
 LaTeX Info: Redefining \nameref on input line 77.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
-LaTeX Font Info:    Try loading font information for U+msa on input line 118.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 110.
+LaTeX Font Info:    Try loading font information for U+msa on input line 110.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 118.
+LaTeX Font Info:    Try loading font information for U+msb on input line 110.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 118.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 119.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 110.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 111.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 119.
+(Font)              scaled to size 8.54997pt on input line 111.
  (/home/augustinm/Dev/pyaerocom/trends/paper/template.toc [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
@@ -3413,121 +3413,139 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
  [2]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 164.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 155.
  [3]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 188.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 180.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [4]
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:253: Extra alignment tab has been changed to \cr.
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:243: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.253  \end{tabularx}
+l.243  \end{tabularx}
                      
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:253: Extra alignment tab has been changed to \cr.
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:243: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.253  \end{tabularx}
+l.243  \end{tabularx}
                      
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:253: Extra alignment tab has been changed to \cr.
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:243: Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.253  \end{tabularx}
+l.243  \end{tabularx}
                      
 You have given more \span or & marks than there were
 in the preamble to the \halign or \valign now in progress.
 So I'll assume that you meant to type \cr instead.
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 253--253
+Underfull \hbox (badness 2980) in paragraph at lines 243--243
 []|\T1/ptm/m/n/9 Geophysical Model De-vel-op-ment Spe-cial
  []
 
 
-Underfull \hbox (badness 6125) in paragraph at lines 253--253
+Underfull \hbox (badness 6125) in paragraph at lines 243--243
 \T1/ptm/m/n/9 is-sue on CanESM5 (https://www.geosci-
  []
 
-<../scripts/figs/maps/av_obs.png, id=93, 597.6729pt x 306.4248pt>
+<../scripts/figs/maps/av_obs.png, id=97, 597.6729pt x 306.4248pt>
 File: ../scripts/figs/maps/av_obs.png Graphic file (type png)
 <use ../scripts/figs/maps/av_obs.png>
-Package pdftex.def Info: ../scripts/figs/maps/av_obs.png  used on input line 268.
+Package pdftex.def Info: ../scripts/figs/maps/av_obs.png  used on input line 258.
 (pdftex.def)             Requested size: 341.43306pt x 175.05202pt.
 [5] [6 <../scripts/figs/maps/av_obs.png>]
-<../scripts/figs/ts/panel-od550aer.png, id=106, 965.0454pt x 533.3526pt>
+<../scripts/figs/ts/panel-od550aer.png, id=110, 965.0454pt x 533.3526pt>
 File: ../scripts/figs/ts/panel-od550aer.png Graphic file (type png)
 <use ../scripts/figs/ts/panel-od550aer.png>
-Package pdftex.def Info: ../scripts/figs/ts/panel-od550aer.png  used on input line 282.
+Package pdftex.def Info: ../scripts/figs/ts/panel-od550aer.png  used on input line 271.
 (pdftex.def)             Requested size: 455.24408pt x 251.59538pt.
- [7 <../scripts/figs/ts/panel-od550aer.png>] [8]
-<../scripts/figs/representativity.png, id=122, 957.5775pt x 460.119pt>
+ [7 <../scripts/figs/ts/panel-od550aer.png>]
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:316: Missing delimiter (. inserted).
+<to be read again> 
+                   \left 
+l.316 ... r)}-s_{Ref_{s}(p, r)}\right|\right) }{2}
+                                                   \right)
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:316: Extra \right.
+l.316 ...Ref_{s}(p, r)}\right|\right) }{2} \right)
+                                                  
+I'm ignoring a \right that had no matching \left.
+
+[8]
+<../scripts/figs/representativity.png, id=126, 957.5775pt x 460.119pt>
 File: ../scripts/figs/representativity.png Graphic file (type png)
 <use ../scripts/figs/representativity.png>
-Package pdftex.def Info: ../scripts/figs/representativity.png  used on input line 336.
+Package pdftex.def Info: ../scripts/figs/representativity.png  used on input line 324.
 (pdftex.def)             Requested size: 455.24408pt x 218.74835pt.
  [9 <../scripts/figs/representativity.png>]
-<../scripts/figs/heatmaps/OBS.png, id=129, 579.1236pt x 461.0826pt>
+<../scripts/figs/heatmaps/OBS.png, id=133, 579.1236pt x 461.0826pt>
 File: ../scripts/figs/heatmaps/OBS.png Graphic file (type png)
 <use ../scripts/figs/heatmaps/OBS.png>
-Package pdftex.def Info: ../scripts/figs/heatmaps/OBS.png  used on input line 383.
+Package pdftex.def Info: ../scripts/figs/heatmaps/OBS.png  used on input line 371.
 (pdftex.def)             Requested size: 341.43306pt x 271.8464pt.
  [10 <../scripts/figs/heatmaps/OBS.png>]
-<../scripts/figs/heatmaps/BARS.png, id=137, 989.3763pt x 909.3975pt>
+<../scripts/figs/heatmaps/BARS.png, id=143, 989.3763pt x 909.3975pt>
 File: ../scripts/figs/heatmaps/BARS.png Graphic file (type png)
 <use ../scripts/figs/heatmaps/BARS.png>
-Package pdftex.def Info: ../scripts/figs/heatmaps/BARS.png  used on input line 397.
+Package pdftex.def Info: ../scripts/figs/heatmaps/BARS.png  used on input line 384.
 (pdftex.def)             Requested size: 455.24408pt x 418.45282pt.
  [11 <../scripts/figs/heatmaps/BARS.png>]
-<../scripts/figs/trends_map.png, id=144, 910.602pt x 581.7735pt>
+<../scripts/figs/trends_map.png, id=150, 910.602pt x 581.7735pt>
 File: ../scripts/figs/trends_map.png Graphic file (type png)
 <use ../scripts/figs/trends_map.png>
-Package pdftex.def Info: ../scripts/figs/trends_map.png  used on input line 433.
+Package pdftex.def Info: ../scripts/figs/trends_map.png  used on input line 419.
 (pdftex.def)             Requested size: 455.24408pt x 290.85052pt.
-<../scripts/figs/abs_species_trends.png, id=145, 970.3452pt x 325.215pt>
+<../scripts/figs/abs_species_trends.png, id=151, 970.3452pt x 325.215pt>
 File: ../scripts/figs/abs_species_trends.png Graphic file (type png)
 <use ../scripts/figs/abs_species_trends.png>
-Package pdftex.def Info: ../scripts/figs/abs_species_trends.png  used on input line 457.
+Package pdftex.def Info: ../scripts/figs/abs_species_trends.png  used on input line 442.
 (pdftex.def)             Requested size: 455.24408pt x 152.57814pt.
  [12] [13 <../scripts/figs/trends_map.png> <../scripts/figs/abs_species_trends.png>] [14pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.525 \end{acknowledgements}
-                            pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+l.506 \disclaimer{TEXT}
+                        %% optional sectionpdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.525 \end{acknowledgements}
-                            ] [15] [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 716.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 716.
+l.506 \disclaimer{TEXT}
+                        %% optional section] [15] [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 701.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 701.
  (/home/augustinm/Dev/pyaerocom/trends/paper/template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 716.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 716.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 716.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 701.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 701.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 701.
  ) 
 Here is how much of TeX's memory you used:
- 13074 strings out of 492982
- 167298 string characters out of 6134896
- 308438 words of memory out of 5000000
- 16328 multiletter control sequences out of 15000+600000
- 47832 words of font info for 84 fonts, out of 8000000 for 9000
+ 13079 strings out of 492982
+ 167374 string characters out of 6134896
+ 307535 words of memory out of 5000000
+ 16331 multiletter control sequences out of 15000+600000
+ 50104 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,40p,872b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (16 pages, 4419851 bytes).
+ 43i,15n,40p,871b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (16 pages, 4436026 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

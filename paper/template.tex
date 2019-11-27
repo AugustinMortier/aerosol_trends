@@ -78,9 +78,7 @@
 
 \title{Do the  climate (AeroCom phase III / CMIP6) models reproduce the observed aerosol trends over the last two decades?}
 
-
 % \Author[affil]{given_name}{surname}
-
 \Author[1]{Augustin}{Mortier}
 \Author[1]{Jonas}{Gliss}
 \Author[1]{Michael}{Schulz}
@@ -89,7 +87,6 @@
 \affil[2]{ADDRESS}
 
 %% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
-
 %% If an author is deceased, please add a further affiliation and mark the respective author name(s) with a dagger, e.g. "\Author[2,$\dag$]{Anton}{Aman}" with the affiliations "\affil[2]{University of ...}" and "\affil[$\dag$]{deceased, 1 July 2019}"
 
 
@@ -99,16 +96,11 @@
 
 \runningauthor{Augustin Mortier}
 
-
-
-
-
 \received{}
 \pubdiscuss{} %% only important for two-stage journals
 \revised{}
 \accepted{}
 \published{}
-
 %% These dates will be inserted by Copernicus Publications during the typesetting process.
 
 
@@ -142,8 +134,7 @@ TEXT
 
 
 \section{Datasets}
-
-A set of 9 optical and in situ aerosol measurements is used in this study. The observation networks and the models providing output for these parameters are reported in Table \ref{table:datasets}.
+A set of nine optical and in situ aerosol measurements is used in this study. The observation networks and the models providing output for these parameters are reported in Table \ref{table:datasets}.
 
 \begin{table}
  \begin{tabularx}{\textwidth}{lllX}
@@ -154,9 +145,9 @@ A set of 9 optical and in situ aerosol measurements is used in this study. The o
   AOD<1µm     & Column  & AERONET             & NorESM2; SPRINTARS; ECHAM-HAM; GEOS; GFDL-AM4                                                             \\
   AOD>1µm     & Column  & AERONET             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; OsloCTM3; GFDL-AM4; BCC-CUACE                                  \\
   AE          & Column  & AERONET             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4                                       \\
-  $PM_{2.5}$       & Surface & GAW                 & ECMWF-Rean; NorESM2                                                                                       \\
-  $PM_{10}$        & Surface & GAW                 & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS                                                           \\
-  $SO_{4}$         & Surface & GAW/TAD             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; BCC-CUACE                                      \\
+  $PM_{2.5}$  & Surface & GAW                 & ECMWF-Rean; NorESM2                                                                                       \\
+  $PM_{10}$   & Surface & GAW                 & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS                                                           \\
+  $SO_{4}$    & Surface & GAW/TAD             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; BCC-CUACE                                      \\
   Scat. Coef. & Surface & GAW/IMPROVE/ACTRIS  & NorESM2                                                                                                   \\
   Abs. Coef.  & Surface & GAW/IMPROVE/ACTRIS  & NorESM2; SPRINTARS                                                                                        \\
   \bottomhline
@@ -167,30 +158,30 @@ A set of 9 optical and in situ aerosol measurements is used in this study. The o
 
 \subsection{Observations}
 
-\paragraph{Columnar measurements}
-**AERONET website** The AERONET (AErosol RObotic NETwork) project is a federation of ground-based remote sensing aerosol networks established by NASA and PHOTONS (PHOtométrie pour le Traitement Opérationnel de Normalisation Satellitaire; Univ. of Lille 1, CNES, and CNRS-INSU) and is greatly expanded by networks (e.g., RIMA, AeroSpan, AEROCAN, and CARSNET) and collaborators from national agencies, institutes, universities, individual scientists, and partners. For more than 25 years, the project has provided long-term, continuous and readily accessible public domain database of aerosol optical, microphysical and radiative properties for aerosol research and characterization, validation of satellite retrievals, and synergism with other databases. The network imposes standardization of instruments, calibration, processing and distribution.
+We use the highest quality level available, apply non-validity flags and an outliers range (see corresponding bullet-point).
+
+\subsubsection{Sunphotometer}
+(AERONET website): The AERONET (AErosol RObotic NETwork) project is a federation of ground-based remote sensing aerosol networks established by NASA and PHOTONS (PHOtométrie pour le Traitement Opérationnel de Normalisation Satellitaire; Univ. of Lille 1, CNES, and CNRS-INSU) and is greatly expanded by networks (e.g., RIMA, AeroSpan, AEROCAN, and CARSNET) and collaborators from national agencies, institutes, universities, individual scientists, and partners. For more than 25 years, the project has provided long-term, continuous and readily accessible public domain database of aerosol optical, microphysical and radiative properties for aerosol research and characterization, validation of satellite retrievals, and synergism with other databases. The network imposes standardization of instruments, calibration, processing and distribution.
 ** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3** + remove outliers
 \begin{itemize}
- \item AOD: od550aer - AeronetSun
- \item AE: ang4487aer - AeronetSun
- \item AOD<1µm: od550lt1aer - AeronetSDA
- \item AOD>1µm: od550lg1aer - AeronetSDA
+ \item AOD: od550aer - AeronetSun - validity range []
+ \item AE: ang4487aer - AeronetSun - validity range []
+ \item AOD<1µm: od550lt1aer - AeronetSDA - validity range []
+ \item AOD>1µm: od550lg1aer - AeronetSDA - validity range []
 \end{itemize}
 
-\paragraph{Surface measurements}
- All the following data have been downloaded via EBAS.
- (EBAS website): EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
- We use the highest quality level available, apply non-validity flags and an outliers range (see corresponding bullet-point).
+All the following data have been downloaded via EBAS.
+(EBAS website): EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
 
-\subparagraph{Particule Matter}
+
+\subsubsection{Particule Matter}
 GAW (GAW website): The Global Atmosphere Watch (GAW) programme of WMO is a partnership involving the Members of WMO, contributing networks and collaborating organizations and bodies which provides reliable scientific data and information on the chemical composition of the atmosphere, its natural and anthropogenic change, and helps to improve the understanding of interactions between the atmosphere, the oceans and the biosphere.
 \begin{itemize}
  \item $PM_{10}$ (\unit{µg.m^{-3}}) - Validity range: []
  \item $PM_{2.5}$ (\unit{µg.m^{-3}}) - Validity range: []
 \end{itemize}
 
-\subparagraph{$SO_{4}$ concentration}
-
+\subsubsection{$SO_{4}$ concentration}
 (trends website): The global dataset is prepared by the WMO/GAW Science Advisory Group for Total Atmospheric Deposition (SAG-TAD) based on data from different regional and global networks:
 \begin{itemize}
  \item WMO/GAW: World Data Center for Precipitation Chemistry
@@ -203,35 +194,34 @@ GAW (GAW website): The Global Atmosphere Watch (GAW) programme of WMO is a partn
 \end{itemize}
 
 Subset from Aas et al.
-
 The data has been screened to be regional representative and of satisfactory quality:
-
 Precipitation measurements are mainly from wet-only samplers or bulk if proven comparable to wet-only.
 The sampling frequency is 2 weeks or higher –mostly daily measurements, except African data where precipitation is sampled on rain events and SO2 with monthly passive samplers.
 Wet deposition and volume weighted precipitation data are based are based on the standard rain gauge depth if that is measured in parallel. At other sites without rain gauge, the sample depth are used.
 Urban sites are not included, neither sites where the surroundings have changed considerable in the period in question.
 When averaging monthly data with higher sampling frequency than daily, the sample is weighted in accordance to how many days it has been sampled in that month.
 
-
-\subparagraph{Optical measurements}
+\subsubsection{Optical in situ}
 (See Jonas paper)
 \begin{itemize}
- \item Scattering coefficient (\unit{Mm^{-1}}): dry -> RH<30\%? - Validity range: []
- \item Absorption coefficients (\unit{Mm^{-1}}): validity range: [] - Validity range: []
+ \item Scattering coefficient (\unit{Mm^{-1}}): from nephelometer - dry -> RH<30\%? - Validity range: []
+ \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [] - Validity range: []
 \end{itemize}
-
-
 
 \subsection{Models}
-
 **Describe model groups**
-A set of 11 climate models are used in this study. Their main characteristics are reported in table \ref{table:models}.  One can separate them into three groups:
-\begin{itemize}
- \item CAMS-Reanalysis: w. data assimilation
- \item AP3 (historical runs): required output: + additional output for some models, which permits to cover the 9 aerosol parameters
- \item CMIP6: required output: od550aer time series from xxxx to 2014.
-       Also, nudged / not-nudged within AP3?
-\end{itemize}
+A set of 11 climate models are used in this study. Their main characteristics are reported in table \ref{table:models}.  One can separate them into three groups.
+
+\subsubsection{CAMS-Reanalysis}
+w. data assimilation
+
+\subsubsection{AeroCom phase III}
+historical runs.
+required output: + additional output for some models, which permits to cover the nine aerosol parameters.
+Also, nudged / not-nudged AP3?
+
+\subsubsection{CMIP6}
+required output: od550aer time series from xxxx to 2014.
 
 \begin{table}
  \begin{tabularx}{\textwidth}{lllllX}
@@ -255,9 +245,9 @@ A set of 11 climate models are used in this study. Their main characteristics ar
  \label{table:models}
 \end{table}
 
+
 \section{Methods}
 TEXT
-
 
 \subsection{Regional time series}
 TEXT
@@ -271,7 +261,6 @@ TEXT
 \end{figure}
 
 \subsubsection{Constrains}
-
 Common filtering: use the highest quality level available, and remove outliers (see corresponding bullet point).
 + remove mountains sites
 
@@ -283,7 +272,6 @@ Then, computation of median, first and third quartiles
  \caption{Regional time series of observed AOD. The dark blue line and the light blue envelope correspond respectively to the median and the first and third quartiles of all the points available at the corresponding timestamp. The blue dots correspond to the yearly average, which is used to compute the linear trend, displayed as a continous or dashed line when the trend is significant or not.}
  \label{ts_aod}
 \end{figure}
-
 
 
 \subsection{Trends calculation}
@@ -325,7 +313,7 @@ In order to investigate both these source of uncertainties, one use model data i
 For each parameter and over each region, one calculates the mean difference in the relative trends of these experiments is then converted into a score by using a normal distribution $f(\mu=0, \sigma=0.5)$. For a given parameter $p$ and a region $r$, the Representativity $Rep(p,r)$ is calculated as following
 
 \begin{equation}
- Rep(p, r) = f\left( \frac{\left| s_{Exp_{t}(p, r)}-s_{Ref_{t}(p, r)} \right| + \left| s_{Exp_{s}(p, r)}-s_{Ref_{s}(p, r)}\right| }{2} \right)
+ Rep(p, r) = \frac{f\left(\left| s_{Exp_{t}(p, r)}-s_{Ref_{t}(p, r)} \right|\right) + f\left\left| s_{Exp_{s}(p, r)}-s_{Ref_{s}(p, r)}\right|\right) }{2} \right)
 \end{equation}
 
 where $s$ corresponds to the relative trend of each dataset.
@@ -344,9 +332,9 @@ Give some main results on the representativity itself:
 - AE has a better representativity than AOD event though same number of observations.
 - Insitu measurements, has usually a good time representativity, since regular measurements in every season, but low space representativity (few stations).
 
+
 \section{Results}
 TEXT
-
 
 \subsection{Trends in observations}
 TEXT
@@ -357,17 +345,17 @@ TABLE with ANNUAL MEAN FOR 2000
 \begin{table}
  \begin{tabular}{llllllll}
   \tophline
-                     & EUROPE & NAMERICA & SAMERICA & NAFRICA & SAFRICA & ASIA & AUSTRALIA \\
+                                & EUROPE & NAMERICA & SAMERICA & NAFRICA & SAFRICA & ASIA & AUSTRALIA \\
   \middlehline
-  AOD                & 0.17   & 0.10     & 0.15     & 0.26    & -       & 0.35 & 0.10      \\
-  AOD<1µm            & 0.14   & 0.08     & 0.12     & 0.11    & -       & 0.18 & 0.05      \\
-  AOD>1µm            & 0.03   & 0.02     & 0.03     & 0.10    & -       & 0.11 & 0.03      \\
-  AE                 & 1.44   & 1.46     & 1.30     & 0.72    & -       & 1.06 & 0.97      \\
-  $PM_{2.5}$ (µg.m-3)     & 12.7   & 6.0      & -        & -       & -       & -    & -         \\
-  $PM_{10}$ (µg.m-3)      & 16.8   & 11.5     & -        & 19.6    & -       & -    & -         \\
-  $SO_{4}$ (µg.m-3)       & 2.01   & 1.45     & -        & 2.98    & -       & 1.97 & -         \\
-  Scat. Coef. (1/Mm) & 29.6   & 23.8     & -        & -       & -       & -    & -         \\
-  Abs. Coef. (1/Mm)  & 2.0    & 2.3      & -        & -       & -       & -    & -         \\
+  AOD                           & 0.17   & 0.10     & 0.15     & 0.26    & -       & 0.35 & 0.10      \\
+  AOD<1µm                       & 0.14   & 0.08     & 0.12     & 0.11    & -       & 0.18 & 0.05      \\
+  AOD>1µm                       & 0.03   & 0.02     & 0.03     & 0.10    & -       & 0.11 & 0.03      \\
+  AE                            & 1.44   & 1.46     & 1.30     & 0.72    & -       & 1.06 & 0.97      \\
+  $PM_{2.5}$ (\unit{µg.m^{-3}}) & 12.7   & 6.0      & -        & -       & -       & -    & -         \\
+  $PM_{10}$ (\unit{µg.m^{-3}})  & 16.8   & 11.5     & -        & 19.6    & -       & -    & -         \\
+  $SO_{4}$ (\unit{µg.m^{-3}})   & 2.01   & 1.45     & -        & 2.98    & -       & 1.97 & -         \\
+  Scat. Coef. (\unit{Mm^{-1}})  & 29.6   & 23.8     & -        & -       & -       & -    & -         \\
+  Abs. Coef. (\unit{Mm^{-1}})   & 2.0    & 2.3      & -        & -       & -       & -    & -         \\
   \bottomhline
  \end{tabular}
 
@@ -385,7 +373,6 @@ In the text, comment values mentioning both p-value (significant or not) and err
  \label{obs_trends}
 \end{figure}
 
-
 \subsection{Evaluation of model trends against observations}
 TEXT
 Given uncertainties, match between observed and modeled trends. For parameters:
@@ -402,7 +389,6 @@ Some variability in the model trends. Especially:
 \subsection{Trends in models}
 
 \subsubsection{Global trends}
-
 Since we know how well we the model trends compare to the trends in the observations, one compute in this section the trends from the models for the whole time period and at a global scale. With the representativity study, we've seen that the trends computed at the stations could lead to a different trend than the computed in this region when all grid-points were considered. How do these both time and spacial representativity affect the computation of the global trends?
 
 Since global trends, here we just process the average of all the trends computed at each grid-point (and at each grid-point where an observation station is located).
@@ -412,17 +398,17 @@ Trends computed with model regridded at a 2x2 degree resolution.
 \begin{table}
  \begin{tabular}{lll}
   \tophline
-                     & $Mean_{2000}$ & Trend (\%/yr) \\
+                                & $Mean_{2000}$ & Trend (\%/yr) \\
   \middlehline
-  AOD                & (0.16) 0.14   & (+0.1) +0.2   \\
-  AOD<1µm            & (0.09) 0.05   & (+0.4) +0.6   \\
-  AOD>1µm            & (0.06) 0.09   & (-0.2) +0.1   \\
-  AE                 & (0.78) 0.43   & (+0.2) +0.3   \\
-  $PM_{2.5}$ (µg m-3)     & (12.4) 9.1    & (+0.2) +0.2   \\
-  $PM_{10}$ (µg m-3)      & (19.3) 18.7   & (+0.1) +0.1   \\
-  $SO_{4}$ (µg m-3)       & (2.33) 0.64   & (-1.1) +0.4   \\
-  Scat. Coef. (1/Mm) & (28.0) 21.2   & (+0.3) +0.2   \\
-  Abs. Coef. (1/Mm)  & (3.1) 0.9     & (+1.8) +1.5   \\
+  AOD                           & (0.16) 0.14   & (+0.1) +0.2   \\
+  AOD<1µm                       & (0.09) 0.05   & (+0.4) +0.6   \\
+  AOD>1µm                       & (0.06) 0.09   & (-0.2) +0.1   \\
+  AE                            & (0.78) 0.43   & (+0.2) +0.3   \\
+  $PM_{2.5}$ (\unit{µg.m^{-3}}) & (12.4) 9.1    & (+0.2) +0.2   \\
+  $PM_{10}$ (\unit{µg.m^{-3}})  & (19.3) 18.7   & (+0.1) +0.1   \\
+  $SO_{4}$ (\unit{µg.m^{-3}})   & (2.33) 0.64   & (-1.1) +0.4   \\
+  Scat. Coef. (\unit{Mm^{-1}})  & (28.0) 21.2   & (+0.3) +0.2   \\
+  Abs. Coef. (\unit{Mm^{-1}})   & (3.1) 0.9     & (+1.8) +1.5   \\
   \bottomhline
  \end{tabular}
  \caption{Global means and trends of aerosol parameters using NorESM2 data. The value in parenthesis is obtained by aggregating only grid-points where observation stations are located. The relative trends are calculated by averaging the absolute trends within the considered grid-points and normalizing it to the global mean for 2000.}
@@ -436,15 +422,14 @@ Trends computed with model regridded at a 2x2 degree resolution.
 \end{figure}
 
 \subsubsection{Can we explain the trends in AOD?}
-
 For that,  we look at the absolute trends in OD of the main aerosol species.
 
 REMARK: we observe opposite trends in $SO_{4}$ OD and emissions.
 See: https://aerocom-trends.met.no/cmip6/
 \begin{itemize}
-    \item $OD_{SO_{4}}$: +0.5\%/yr
-    \item $Emissions_{SO_{4}}$: -0.2\%/yr
-    \item $Load_{SO_{4}}$: +0.9\%/yr
+ \item $OD_{SO_{4}}$: +0.5\%/yr
+ \item $Emissions_{SO_{4}}$: -0.2\%/yr
+ \item $Load_{SO_{4}}$: +0.9\%/yr
 \end{itemize}
 
 %\begin{figure}[t]
@@ -455,7 +440,7 @@ See: https://aerocom-trends.met.no/cmip6/
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/abs_species_trends.png}
- \caption{Absolute trends in OD and emissions of the main aerosol species computed with NorESM2. The y-axis of the trends in OD and the emissions }
+ \caption{Absolute trends in OD and emissions of the main aerosol species computed with NorESM2. The y-axis of the trends in OD and the emissions is given according to the power of 10 indicated at the top left corner of each of these subplots.}
  \label{species_abs_trends}
 \end{figure}
 
