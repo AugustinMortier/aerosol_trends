@@ -1,0 +1,46 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Lund et~al.(2018)Lund, Myhre, Haslerud, Skeie, Griesfeller, Platt,
+  Kumar, Myhre, and Schulz}]{lund2018concentrations}
+Lund, M.~T., Myhre, G., Haslerud, A.~S., Skeie, R.~B., Griesfeller, J., Platt,
+  S.~M., Kumar, R., Myhre, C.~L., and Schulz, M.: Concentrations and radiative
+  forcing of anthropogenic aerosols from 1750 to 2014 simulated with the Oslo
+  CTM3 and CEDS emission inventory, 2018.
+
+\bibitem[{Myhre et~al.(2009)Myhre, Berglen, Johnsrud, Hoyle, Berntsen,
+  Christopher, Fahey, Isaksen, Jones, Kahn et~al.}]{myhre2009modelled}
+Myhre, G., Berglen, T.~F., Johnsrud, M., Hoyle, C., Berntsen, T.~K.,
+  Christopher, S., Fahey, D., Isaksen, I.~S., Jones, T., Kahn, R., et~al.:
+  Modelled radiative forcing of the direct aerosol effect with
+  multi-observation evaluation, Atmospheric Chemistry and Physics, 9,
+  1365--1392, 2009.
+
+\bibitem[{Takemura et~al.(2000)Takemura, Okamoto, Maruyama, Numaguti,
+  Higurashi, and Nakajima}]{takemura2000global}
+Takemura, T., Okamoto, H., Maruyama, Y., Numaguti, A., Higurashi, A., and
+  Nakajima, T.: Global three-dimensional simulation of aerosol optical
+  thickness distribution of various origins, Journal of Geophysical Research:
+  Atmospheres, 105, 17\,853--17\,873, 2000.
+
+\bibitem[{Takemura et~al.(2002)Takemura, Nakajima, Dubovik, Holben, and
+  Kinne}]{takemura2002single}
+Takemura, T., Nakajima, T., Dubovik, O., Holben, B.~N., and Kinne, S.:
+  Single-scattering albedo and radiative forcing of various aerosol species
+  with a global three-dimensional model, Journal of Climate, 15, 333--352,
+  2002.
+
+\bibitem[{Takemura et~al.(2005)Takemura, Nozawa, Emori, Nakajima, and
+  Nakajima}]{takemura2005simulation}
+Takemura, T., Nozawa, T., Emori, S., Nakajima, T.~Y., and Nakajima, T.:
+  Simulation of climate response to aerosol direct and indirect effects with
+  aerosol transport-radiation model, Journal of Geophysical Research:
+  Atmospheres, 110, 2005.
+
+\end{thebibliography}

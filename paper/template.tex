@@ -230,10 +230,10 @@ required output: od550aer time series from xxxx to 2014.
   \middlehline
   ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                                                                                  \\
   NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                                                                                  \\
-  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & Takemura et al.                                                                                                                    \\
+  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & \cite{takemura2000global,takemura2002single,takemura2005simulation}                                                                                                     \\
   ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88            & -                                                                                                                                  \\
   GEOS       & AP3       & ?        & ?           & 1.00x1.00            & -                                                                                                                                  \\
-  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & Lund et al., 2018                                                                                              & Myhre et al. 2009 \\
+  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & \cite{lund2018concentrations,myhre2009modelled} \\
   GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25            & -                                                                                                                                  \\
   BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81            & -                                                                                                                                  \\
   CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81            & Geophysical Model Development Special issue on CanESM5 (https://www.geosci-model-dev.net/special\_issues.html)                     \\
@@ -516,21 +516,21 @@ TEXT
 
 %% The reference list is compiled as follows:
 
-\begin{thebibliography}{}
+%\begin{thebibliography}{}
 
- \bibitem[AUTHOR(YEAR)]{LABEL1}
- REFERENCE 1
+% \bibitem[AUTHOR(YEAR)]{LABEL1}
+% REFERENCE 1
 
- \bibitem[AUTHOR(YEAR)]{LABEL2}
- REFERENCE 2
+% \bibitem[AUTHOR(YEAR)]{LABEL2}
+% REFERENCE 2
 
 \end{thebibliography}
 
 %% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
 %% authors experienced with BibTeX only have to include the following two lines:
 %%
-%% \bibliographystyle{copernicus}
-%% \bibliography{example.bib}
+\bibliographystyle{copernicus}
+\bibliography{mybib.bib}
 %%
 %% URLs and DOIs can be entered in your BibTeX file as:
 %%

@@ -302,6 +302,8 @@ INPUT ../scripts/figs/trends_map.png
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/abs_species_trends.png
 INPUT ../scripts/figs/abs_species_trends.png
 INPUT ../scripts/figs/abs_species_trends.png
+INPUT /home/augustinm/Dev/pyaerocom/trends/paper/template.bbl
+INPUT /home/augustinm/Dev/pyaerocom/trends/paper/template.bbl
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/template.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb
