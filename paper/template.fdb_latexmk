@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex template"] 1574868593 "template.aux" "template.bbl" "template" 1574868599
+["bibtex template"] 1574873432 "template.aux" "template.bbl" "template" 1574873548
   "./copernicus.bst" 1574597529 37359 d6a2b35e90cb9bf35e556ca57bc8f6c7 ""
-  "mybib.bib" 1574865538 2118 b7d4d1f8ef59c26d79deeae67a796335 ""
-  "template.aux" 1574868598 10568 639d36b754cf041ce1883ba0bca8ed22 ""
+  "mybib.bib" 1574873342 2555 4c88f20c3987072cf8254552bcc1664e ""
+  "template.aux" 1574873548 10724 ece48d1a7657351758006e721629a132 ""
   "template.bcf" 0 -1 0 ""
   (generated)
-  "template.bbl"
   "template.blg"
-["pdflatex"] 1574868593 "template.tex" "/home/augustinm/Dev/pyaerocom/trends/paper/template.pdf" "template" 1574868599
+  "template.bbl"
+["pdflatex"] 1574873542 "template.tex" "/home/augustinm/Dev/pyaerocom/trends/paper/template.pdf" "template" 1574873548
   "../scripts/figs/abs_species_trends.png" 1574786126 269776 db774d567b3e1f871d6f36f0268a697f ""
   "../scripts/figs/heatmaps/BARS.png" 1574846011 919499 a6e68fde5d71e5d23530a25fdf1213ed ""
   "../scripts/figs/heatmaps/OBS.png" 1574761070 387131 de8ff66be9a30f262f0a80cbc8bf49e6 ""
@@ -16,7 +16,7 @@
   "../scripts/figs/trends_map.png" 1574696740 2038163 abb491f46b7ab8ef21ef3d374225fde1 ""
   "../scripts/figs/ts/panel-od550aer.png" 1574245198 1067926 8122df9d3dfed419cabcdcc004dcb87a ""
   "/etc/texmf/web2c/texmf.cnf" 1563181619 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/augustinm/Dev/pyaerocom/trends/paper/template.aux" 1574868598 10568 639d36b754cf041ce1883ba0bca8ed22 ""
+  "/home/augustinm/Dev/pyaerocom/trends/paper/template.aux" 1574873548 10724 ece48d1a7657351758006e721629a132 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1480098688 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -175,14 +175,13 @@
   "copernicus.cfg" 1569994378 46153 f6b6b3cb1ddf83b9418ca1fdbf0aae81 ""
   "copernicus.cls" 1569994716 101501 036329d8d10a917514bfe2b93e3974f0 ""
   "natbib.sty" 1574597529 36061 f2675b2a662f3a410761b7189b6c066e ""
-  "template.aux" 1574868598 10568 639d36b754cf041ce1883ba0bca8ed22 ""
-  "template.bbl" 1574868593 2291 5dc92da7a630376ef1d14a118b005752 "bibtex template"
-  "template.tex" 1574868586 33598 16c8f124aa48cae1188a4c4d9bdbce34 ""
-  "template.toc" 1574868598 2353 ddc58417da829c22099bdafe35167d6c ""
+  "template.aux" 1574873548 10724 ece48d1a7657351758006e721629a132 ""
+  "template.bbl" 1574873432 2660 8567904b791c03036fed66b199230d15 "bibtex template"
+  "template.tex" 1574873541 36210 3625d5be4f0d33e50a0e0e32b94b39e6 ""
   (generated)
+  "template.log"
   "template.aux"
   "template.pdf"
+  "/home/augustinm/Dev/pyaerocom/trends/paper/template.log"
   "template.toc"
   "/home/augustinm/Dev/pyaerocom/trends/paper/template.pdf"
-  "/home/augustinm/Dev/pyaerocom/trends/paper/template.log"
-  "template.log"

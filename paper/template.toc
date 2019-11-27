@@ -10,20 +10,20 @@
 \contentsline {subsubsection}{\numberline {2.2.1}CAMS-Reanalysis}{5}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}AeroCom phase III}{5}{subsubsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.3}CMIP6}{5}{subsubsection.2.2.3}
-\contentsline {section}{\numberline {3}Methods}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Regional time series}{5}{subsection.3.1}
+\contentsline {section}{\numberline {3}Methods}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Regional time series}{6}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Regions definition}{6}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Constrains}{7}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Trends calculation}{7}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Regional time series computation}{7}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Trends computation}{8}{subsubsection.3.2.2}
-\contentsline {subsection}{\numberline {3.3}Representativity of the trends}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Results}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Trends in observations}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Evaluation of model trends against observations}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {3.3}Representativity of the trends}{9}{subsection.3.3}
+\contentsline {section}{\numberline {4}Results}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Trends in observations}{10}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Evaluation of model trends against observations}{10}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Trends in models}{12}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Global trends}{12}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}Can we explain the trends in AOD?}{12}{subsubsection.4.3.2}
-\contentsline {section}{\numberline {5}Conclusions}{14}{section.5}
-\contentsline {section}{Appendix A}{14}{appendix.A}
-\contentsline {subsection}{Appendix A1}{14}{subsection.A.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Can we explain the trends in AOD?}{13}{subsubsection.4.3.2}
+\contentsline {section}{\numberline {5}Conclusions}{13}{section.5}
+\contentsline {section}{Appendix A}{15}{appendix.A}
+\contentsline {subsection}{Appendix A1}{15}{subsection.A.1}

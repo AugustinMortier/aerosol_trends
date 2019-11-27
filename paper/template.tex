@@ -108,7 +108,7 @@
 
 \maketitle
 
-\tableofcontents
+%\tableofcontents
 
 \begin{abstract}
  TEXT
@@ -162,7 +162,7 @@ We use the highest quality level available, apply non-validity flags and an outl
 
 \subsubsection{Sunphotometer}
 (AERONET website): The AERONET (AErosol RObotic NETwork) project is a federation of ground-based remote sensing aerosol networks established by NASA and PHOTONS (PHOtométrie pour le Traitement Opérationnel de Normalisation Satellitaire; Univ. of Lille 1, CNES, and CNRS-INSU) and is greatly expanded by networks (e.g., RIMA, AeroSpan, AEROCAN, and CARSNET) and collaborators from national agencies, institutes, universities, individual scientists, and partners. For more than 25 years, the project has provided long-term, continuous and readily accessible public domain database of aerosol optical, microphysical and radiative properties for aerosol research and characterization, validation of satellite retrievals, and synergism with other databases. The network imposes standardization of instruments, calibration, processing and distribution.
-** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3** + remove outliers
+** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3** + daily files+ remove outliers
 \begin{itemize}
  \item AOD: od550aer - AeronetSun - validity range []
  \item AE: ang4487aer - AeronetSun - validity range []
@@ -173,6 +173,7 @@ We use the highest quality level available, apply non-validity flags and an outl
 All the following data have been downloaded via EBAS.
 (EBAS website): EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
 
+Add time resolution for each of the parameters.
 
 \subsubsection{Particule Matter}
 GAW (GAW website): The Global Atmosphere Watch (GAW) programme of WMO is a partnership involving the Members of WMO, contributing networks and collaborating organizations and bodies which provides reliable scientific data and information on the chemical composition of the atmosphere, its natural and anthropogenic change, and helps to improve the understanding of interactions between the atmosphere, the oceans and the biosphere.
@@ -205,12 +206,12 @@ When averaging monthly data with higher sampling frequency than daily, the sampl
 (See Jonas paper)
 \begin{itemize}
  \item Scattering coefficient (\unit{Mm^{-1}}): from nephelometer - dry -> RH<30\%? - Validity range: []
- \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [] - Validity range: []
+ \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [] - Validity range: [] - Removed Alert station (unit issue).
 \end{itemize}
 
 \subsection{Models}
 **Describe model groups**
-A set of 11 climate models are used in this study. Their main characteristics are reported in table \ref{table:models}.  One can separate them into three groups.
+A set of 11 climate models are used in this study. Their main characteristics are reported in Table \ref{table:models}.  One can separate them into three groups.
 
 \subsubsection{CAMS-Reanalysis}
 w. data assimilation
@@ -247,51 +248,65 @@ required output: od550aer time series from xxxx to 2014.
 
 
 \section{Methods}
-TEXT
 
 \subsection{Regional time series}
-TEXT
+Due to the nature of the processes involved in the emission and the deposition of aerosols, one can expect different trends in the different regions of the World.
+Instead of assembling the trends obtained at each individual observation station in a given region, regional time series are computed by assembling the measurements. This makes sense if the regions are not too big. An advantage is that one single trend can be computed in a given region, with an associated significance and uncertainty, which is not possible to get when combining trends together.
 
 \subsubsection{Regions definition}
-TEXT
+Seven regions, defined by a range of latitudes and longitudes, are considered in this study. The definitions of these regions allow to restrict the study to a limited number of geographic areas with, however, a global coverage when considering the ensemble of the regions. As seen in Figure \ref{fig:map_obs}, the regions do not have a similar coverage in terms of observations. North-America and Europe have the highest concentration of instruments.
+\begin{itemize}
+    \item Sunphotometers: most homogeneous spatial network. In this study, more than 1000 instruments are used over the World. The highest density in Europe and central part of North-America (US). Lowest density in South-Africa and Australia.
+    \item Particule Matter: 212 instruments spread over Europe and North America. Note that in North-America, EBAS data only until 2006.
+    \item $SO_{4}$: 346 instruments in North-America, Europe, Asia and North-Africa
+    \item Scat. Coef. and Abs. Coef.: about 50 stations in total spread over North-America, Europe, North-Africa and Asia.
+\end{itemize}
+
 \begin{figure}
  \includegraphics[width=12cm]{../scripts/figs/maps/av_obs.png}
  \caption{Observations and regions used in this study. The numbers reported within each region correspond to the maximum number of stations given for each observation network.}
- \label{map_obs}
+ \label{fig:map_obs}
 \end{figure}
 
 \subsubsection{Constrains}
-Common filtering: use the highest quality level available, and remove outliers (see corresponding bullet point).
-+ remove mountains sites
+Common filtering among all the parameters: use the highest quality level available, and remove outliers (see corresponding bullet point).
 
-Filtering ephemere stations: at least 300 days (get rid of AERONET DRAGON stations)
-Minimum number of points required in one timestamp: 3
-Then, computation of median, first and third quartiles
+The regional time series are computed by combining, for each timestamp, the data of all the stations available in the corresponding region, for the same timestamp.
+In order to compute robust regional time series, some additional constrains have been applied to the data:
+\begin{itemize}
+    \item The mountains sites have been removed.
+    \item Filtering of ephemera stations (e.g AERONET DRAGON stations): a minimum of 300 days is required per station.
+    \item Minimum of 3 points (stations with valid measurement) required per timestamp.
+\end{itemize}
+
+When those criteria are fulfilled, the median, as well as the first and third quartiles are computed at the finest time-resolution possible. The quartiles allow to capture the inter-regional variability. An example of regional time-series is shown in Figure \ref{fig:ts_aod} for the AOD.
+
 \begin{figure}
  \includegraphics[width=16cm]{../scripts/figs/ts/panel-od550aer.png}
- \caption{Regional time series of observed AOD. The dark blue line and the light blue envelope correspond respectively to the median and the first and third quartiles of all the points available at the corresponding timestamp. The blue dots correspond to the yearly average, which is used to compute the linear trend, displayed as a continous or dashed line when the trend is significant or not.}
- \label{ts_aod}
+ \caption{Regional time series of AOD. The dark blue line and the light blue envelope correspond respectively to the median and the first and third quartiles of all the valid points at the corresponding timestamp. The blue dots correspond to the yearly averages which are used to compute the linear trend, displayed as a continuous or dashed line when the trend is significant or not.}
+ \label{fig:ts_aod}
 \end{figure}
 
 
 \subsection{Trends calculation}
 
 \subsubsection{Regional time series computation}
-The trends are calculated using the time series constructed with the yearly averages. This allows to prevent any disturbance in the calculation of the trend slope that would be induced by the presence of seasonal cycles, which are observed for most of the aerosol parameters. The computation of the yearly averages is obtained by applying step-by-step time constrains in order to insure the robustness of these averages. Starting with the finest resolution available, monthly, seasonal and yearly averages are computed as following:
+The trends are calculated using the time series constructed with the yearly averages. This allows to prevent any disturbance in the calculation of the trend slope that would be induced by the presence of seasonal cycles, which are observed for most of the aerosol parameters. The computation of the yearly averages is obtained by applying step-by-step time constrains in order to insure the robustness of the statistics. By starting at the finest time resolution available, monthly, seasonal and yearly averages are computed is the following criteria are fulfilled:
 \begin{itemize}
- \item monthly average if at least 5 days are available in the month (when daily observations are available).
- \item seasonal average if 1 month is available in the season.
- \item yearly average if 4 seasons are available in the year.
+ \item at least 5 days per month (when daily observations are available).
+ \item at least 1 month per season.
+ \item at least 4 seasons per year.
 \end{itemize}
-Compromise between availability of the measurements and the robustness of the yearly statistics.
+This gives a reasonable compromise between the availability of the measurements and the robustness of the yearly statistics.
 
 \subsubsection{Trends computation}
-Use of yearly averages. Computation if at least 7 points in the time series (50\% of time coverage). That's why, even though 25 stations provide AOD measurements in SAFRICA, no trend is provided in this region. For the models which provide output every 5 years (in addition to 2014), the trends are computed using 4 points (2000, 2005, 2010 and 2014).
+Use of yearly averages. Computation if at least 7 points in the time series (50\% of time coverage). That's why, even though 25 stations provide AOD measurements in SAFRICA, no trend is provided in this region since the regional time series contains only 6? points (clean up the website). The trends are computed similarly for observation and model datasets. However, since some models provide output every 5 years (in addition to 2014), the minimum number of points has been reduced to 4 for the models, so the trends can be computed using the years 2000, 2005, 2010 and 2014.
 
+Same methodology as in \cite{aas2019global}.
 Trends significance with Mann-Kendall.
-Slope calculation: Theil-Sen estimator.
+Slope calculation with Theil-Sen estimator.
 Uncertainty on the slope: combination of the Theil-Sen slope error and the error on the residuals.
-The trend is provided as a relative trends (\%/yr) as respect to the first year of the time period (2000).
+The trend is provided as a relative trend (\%/yr) as respect to the first year of the time period (2000).
 
 \subsection{Representativity of the trends}
 The number of available points used to compute the regional time series is not constant in time. Usually, more stations are integrated within the observations networks in time, but also can be affected by the season depending on the nature of the measurements. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD: time representativity.
