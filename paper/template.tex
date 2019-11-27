@@ -300,25 +300,25 @@ In order to investigate both these source of uncertainties, one use model data i
 \begin{itemize}
  \item Time representativity experiment
        \begin{itemize}
-        \item $Ref_{t}$: Collocation in space and time
-        \item $Exp_{t}$: Collocation in space using complete time-series
+        \item $Ref_{time}$: Collocation in space and time
+        \item $Exp_{time}$: Collocation in space using complete time-series
        \end{itemize}
  \item Space representativity experiment
        \begin{itemize}
-        \item $Ref_{s}$: Collocation in space using complete time-series (=$Exp_{t}$)
-        \item $Exp_{s}$: All grid-points in region using full time-series
+        \item $Ref_{space}$: Collocation in space using complete time-series (=$Exp_{t}$)
+        \item $Exp_{space}$: All grid-points in region using full time-series
        \end{itemize}
 \end{itemize}
 
-For each parameter and over each region, one calculates the mean difference in the relative trends of these experiments is then converted into a score by using a normal distribution $f(\mu=0, \sigma=0.5)$. For a given parameter $p$ and a region $r$, the Representativity $Rep(p,r)$ is calculated as following
+For each parameter and over each region, one calculates the mean difference of the relative trends for these two experiments. The two relative differences are then converted into a single score by using a normal distribution $f$ described by a mean $\mu=0$ and a standard deviation of $\sigma=0.5$. For a given parameter $p$ and a region $r$, the Representativity $Rep(p,r)$ is calculated as following
 
 \begin{equation}
- Rep(p, r) = \frac{f\left(\left| s_{Exp_{t}(p, r)}-s_{Ref_{t}(p, r)} \right|\right) + f\left(\left| s_{Exp_{s}(p, r)}-s_{Ref_{s}(p, r)}\right|\right) }{2}
+ Rep_{space,time}(p, r) = {f\left(\left| trend_{Exp_{space,time}(p, r)}-trend_{Ref_{space,time}(p, r)} \right|\right)}
 \end{equation}
 
-where $s$ corresponds to the relative trend of each dataset.
+For a given experiment, a difference of 0.0\%/yr as compared to its reference dataset leads to a representativity of 100\%, and a difference of 0.5\%/yr leads to a representativity of 50\%.
 
-By doing so, a difference of 0.0\%/yr is giving a representativity of 100\%, and a difference of 0.5\%/yr is giving a representativity of 50\%.
+The total representativity is computed as the mean of the time and the space representativities.
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/representativity.png}
