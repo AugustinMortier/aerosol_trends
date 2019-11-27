@@ -154,9 +154,9 @@ A set of 9 optical and in situ aerosol measurements is used in this study. The o
   AOD<1µm     & Column  & AERONET             & NorESM2; SPRINTARS; ECHAM-HAM; GEOS; GFDL-AM4                                                             \\
   AOD>1µm     & Column  & AERONET             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; OsloCTM3; GFDL-AM4; BCC-CUACE                                  \\
   AE          & Column  & AERONET             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; GFDL-AM4                                       \\
-  PM2.5       & Surface & GAW                 & ECMWF-Rean; NorESM2                                                                                       \\
-  PM10        & Surface & GAW                 & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS                                                           \\
-  SO4         & Surface & GAW/TAD             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; BCC-CUACE                                      \\
+  $PM_{2.5}$       & Surface & GAW                 & ECMWF-Rean; NorESM2                                                                                       \\
+  $PM_{10}$        & Surface & GAW                 & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS                                                           \\
+  $SO_{4}$         & Surface & GAW/TAD             & ECMWF-Rean; NorESM2; SPRINTARS; ECHAM-HAM; GEOS; OsloCTM3; BCC-CUACE                                      \\
   Scat. Coef. & Surface & GAW/IMPROVE/ACTRIS  & NorESM2                                                                                                   \\
   Abs. Coef.  & Surface & GAW/IMPROVE/ACTRIS  & NorESM2; SPRINTARS                                                                                        \\
   \bottomhline
@@ -188,11 +188,11 @@ A set of 9 optical and in situ aerosol measurements is used in this study. The o
 \subparagraph{Particule Matter}
 GAW (GAW website): The Global Atmosphere Watch (GAW) programme of WMO is a partnership involving the Members of WMO, contributing networks and collaborating organizations and bodies which provides reliable scientific data and information on the chemical composition of the atmosphere, its natural and anthropogenic change, and helps to improve the understanding of interactions between the atmosphere, the oceans and the biosphere.
 \begin{itemize}
- \item PM10 ($µg.m^{-3}$) - Validity range: []
- \item PM2.5 ($µg.m^{-3}$) - Validity range: []
+ \item $PM_{10}$ (\unit{µg.m^{-3}}) - Validity range: []
+ \item $PM_{2.5}$ (\unit{µg.m^{-3}}) - Validity range: []
 \end{itemize}
 
-\subparagraph{SO4 concentration}
+\subparagraph{$SO_{4}$ concentration}
 
 (trends website): The global dataset is prepared by the WMO/GAW Science Advisory Group for Total Atmospheric Deposition (SAG-TAD) based on data from different regional and global networks:
 \begin{itemize}
@@ -219,8 +219,8 @@ When averaging monthly data with higher sampling frequency than daily, the sampl
 \subparagraph{Optical measurements}
 (See Jonas paper)
 \begin{itemize}
- \item Scattering coefficient ($Mm^{-1}$): dry -> RH<30\%? - Validity range: []
- \item Absorption coefficients ($Mm^{-1}$): validity range: [] - Validity range: []
+ \item Scattering coefficient (\unit{Mm^{-1}}): dry -> RH<30\%? - Validity range: []
+ \item Absorption coefficients (\unit{Mm^{-1}}): validity range: [] - Validity range: []
 \end{itemize}
 
 
@@ -366,9 +366,9 @@ TABLE with ANNUAL MEAN FOR 2000
   AOD<1µm            & 0.14   & 0.08     & 0.12     & 0.11    & -       & 0.18 & 0.05      \\
   AOD>1µm            & 0.03   & 0.02     & 0.03     & 0.10    & -       & 0.11 & 0.03      \\
   AE                 & 1.44   & 1.46     & 1.30     & 0.72    & -       & 1.06 & 0.97      \\
-  PM2.5 (µg.m-3)     & 12.7   & 6.0      & -        & -       & -       & -    & -         \\
-  PM10 (µg.m-3)      & 16.8   & 11.5     & -        & 19.6    & -       & -    & -         \\
-  SO4 (µg.m-3)       & 2.01   & 1.45     & -        & 2.98    & -       & 1.97 & -         \\
+  $PM_{2.5}$ (µg.m-3)     & 12.7   & 6.0      & -        & -       & -       & -    & -         \\
+  $PM_{10}$ (µg.m-3)      & 16.8   & 11.5     & -        & 19.6    & -       & -    & -         \\
+  $SO_{4}$ (µg.m-3)       & 2.01   & 1.45     & -        & 2.98    & -       & 1.97 & -         \\
   Scat. Coef. (1/Mm) & 29.6   & 23.8     & -        & -       & -       & -    & -         \\
   Abs. Coef. (1/Mm)  & 2.0    & 2.3      & -        & -       & -       & -    & -         \\
   \bottomhline
@@ -421,9 +421,9 @@ Trends computed with model regridded at a 2x2 degree resolution.
   AOD<1µm            & (0.09) 0.05   & (+0.4) +0.6   \\
   AOD>1µm            & (0.06) 0.09   & (-0.2) +0.1   \\
   AE                 & (0.78) 0.43   & (+0.2) +0.3   \\
-  PM2.5 (µg m-3)     & (12.4) 9.1    & (+0.2) +0.2   \\
-  PM10 (µg m-3)      & (19.3) 18.7   & (+0.1) +0.1   \\
-  SO4 (µg m-3)       & (2.33) 0.64   & (-1.1) +0.4   \\
+  $PM_{2.5}$ (µg m-3)     & (12.4) 9.1    & (+0.2) +0.2   \\
+  $PM_{10}$ (µg m-3)      & (19.3) 18.7   & (+0.1) +0.1   \\
+  $SO_{4}$ (µg m-3)       & (2.33) 0.64   & (-1.1) +0.4   \\
   Scat. Coef. (1/Mm) & (28.0) 21.2   & (+0.3) +0.2   \\
   Abs. Coef. (1/Mm)  & (3.1) 0.9     & (+1.8) +1.5   \\
   \bottomhline
@@ -458,7 +458,7 @@ See: https://aerocom-trends.met.no/cmip6/
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/abs_species_trends.png}
- \caption{Absolute trends in OD and emissions of the main aerosol species computed with NorESM2. *KEEP ONLY ONE REL/ABS*}
+ \caption{Absolute trends in OD and emissions of the main aerosol species computed with NorESM2. The y-axis of the trends in OD and the emissions }
  \label{species_abs_trends}
 \end{figure}
 

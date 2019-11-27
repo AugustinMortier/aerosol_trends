@@ -5,7 +5,7 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Columnar measurements}{3}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}Surface measurements}{4}{subsubsection.2.1.2}
 \contentsline {subsubsection}{\numberline {2.1.3}Particule Matter}{4}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}SO4 concentration}{4}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.4}$SO_{4}$ concentration}{4}{subsubsection.2.1.4}
 \contentsline {subsubsection}{\numberline {2.1.5}Optical measurements}{5}{subsubsection.2.1.5}
 \contentsline {subsection}{\numberline {2.2}Models}{5}{subsection.2.2}
 \contentsline {section}{\numberline {3}Methods}{5}{section.3}
