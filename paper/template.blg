@@ -4,45 +4,45 @@ The top-level auxiliary file: template.aux
 The style file: copernicus.bst
 Database file #1: mybib.bib.bib
 Warning--empty journal in lund2018concentrations
-You've used 6 entries,
+You've used 7 entries,
             2811 wiz_defined-function locations,
-            1032 strings with 10515 characters,
-and the built_in function-call counts, 7009 in all, are:
-= -- 684
-> -- 437
+            1041 strings with 11052 characters,
+and the built_in function-call counts, 9345 in all, are:
+= -- 898
+> -- 638
 < -- 0
-+ -- 174
-- -- 141
-* -- 507
-:= -- 800
-add.period$ -- 6
-call.type$ -- 6
-change.case$ -- 57
-chr.to.int$ -- 6
-cite$ -- 19
-duplicate$ -- 600
-empty$ -- 315
-format.name$ -- 159
-if$ -- 1357
++ -- 249
+- -- 207
+* -- 692
+:= -- 1075
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 81
+chr.to.int$ -- 7
+cite$ -- 22
+duplicate$ -- 772
+empty$ -- 393
+format.name$ -- 228
+if$ -- 1808
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 86
-newline$ -- 27
-num.names$ -- 24
-pop$ -- 318
+missing$ -- 115
+newline$ -- 30
+num.names$ -- 28
+pop$ -- 432
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 81
 quote$ -- 0
-skip$ -- 332
+skip$ -- 425
 stack$ -- 0
-substring$ -- 235
-swap$ -- 503
+substring$ -- 299
+swap$ -- 664
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
+type$ -- 63
 warning$ -- 1
-while$ -- 29
+while$ -- 35
 width$ -- 0
-write$ -- 72
+write$ -- 85
 (There was 1 warning)

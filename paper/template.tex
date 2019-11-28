@@ -227,19 +227,19 @@ required output: od550aer time series from xxxx to 2014.
 \begin{table}
  \begin{tabularx}{\textwidth}{lllllX}
   \tophline
-  Model      & Group     & Emission & Meteorology & Resolution (LatxLon) & References                                                                                                                         \\
+  Model      & Group     & Emission & Meteorology & Resolution (LatxLon) & References                                                          \\
   \middlehline
-  ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                                                                                  \\
-  NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                                                                                  \\
-  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & \cite{takemura2000global,takemura2002single,takemura2005simulation}                                                                                                     \\
-  ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88            & -                                                                                                                                  \\
-  GEOS       & AP3       & ?        & ?           & 1.00x1.00            & -                                                                                                                                  \\
-  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & \cite{lund2018concentrations,myhre2009modelled} \\
-  GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25            & -                                                                                                                                  \\
-  BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81            & -                                                                                                                                  \\
-  CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81            & Geophysical Model Development Special issue on CanESM5 (https://www.geosci-model-dev.net/special\_issues.html)                     \\
-  CESM2      & CMIP6     & ?        & ?           & 0.94x1.25            & -                                                                                                                                  \\
-  IPSL-CM6A  & CMIP6     & ?        & ?           & 1.27x2.50            & -                                                                                                                                  \\
+  ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                   \\
+  NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                   \\
+  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & \cite{takemura2000global,takemura2002single,takemura2005simulation} \\
+  ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88            & -                                                                   \\
+  GEOS       & AP3       & ?        & ?           & 1.00x1.00            & -                                                                   \\
+  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & \cite{lund2018concentrations,myhre2009modelled}                     \\
+  GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25            & -                                                                   \\
+  BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81            & -                                                                   \\
+  CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81            & \cite{gmd-12-4823-2019}                                             \\
+  CESM2      & CMIP6     & ?        & ?           & 0.94x1.25            & -                                                                   \\
+  IPSL-CM6A  & CMIP6     & ?        & ?           & 1.27x2.50            & -                                                                   \\
   \bottomhline
  \end{tabularx}
  \caption{Information on models used in this study.}
@@ -256,10 +256,10 @@ Instead of assembling the trends obtained at each individual observation station
 \subsubsection{Regions definition}
 Seven regions, defined by a range of latitudes and longitudes, are considered in this study. The definitions of these regions allow to restrict the study to a limited number of geographic areas with, however, a global coverage when considering the ensemble of the regions. As seen in Figure \ref{fig:map_obs}, the regions do not have a similar coverage in terms of observations. North-America and Europe have the highest concentration of instruments.
 \begin{itemize}
-    \item Sunphotometers: most homogeneous spatial network. In this study, more than 1000 instruments are used over the World. The highest density in Europe and central part of North-America (US). Lowest density in South-Africa and Australia.
-    \item Particule Matter: 212 instruments spread over Europe and North America. Note that in North-America, EBAS data only until 2006.
-    \item $SO_{4}$: 346 instruments in North-America, Europe, Asia and North-Africa
-    \item Scat. Coef. and Abs. Coef.: about 50 stations in total spread over North-America, Europe, North-Africa and Asia.
+ \item Sunphotometers: most homogeneous spatial network. In this study, more than 1000 instruments are used over the World. The highest density in Europe and central part of North-America (US). Lowest density in South-Africa and Australia.
+ \item Particule Matter: 212 instruments spread over Europe and North America. Note that in North-America, EBAS data only until 2006.
+ \item $SO_{4}$: 346 instruments in North-America, Europe, Asia and North-Africa
+ \item Scat. Coef. and Abs. Coef.: about 50 stations in total spread over North-America, Europe, North-Africa and Asia.
 \end{itemize}
 
 \begin{figure}
@@ -274,9 +274,9 @@ Common filtering among all the parameters: use the highest quality level availab
 The regional time series are computed by combining, for each timestamp, the data of all the stations available in the corresponding region, for the same timestamp.
 In order to compute robust regional time series, some additional constrains have been applied to the data:
 \begin{itemize}
-    \item The mountains sites have been removed.
-    \item Filtering of ephemera stations (e.g AERONET DRAGON stations): a minimum of 300 days is required per station.
-    \item Minimum of 3 points (stations with valid measurement) required per timestamp.
+ \item The mountains sites have been removed.
+ \item Filtering of ephemera stations (e.g AERONET DRAGON stations): a minimum of 300 days is required per station.
+ \item Minimum of 3 points (stations with valid measurement) required per timestamp.
 \end{itemize}
 
 When those criteria are fulfilled, the median, as well as the first and third quartiles are computed at the finest time-resolution possible. The quartiles allow to capture the inter-regional variability. An example of regional time-series is shown in Figure \ref{fig:ts_aod} for the AOD.

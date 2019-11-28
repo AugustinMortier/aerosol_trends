@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  28 NOV 2019 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  28 NOV 2019 11:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3415,41 +3415,41 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 181.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3] [4] [5]
-<../scripts/figs/maps/av_obs.png, id=90, 597.6729pt x 306.4248pt>
+<../scripts/figs/maps/av_obs.png, id=97, 597.6729pt x 306.4248pt>
 File: ../scripts/figs/maps/av_obs.png Graphic file (type png)
 <use ../scripts/figs/maps/av_obs.png>
 Package pdftex.def Info: ../scripts/figs/maps/av_obs.png  used on input line 266.
 (pdftex.def)             Requested size: 341.43306pt x 175.05202pt.
-<../scripts/figs/ts/panel-od550aer.png, id=93, 965.0454pt x 533.3526pt>
+<../scripts/figs/ts/panel-od550aer.png, id=100, 965.0454pt x 533.3526pt>
 File: ../scripts/figs/ts/panel-od550aer.png Graphic file (type png)
 <use ../scripts/figs/ts/panel-od550aer.png>
 Package pdftex.def Info: ../scripts/figs/ts/panel-od550aer.png  used on input line 285.
 (pdftex.def)             Requested size: 455.24408pt x 251.59538pt.
  [6 <../scripts/figs/maps/av_obs.png>] [7 <../scripts/figs/ts/panel-od550aer.png>] [8]
-<../scripts/figs/representativity.png, id=122, 957.5775pt x 460.119pt>
+<../scripts/figs/representativity.png, id=129, 957.5775pt x 460.119pt>
 File: ../scripts/figs/representativity.png Graphic file (type png)
 <use ../scripts/figs/representativity.png>
 Package pdftex.def Info: ../scripts/figs/representativity.png  used on input line 339.
 (pdftex.def)             Requested size: 455.24408pt x 218.74835pt.
  [9 <../scripts/figs/representativity.png>]
-<../scripts/figs/heatmaps/OBS.png, id=131, 579.1236pt x 461.0826pt>
+<../scripts/figs/heatmaps/OBS.png, id=138, 579.1236pt x 461.0826pt>
 File: ../scripts/figs/heatmaps/OBS.png Graphic file (type png)
 <use ../scripts/figs/heatmaps/OBS.png>
 Package pdftex.def Info: ../scripts/figs/heatmaps/OBS.png  used on input line 386.
 (pdftex.def)             Requested size: 341.43306pt x 271.8464pt.
  [10 <../scripts/figs/heatmaps/OBS.png>]
-<../scripts/figs/heatmaps/BARS.png, id=141, 989.3763pt x 909.3975pt>
+<../scripts/figs/heatmaps/BARS.png, id=148, 989.3763pt x 909.3975pt>
 File: ../scripts/figs/heatmaps/BARS.png Graphic file (type png)
 <use ../scripts/figs/heatmaps/BARS.png>
 Package pdftex.def Info: ../scripts/figs/heatmaps/BARS.png  used on input line 399.
 (pdftex.def)             Requested size: 455.24408pt x 418.45282pt.
  [11 <../scripts/figs/heatmaps/BARS.png>]
-<../scripts/figs/trends_map.png, id=149, 910.602pt x 581.7735pt>
+<../scripts/figs/trends_map.png, id=156, 910.602pt x 581.7735pt>
 File: ../scripts/figs/trends_map.png Graphic file (type png)
 <use ../scripts/figs/trends_map.png>
 Package pdftex.def Info: ../scripts/figs/trends_map.png  used on input line 434.
 (pdftex.def)             Requested size: 455.24408pt x 290.85052pt.
-<../scripts/figs/abs_species_trends.png, id=150, 970.3452pt x 325.215pt>
+<../scripts/figs/abs_species_trends.png, id=157, 970.3452pt x 325.215pt>
 File: ../scripts/figs/abs_species_trends.png Graphic file (type png)
 <use ../scripts/figs/abs_species_trends.png>
 Package pdftex.def Info: ../scripts/figs/abs_species_trends.png  used on input line 457.
@@ -3473,19 +3473,19 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 716.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 716.
  ) 
 Here is how much of TeX's memory you used:
- 13090 strings out of 492982
- 167641 string characters out of 6134896
- 309078 words of memory out of 5000000
- 16339 multiletter control sequences out of 15000+600000
+ 13092 strings out of 492982
+ 167680 string characters out of 6134896
+ 309286 words of memory out of 5000000
+ 16340 multiletter control sequences out of 15000+600000
  50104 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,15n,40p,871b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (16 pages, 4440333 bytes).
+Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (16 pages, 4440862 bytes).
 PDF statistics:
- 279 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 76 named destinations out of 1000 (max. 500000)
+ 288 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
