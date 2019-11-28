@@ -311,41 +311,30 @@ The trend is provided as a relative trend (\%/yr) as respect to the first year o
 \subsection{Representativity of the trends}
 The number of available points used to compute the regional time series is not constant in time. Usually, more stations are integrated within the observations networks in time, but also can be affected by the season depending on the nature of the measurements. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD: time representativity.
 Also, one provides the trends for large regions, but data are available over a limited number of stations: space representativity.
-In order to investigate both these source of uncertainties, one use model data in two experiments for each of whom the trends computed over one reference ($Ref$) and one experiment ($Exp$) will be compared together.
+In order to investigate both these sources of uncertainty, model data are used in two different time and space studies for each of whom the trends, computed for one reference ($Ref$) and one experiment ($Exp$) dataset, are compared together.
 \begin{itemize}
- \item Time representativity experiment
+ \item Time representativity study
        \begin{itemize}
         \item $Ref_{time}$: Collocation in space and time
         \item $Exp_{time}$: Collocation in space using complete time-series
        \end{itemize}
- \item Space representativity experiment
+ \item Space representativity study
        \begin{itemize}
         \item $Ref_{space}$: Collocation in space using complete time-series (=$Exp_{t}$)
         \item $Exp_{space}$: All grid-points in region using full time-series
        \end{itemize}
 \end{itemize}
 
-For each parameter and over each region, one calculates the mean difference of the relative trends for these two experiments. The two relative differences are then converted into a single score by using a normal distribution $f$ described by a mean $\mu=0$ and a standard deviation of $\sigma=0.5$. For a given parameter $p$ and a region $r$, the Representativity $Rep(p,r)$ is calculated as following
+The difference between the relative trends are computed for each parameter and over each region. Those differences are then converted into a score (\unit{\%}) by using a normal distribution $f$ described by a mean $\mu=0$ and a standard deviation of $\sigma=0.5$. For a given parameter $p$ and a region $r$, the Representativity $Rep(p,r)$ is calculated as following
 
 \begin{equation}
  Rep_{space,time}(p, r) = {f\left(\left| trend_{Exp_{space,time}(p, r)}-trend_{Ref_{space,time}(p, r)} \right|\right)}
 \end{equation}
 
-For a given experiment, a difference of 0.0\%/yr as compared to its reference dataset leads to a representativity of 100\%, and a difference of 0.5\%/yr leads to a representativity of 50\%.
+For a given study, a difference of 0.0\%/yr as compared to its reference dataset leads to a representativity of 100\%, and a difference of 0.5\%/yr leads to a representativity of 50\%.
+Finally, the total representativity is computed as the mean of the time and the space representativities.
 
-The total representativity is computed as the mean of the time and the space representativities.
-
-\begin{figure}[t]
- \includegraphics[width=16cm]{../scripts/figs/representativity.png}
- \caption{Representativity of the regional AOD time series for the computation of trends. The upper figures correspond to the number of points used to compute the regional time series. The lower figures show the time series, the trends, and the resulting representativity. *MIGHT BE IN SUPP?*}
- \label{representativity}
-\end{figure}
-
-There is no filtering of the ocean grid-points while computing the representativity of the different parameters in the different regions. For this region, the regions that contain a larger proportion of ocean grid-points, where the trends are most likely to differ from the trends observed over land, will have a lower spatial representativity. This is the case for NAMERICA and WORLD.
-
-Give some main results on the representativity itself:
-- AE has a better representativity than AOD event though same number of observations.
-- Insitu measurements, has usually a good time representativity, since regular measurements in every season, but low space representativity (few stations).
+An example of representativity calculation is presented in Appendix \ref{sec:representativity}.
 
 
 \section{Results}
@@ -374,19 +363,25 @@ TABLE with ANNUAL MEAN FOR 2000
   \bottomhline
  \end{tabular}
 
- \caption{Mean of the observations for the year 2000 (reference year for computing the relative trends). The value is extracted as the interecept of the linear trend computed in the 2000-2014 period.}
+ \caption{Observations means for the year 2000 (reference year for computing the relative trends). The value is extracted as the interecept of the linear trend computed in the 2000-2014 period.}
  \label{meanobs_2000}
 \end{table}
 
-
 Usually, the highest p-values are associated with the lowest uncertainties.
 In the text, comment values mentioning both p-value (significant or not) and errors.
+
+
+Give some main results on the representativity itself:
+- AE has a better representativity than AOD event though same number of observations.
+- Insitu measurements, has usually a good time representativity, since regular measurements in every season, but low space representativity (few stations).
+
 
 \begin{figure}[t]
  \includegraphics[width=12cm]{../scripts/figs/heatmaps/OBS.png}
  \caption{Regional trends of aerosol properties in the observation datasets. The colors of the circles correspond to the trend value, while the radius indicate the p-value. The largest circles reveal the trends significant with a confidence of 95\%. The cirlces bordered with a black line indicate the trends associated with a representativity larger than 50\%.}
  \label{obs_trends}
 \end{figure}
+
 
 \subsection{Evaluation of model trends against observations}
 TEXT
@@ -406,7 +401,7 @@ Some variability in the model trends. Especially:
 \subsubsection{Global trends}
 Since we know how well we the model trends compare to the trends in the observations, one compute in this section the trends from the models for the whole time period and at a global scale. With the representativity study, we've seen that the trends computed at the stations could lead to a different trend than the computed in this region when all grid-points were considered. How do these both time and spacial representativity affect the computation of the global trends?
 
-Since global trends, here we just process the average of all the trends computed at each grid-point (and at each grid-point where an observation station is located).
+Since global trends, it does not make sens to compute a regional time series. Instead, we process the average of all the trends computed at each grid-point (and at each grid-point where an observation station is located).
 
 Trends computed with model regridded at a 2x2 degree resolution.
 
@@ -426,7 +421,7 @@ Trends computed with model regridded at a 2x2 degree resolution.
   Abs. Coef. (\unit{Mm^{-1}})   & (3.1) 0.9     & (+1.8) +1.5   \\
   \bottomhline
  \end{tabular}
- \caption{Global means and trends of aerosol parameters using NorESM2 data. The value in parenthesis is obtained by aggregating only grid-points where observation stations are located. The relative trends are calculated by averaging the absolute trends within the considered grid-points and normalizing it to the global mean for 2000.}
+ \caption{Global means and trends of aerosol parameters using NorESM2 data. The value in parenthesis is obtained by aggregating only grid-points where observation stations are located. The relative trends are calculated by averaging the absolute trends within the considered grid-points and normalizing it to the global mean for the year 2000.}
  \label{mod_tab_trends}
 \end{table}
 
@@ -491,7 +486,13 @@ TEXT
 
 
 \appendix
-\section{}    %% Appendix A
+\section{Representativity study} \label{sec:representativity} %% Appendix A
+
+The Figure \ref{fig:representativity} shows an example of the repesentativity of the AOD measurements in Europe and North-America for the computation of the trends in 2000-2014.
+
+The $Ref_{t}$ dataset reveals in both regions strong seasonal cycles for the number of points used to compute the regional time-series. This comes from the nature of the AOD measurements, which are obtained during daytime, while amount of daylight is minimum in wintertime in the Northern Hemisphere. Together with this seasonal cycle, one observe an increase with time, that reflect the increasing number of stations within each region.
+
+The ocean grid-points are not filtered while computing the representativity of the different parameters in the different regions of the World. For this reason, the regions containing a larger proportion of ocean grid-points, where the trends are most likely to differ from the trends observed over land, will have a lower spatial representativity. This probably explains why North America has a low representativity, especially considering the spatial part.
 
 \subsection{}     %% Appendix A1, A2, etc.
 
@@ -506,7 +507,14 @@ TEXT
 %% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
 %% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
 
-\appendixfigures  %% needs to be added in front of appendix figuresglobal means and
+
+\begin{figure}[t]
+ \includegraphics[width=16cm]{../scripts/figs/representativity.png}
+ \caption{Representativity of the regional AOD time series for the computation of trends. The upper figures correspond to the number of points used to compute the regional time series. The lower figures show the time series, the trends, and the resulting representativity.}
+ \label{fig:representativity}
+\end{figure}
+
+\appendixfigures  %% needs to be added in front of appendix figures
 
 \appendixtables   %% needs to be added in front of appendix tables
 
