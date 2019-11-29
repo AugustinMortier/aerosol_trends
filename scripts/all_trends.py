@@ -12,6 +12,7 @@ filterwarnings('ignore')
 regions = get_regions()
 vars = ['ang4487aer', 'od550aer', 'od550gt1aer',
         'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
+vars = ['concpm10', 'concpm25']
 #vars = ['od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
 
 for var in vars:
@@ -46,7 +47,7 @@ for var in vars:
 
     #for the models, set mon_dim to zero
     params['min_dim'] = 0
-    params['min_ntrend'] = 4
+    #params['min_ntrend'] = 4
     mod_var = params['mod_var']
 
     #mod_sources = sources[var]
@@ -94,7 +95,15 @@ for var in vars:
         else:
             #crop the cube to interest period, so can handle WORLD region
             mod_data = mod_data.crop(time_range=(params['period'].split('-')[0], str(int(params['period'].split('-')[1])+1)))
-
+            #check time frequency, if 5 years, set #params['min_ntrend'] = 0
+            years = [ts.item().year for ts in mod_data.time_stamps()]
+            uyears = np.unique(years)
+            i2000 = np.argmin(abs(uyears-2000))
+            dy = uyears[i2000+1]-uyears[i2000]
+            if dy>=1:
+                params['min_ntrend'] = 4
+            else:
+                params['min_ntrend'] = 7
             #full colocation
             _, MOD_MAP[mod_source], MOD_DF[mod_source], = process_trend(
                 mod_data, params, obs=obs_data,

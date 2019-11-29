@@ -289,13 +289,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/heatmaps/OBS.png
 INPUT ../scripts/figs/heatmaps/OBS.png
 INPUT ../scripts/figs/heatmaps/OBS.png
-INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/heatmaps/BARS.png
 INPUT ../scripts/figs/heatmaps/BARS.png
 INPUT ../scripts/figs/heatmaps/BARS.png
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/trends_map.png
 INPUT ../scripts/figs/trends_map.png
 INPUT ../scripts/figs/trends_map.png
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/times/ptmr8c.vf
 INPUT /home/augustinm/Dev/pyaerocom/trends/paper/../scripts/figs/abs_species_trends.png
 INPUT ../scripts/figs/abs_species_trends.png
 INPUT ../scripts/figs/abs_species_trends.png
