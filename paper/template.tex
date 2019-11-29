@@ -124,7 +124,7 @@ TEXT
  \item importance of aerosols for health, climate..
  \item aerosols uncertainty due to high variability in space and time at different scales
  \item in addition to seasonal variability, variability at a longer time-scale. Importance of assessing the aerosol trends.
- \item sources of variability: anthropogenic emissions (development of emergent countries VS environmental protection programs: e.g: Clean Air Act), changes in meteorological conditions that parameterize the emissions of natural aerosols and the wet and dry deposition of aerosols.
+ \item sources of variability: anthropogenic emissions (development of emergent countries VS mitigation measures: e.g: Clean Air Act), changes in meteorological conditions that parameterize the emissions of natural aerosols and the wet and dry deposition of aerosols.
  \item the ground based observation of the aerosols is organized in different networks. The remote sensing networks provide optical properties of the aerosols in the total air column, while in situ measurements provide particles measurements at the surface level. Using both of these information allow to depict a more complete picture of the changes in the aerosol content.
  \item what do the aerosol trends look like as seen from these observation networks?
  \item because of the role of aerosol on climate, it is of importance for the models to capture the aerosol trends in order to reproduce the climate trends. How do the models reproduce the aerosol trends?
@@ -162,24 +162,33 @@ We use the highest quality level available, apply non-validity flags and an outl
 
 \subsubsection{Sunphotometer}
 (AERONET website): The AERONET (AErosol RObotic NETwork) project is a federation of ground-based remote sensing aerosol networks established by NASA and PHOTONS (PHOtométrie pour le Traitement Opérationnel de Normalisation Satellitaire; Univ. of Lille 1, CNES, and CNRS-INSU) and is greatly expanded by networks (e.g., RIMA, AeroSpan, AEROCAN, and CARSNET) and collaborators from national agencies, institutes, universities, individual scientists, and partners. For more than 25 years, the project has provided long-term, continuous and readily accessible public domain database of aerosol optical, microphysical and radiative properties for aerosol research and characterization, validation of satellite retrievals, and synergism with other databases. The network imposes standardization of instruments, calibration, processing and distribution.
-** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3** + daily files+ remove outliers
+
+
+** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3** + daily files
+
 \begin{itemize}
- \item AOD: od550aer - AeronetSun - validity range []
- \item AE: ang4487aer - AeronetSun - validity range []
- \item AOD<1µm: od550lt1aer - AeronetSDA - validity range []
- \item AOD>1µm: od550lg1aer - AeronetSDA - validity range []
+    \item Sun Direct measurements
+    \begin{itemize}
+        \item AOD (Aerosol Optical Depth). 
+        \item AE (Anstrom Exponent): calculated using 440 nm and 870 nm channels.
+    \end{itemize}
+    \item Spectral Deconvolution Algorithm (SDA, described in \cite{o2003spectral})
+    \begin{itemize}
+         \item AOD<1µm (AOD for the particles whose diameter is lower than 1 µm).
+         \item AOD>1µm (AOD for the particles whose diameter is greater than 1 µm).
+    \end{itemize}
 \end{itemize}
 
-All the following data have been downloaded via EBAS.
-(EBAS website): EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
 
-Add time resolution for each of the parameters.
+All the following data have been downloaded via EBAS platform (\cite{ebasweb}).
+(EBAS website): EBAS is a database hosting observation data of atmospheric chemical composition and physical properties. EBAS hosts data submitted by data originators in support of a number of national and international programs ranging from monitoring activities to research projects. EBAS is developed and operated by the Norwegian Institute for Air Research (NILU).
 
 \subsubsection{Particule Matter}
 GAW (GAW website): The Global Atmosphere Watch (GAW) programme of WMO is a partnership involving the Members of WMO, contributing networks and collaborating organizations and bodies which provides reliable scientific data and information on the chemical composition of the atmosphere, its natural and anthropogenic change, and helps to improve the understanding of interactions between the atmosphere, the oceans and the biosphere.
+*In North America, data only until 2006*
 \begin{itemize}
- \item $PM_{10}$ (\unit{µg.m^{-3}}) - Validity range: []
- \item $PM_{2.5}$ (\unit{µg.m^{-3}}) - Validity range: []
+ \item $PM_{10}$ (\unit{µg.m^{-3}})
+ \item $PM_{2.5}$ (\unit{µg.m^{-3}})
 \end{itemize}
 
 \subsubsection{$SO_{4}$ concentration}
@@ -205,8 +214,8 @@ When averaging monthly data with higher sampling frequency than daily, the sampl
 \subsubsection{Optical in situ}
 (See Jonas paper)
 \begin{itemize}
- \item Scattering coefficient (\unit{Mm^{-1}}): from nephelometer - dry -> RH<30\%? - Validity range: []
- \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [] - Validity range: [] - Removed Alert station (unit issue).
+ \item Scattering coefficient (\unit{Mm^{-1}}): from nephelometer - dry -> RH<30\%? - Validity range: [-10,1000]
+ \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [-1,100] - Removed Alert station (unit issue).
 \end{itemize}
 
 \subsection{Models}
@@ -227,7 +236,7 @@ required output: od550aer time series from xxxx to 2014.
 \begin{table}
  \begin{tabularx}{\textwidth}{lllllX}
   \tophline
-  Model      & Group     & Emission & Meteorology & Resolution (LatxLon) & References                                                          \\
+  Model      & Group     & Emission & Meteorology & LatxLon resolution (degree) & References                                                          \\
   \middlehline
   ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                   \\
   NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                   \\
@@ -251,10 +260,10 @@ required output: od550aer time series from xxxx to 2014.
 
 \subsection{Regional time series}
 Due to the nature of the processes involved in the emission and the deposition of aerosols, one can expect different trends in the different regions of the World.
-Instead of assembling the trends obtained at each individual observation station in a given region, regional time series are computed by assembling the measurements. This makes sense if the regions are not too big. An advantage is that one single trend can be computed in a given region, with an associated significance and uncertainty, which is not possible to get when combining trends together.
+Instead of assembling the trends obtained at each individual observation station in a given region, regional time series are computed by assembling the measurements of the different stations within a region. This makes sense if the regions are not too big. An advantage is that one single trend can be computed in a given region, with an associated significance and uncertainty, which is not possible to get when combining the trends together.
 
 \subsubsection{Regions definition}
-Seven regions, defined by a range of latitudes and longitudes, are considered in this study. The definitions of these regions allow to restrict the study to a limited number of geographic areas with, however, a global coverage when considering the ensemble of the regions. As seen in Figure \ref{fig:map_obs}, the regions do not have a similar coverage in terms of observations. North-America and Europe have the highest concentration of instruments.
+Seven regions, defined by a range of latitudes and longitudes, are considered in this study. The definitions of these regions allow to restrict the study to a limited number of geographic areas with, however, a global coverage when considering the ensemble of the regions. As seen in Figure \ref{fig:map_obs}, the regions do not have a similar coverage in terms of observations. North-America and Europe have the highest concentrations of instruments.
 \begin{itemize}
  \item Sunphotometers: most homogeneous spatial network. In this study, more than 1000 instruments are used over the World. The highest density in Europe and central part of North-America (US). Lowest density in South-Africa and Australia.
  \item Particule Matter: 212 instruments spread over Europe and North America. Note that in North-America, EBAS data only until 2006.
@@ -269,17 +278,17 @@ Seven regions, defined by a range of latitudes and longitudes, are considered in
 \end{figure}
 
 \subsubsection{Constrains}
-Common filtering among all the parameters: use the highest quality level available, and remove outliers (see corresponding bullet point).
+Common filtering among all the parameters on each station data: use the highest quality level available, remove outliers.
 
-The regional time series are computed by combining, for each timestamp, the data of all the stations available in the corresponding region, for the same timestamp.
-In order to compute robust regional time series, some additional constrains have been applied to the data:
+The regional time series are computed by combining, for each timestamp, the valid data of all the station in the corresponding region, for the same timestamp.
+In order to compute consistent and robust regional time series, some additional constrains have been applied to the data:
 \begin{itemize}
- \item The mountains sites have been removed.
- \item Filtering of ephemera stations (e.g AERONET DRAGON stations): a minimum of 300 days is required per station.
- \item Minimum of 3 points (stations with valid measurement) required per timestamp.
+ \item The mountains sites (elevation>1000? m) have been removed.
+ \item In order to filter ephemera stations (e.g AERONET DRAGON stations), a minimum of 300 days with valid measurements is required per station, when daily measurements are available.
+ \item A minimum of three points (stations with valid measurement) is required per timestamp.
 \end{itemize}
 
-When those criteria are fulfilled, the median, as well as the first and third quartiles are computed at the finest time-resolution possible. The quartiles allow to capture the inter-regional variability. An example of regional time-series is shown in Figure \ref{fig:ts_aod} for the AOD.
+When those criteria are fulfilled, the median, the first and third quartiles are computed at the finest time-resolution available. The quartiles allow to capture the inter-regional variability. An example of regional time-series is shown in Figure \ref{fig:ts_aod} for the AOD.
 
 \begin{figure}
  \includegraphics[width=16cm]{../scripts/figs/ts/panel-od550aer.png}
@@ -291,7 +300,7 @@ When those criteria are fulfilled, the median, as well as the first and third qu
 \subsection{Trends calculation}
 
 \subsubsection{Regional time series computation}
-The trends are calculated using the time series constructed with the yearly averages. This allows to prevent any disturbance in the calculation of the trend slope that would be induced by the presence of seasonal cycles, which are observed for most of the aerosol parameters. The computation of the yearly averages is obtained by applying step-by-step time constrains in order to insure the robustness of the statistics. By starting at the finest time resolution available, monthly, seasonal and yearly averages are computed is the following criteria are fulfilled:
+The trends are processed based on the yearly averages of the regional time series. Using the yearly averages allows to get rid of the seasonal cycles, which are observed in most of the aerosol parameters used in this study, which disturb the calculation of the trend slope. In order to insure the statistical robustness of these yearly average, the time averaging is performed step-by-step with specific time constrains. By starting at the finest time resolution available in the data, monthly, seasonal and yearly averages are computed when the following criteria are fulfilled:
 \begin{itemize}
  \item at least 5 days per month (when daily observations are available).
  \item at least 1 month per season.
@@ -300,7 +309,7 @@ The trends are calculated using the time series constructed with the yearly aver
 This gives a reasonable compromise between the availability of the measurements and the robustness of the yearly statistics.
 
 \subsubsection{Trends computation}
-Use of yearly averages. Computation if at least 7 points in the time series (50\% of time coverage). That's why, even though 25 stations provide AOD measurements in SAFRICA, no trend is provided in this region since the regional time series contains only 6? points (clean up the website). The trends are computed similarly for observation and model datasets. However, since some models provide output every 5 years (in addition to 2014), the minimum number of points has been reduced to 4 for the models, so the trends can be computed using the years 2000, 2005, 2010 and 2014.
+Use of yearly averages. Computation if at least 7 points in the time series (50\% of time coverage). That's why, even though 25 stations provide AOD measurements in SAFRICA, no trend is provided in this region since the regional time series contains only 6? points (clean up the website). The trends are computed similarly for both observation and model datasets. However, for the models providing output every 5 years (in addition to 2014), the minimum number of points has been reduced to 4, so the trends can be computed using the years 2000, 2005, 2010 and 2014 *e.g: OsloCTM*.
 
 Same methodology as in \cite{aas2019global}.
 Trends significance with Mann-Kendall.
@@ -309,9 +318,11 @@ Uncertainty on the slope: combination of the Theil-Sen slope error and the error
 The trend is provided as a relative trend (\%/yr) as respect to the first year of the time period (2000).
 
 \subsection{Representativity of the trends}
-The number of available points used to compute the regional time series is not constant in time. Usually, more stations are integrated within the observations networks in time, but also can be affected by the season depending on the nature of the measurements. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD: time representativity.
-Also, one provides the trends for large regions, but data are available over a limited number of stations: space representativity.
-In order to investigate both these sources of uncertainty, model data are used in two different time and space studies for each of whom the trends, computed for one reference ($Ref$) and one experiment ($Exp$) dataset, are compared together.
+The number of available points used to compute the regional time series is not constant in time. For a given observation station, the number of points available might vary with time due to the nature of the measurements itself. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD. The density of the different observation networks is also changing in time. The development of the different observation networks usually went together with an increase of the number of observation stations. *Henceforth, for sustainability reasons, some networks are considering reducing the number of stations.* These variations in the number of measurements available is rising the question of the time representativity of the measurements for the computation of trends.
+
+Associated with this time representativity issue comes the space representativity. The trends are provided for regions in which the data density is not homogeneous. Also within a single region, the observation stations might be located in different type of environments. Stations located in more urban, rural environments, or mostly affected by natural particles might have trends differing from the trend observed over the whole region.
+
+In order to investigate both these sources of uncertainty, two studies are conducted using model data. A time and a space studies have been defined, for each of whom the trends, computed for one reference ($Ref$) and one experiment ($Exp$) dataset, are compared together.
 \begin{itemize}
  \item Time representativity study
        \begin{itemize}
@@ -331,20 +342,16 @@ The difference between the relative trends are computed for each parameter and o
  Rep_{space,time}(p, r) = {f\left(\left| trend_{Exp_{space,time}(p, r)}-trend_{Ref_{space,time}(p, r)} \right|\right)}
 \end{equation}
 
-For a given study, a difference of 0.0\%/yr as compared to its reference dataset leads to a representativity of 100\%, and a difference of 0.5\%/yr leads to a representativity of 50\%.
-Finally, the total representativity is computed as the mean of the time and the space representativities.
+For a given representativity study, a difference of 0.0\%/yr as compared to its reference dataset leads to a representativity score of 100\%, and a difference of 0.5\%/yr leads to a score of 50\%.
+Finally, the total representativity is computed as the mean of the time and the space scores.
 
 An example of representativity calculation is presented in Appendix \ref{sec:representativity}.
 
 
 \section{Results}
-TEXT
 
 \subsection{Trends in observations}
-TEXT
-
-Contrast in different Regions
-TABLE with ANNUAL MEAN FOR 2000
+This sections presents the trends computed from the observations, for the different parameters and over the predefined regions. 
 
 \begin{table}
  \begin{tabular}{llllllll}
@@ -363,9 +370,26 @@ TABLE with ANNUAL MEAN FOR 2000
   \bottomhline
  \end{tabular}
 
- \caption{Observations means for the year 2000 (reference year for computing the relative trends). The value is extracted as the interecept of the linear trend computed in the 2000-2014 period.}
- \label{meanobs_2000}
+ \caption{Observations means for the year 2000 (reference year used for computing the relative trends). The value is extracted as the interecept of the linear trend computed in the 2000-2014 period.}
+ \label{table:obs_2000mean}
 \end{table}
+
+In order to compare consistently the trends observed for the different parameters, one focus on the relative trends, with the reference set to the year 2000, as the first year of the study period. The means for the year 2000 are reported in Table \ref{table:obs_2000mean} reveal a great inter region variability. 
+
+The AOD is more than three times higher in Asia (0.35) than in North-America (0.10). Usually, the AOD is largely dominated by its fine fraction (AOD<1µm), but it is not the case in North-Africa, where the persistent presence of desert dust makes the coarse mode (AOD>1µm) as prevailing as the fine mode. This is also noticeable with the AE which is minimum in this region (0.72). 
+
+The PM observations are mostly available in Europe and North-America. $PM_{10}$ are also available in North-Africa, but the stations are mostly located in the Northern part of the region which is less affected by the dust sources than the AERONET stations in this region, also located in desert areas. Both $PM{10}$ and $PM_{2.5}$ are larger in Europe than in North-America, with nevertheless different proportions. In Europe, PM2.5 represent 75\% of the PM10, as compared to 52\% in North-America.
+
+$SO_{4}$ means for the year 2000 ranges between 1.45 and 2.98 \unit{µg.m^{-3}} in North-America and Asia, respectively.
+
+Similarly to the surface $PM_{10}$ measurements, Scat. Coef. is higher in Europe (29.6 \unit{µg.m^{-3}}) than in North-America (23.8 \unit{µg.m^{-3}}). A different pattern is found with Abs. Coef. which is slightly higher in the latter region.
+
+\begin{figure}[t]
+ \includegraphics[width=12cm]{../scripts/figs/heatmaps/OBS.png}
+ \caption{Regional trends of aerosol properties in the observation datasets. The colors of the circles correspond to the trend value, while the radius indicate the p-value. The largest circles reveal the trends significant with a confidence of 95\%. The circles bordered with a black line indicate the trends associated with a representativity larger than 50\%.}
+ \label{fig:obs_trends}
+\end{figure}
+
 
 Usually, the highest p-values are associated with the lowest uncertainties.
 In the text, comment values mentioning both p-value (significant or not) and errors.
@@ -376,11 +400,7 @@ Give some main results on the representativity itself:
 - Insitu measurements, has usually a good time representativity, since regular measurements in every season, but low space representativity (few stations).
 
 
-\begin{figure}[t]
- \includegraphics[width=12cm]{../scripts/figs/heatmaps/OBS.png}
- \caption{Regional trends of aerosol properties in the observation datasets. The colors of the circles correspond to the trend value, while the radius indicate the p-value. The largest circles reveal the trends significant with a confidence of 95\%. The cirlces bordered with a black line indicate the trends associated with a representativity larger than 50\%.}
- \label{obs_trends}
-\end{figure}
+
 
 
 \subsection{Evaluation of model trends against observations}
@@ -489,9 +509,9 @@ TEXT
 
 The Figure \ref{fig:representativity} shows an example of the repesentativity of the AOD measurements in Europe and North-America for the computation of the trends in 2000-2014.
 
-The $Ref_{t}$ dataset reveals in both regions strong seasonal cycles for the number of points used to compute the regional time-series. This comes from the nature of the AOD measurements, which are obtained during daytime, while amount of daylight is minimum in wintertime in the Northern Hemisphere. Together with this seasonal cycle, one observe an increase with time, that reflect the increasing number of stations within each region.
+In both regions, the $Ref_{t}$ dataset reveals strong seasonal cycles for the number of points used to compute the regional time-series. This comes from the nature of the AOD measurements, which are obtained during daytime, while amount of daylight is minimum in wintertime in the Northern Hemisphere. Together with this seasonal cycle, one observe an increase in time of the number of points, which reflect the increasing number of stations within each region.
 
-The ocean grid-points are not filtered while computing the representativity of the different parameters in the different regions of the World. For this reason, the regions containing a larger proportion of ocean grid-points, where the trends are most likely to differ from the trends observed over land, will have a lower spatial representativity. This probably explains why North America has a low representativity, especially considering the spatial part.
+The ocean grid-points are not filtered while computing the representativity of the different parameters in the different regions of the World. For this reason, the regions containing a greater proportion of ocean grid-points, where the trends are most likely to differ from the trends observed over land, will have a lower spatial representativity. This probably explains why North America has a low representativity, especially when considering the spatial part.
 
 \subsection{}     %% Appendix A1, A2, etc.
 
