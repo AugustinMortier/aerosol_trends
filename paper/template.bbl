@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{9}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -27,6 +27,15 @@ Myhre, G., Berglen, T.~F., Johnsrud, M., Hoyle, C., Berntsen, T.~K.,
   Modelled radiative forcing of the direct aerosol effect with
   multi-observation evaluation, Atmospheric Chemistry and Physics, 9,
   1365--1392, 2009.
+
+\bibitem[{NILU()}]{ebasweb}
+NILU: EBAS website, \urlprefix\url{http://ebas.nilu.no/}.
+
+\bibitem[{O'neill et~al.(2003)O'neill, Eck, Smirnov, Holben, and
+  Thulasiraman}]{o2003spectral}
+O'neill, N., Eck, T., Smirnov, A., Holben, B., and Thulasiraman, S.: Spectral
+  discrimination of coarse and fine mode optical depth, Journal of Geophysical
+  Research: Atmospheres, 108, 2003.
 
 \bibitem[{Swart et~al.(2019)Swart, Cole, Kharin, Lazare, Scinocca, Gillett,
   Anstey, Arora, Christian, Hanna, Jiao, Lee, Majaess, Saenko, Seiler, Seinen,
