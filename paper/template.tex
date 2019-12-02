@@ -212,7 +212,6 @@ Urban sites are not included, neither sites where the surroundings have changed 
 When averaging monthly data with higher sampling frequency than daily, the sample is weighted in accordance to how many days it has been sampled in that month.
 
 \subsubsection{Optical in situ}
-(See Jonas paper)
 \begin{itemize}
  \item Scattering coefficient (\unit{Mm^{-1}}): from nephelometer - dry -> RH<30\%? - Validity range: [-10,1000]
  \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [-1,100] - Removed Alert station (unit issue).
@@ -268,7 +267,7 @@ Seven regions, defined by a range of latitudes and longitudes, are considered in
  \item Sunphotometers: most homogeneous spatial network. In this study, more than 1000 instruments are used over the World. The highest density in Europe and central part of North-America (US). Lowest density in South-Africa and Australia.
  \item Particule Matter: 212 instruments spread over Europe and North America. Note that in North-America, EBAS data only until 2006.
  \item $SO_{4}$: 346 instruments in North-America, Europe, Asia and North-Africa
- \item Scat. Coef. and Abs. Coef.: about 50 stations in total spread over North-America, Europe, North-Africa and Asia.
+ \item Scat. Coef. and Abs. Coef.: about 50 stations in total spread over North-America, Europe, North-Africa and Asia. Due to time coverage issues, data up to 2018 were used to compute the trends for these two parameters. The trends are then computed between 2000-2018 instead of 2000-2014 like for the other parameters.
 \end{itemize}
 
 \begin{figure}
@@ -393,8 +392,7 @@ Analogously to the surface $PM_{10}$ measurements, Scat. Coef. is higher in Euro
 The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_trends}. The heatmap is dominated by the blue color which indicates mostly negative trends. Usually, the lowest p-values (<0.05) are associated with the lowest uncertainties. The largest circles are then associated with certain decrease/increase while the value of the trend is greater than the uncertainty.
 *would need to add some comparisons with published values*
 \begin{itemize}
-    \item In Europe, both columnar and surface parameters reveal significant decreases, at the exception of Scat. Coef. which shows a not significant decrease and Abs. Coef. which shows a strong but not significant increase. These two parameters are however associated with large error bars that exceed the trends themselves. One reason for this large uncertainty is that there is no measurements available prior to 2005. For the other parameters, the uncertainties are lower than the trends. The decrease in AOD (-2.8\%/yr) is found in both fine and coarse modes. The fine mode is decreasing more than the coarse mode, which is consistent with the decrease observed for AE. The same pattern is found at the surface since $PM_{2.5}$ has decrease relatively twice more than $PM_{10}$. These trends could result from mitigation measures for the reduction of the emission of anthropogenic particles, which is directly observed with the decrease of $SO_{4}$ (-1.5\%/yr).
-    The representativity study reveals that the observed trends are actually representative for the whole period and region for all of the parameters, at the exception of Scat. Coef. and Abs. Coef. due to the lack of observations in the earliest period.
+    \item In Europe, both columnar and surface parameters reveal significant decreases, at the exception of Abs. Coef. for which the observed decrease is not significant. For this last parameter, the associated uncertainty on the trend exceed the trend itself. One reason for this large uncertainty is that there is no measurements available prior to 2005. For the other parameters, the uncertainties are lower than the trends. The decrease in AOD (-2.8\%/yr) is found in both fine and coarse modes. The fine mode is decreasing more than the coarse mode, which is consistent with the decrease observed for AE. The same pattern is found at the surface since $PM_{2.5}$ has decrease relatively twice more than $PM_{10}$. These trends could result from mitigation measures aiming for the reduction the anthropogenic aerosols emissions, which is more directly observed with the decrease of $SO_{4}$ (-1.5\%/yr). The representativity study reveals that the observed trends are actually representative for the whole period and region for all of the parameters, at the exception of Scat. Coef. and Abs. Coef. due to the lack of observations in the earliest period.
     \item In North-America, similar trends are found for the columnar properties than in Europe. AOD is decreasing of 1.3\%/yr, so 55\% percent less than in Europe, but the reference value in 2000 is 40\% lower than the reference value in Europe. PM measurements are not available after 2006 within EBAS, which conducts to uncertain trends. $SO_{4}$ decreases about 3\%/yr, which is twice the decrease observed in Europe where the reference value is larger than in North-America. The regional time series are more complete for Scat. Coef. and Abs. Coef. than in Europe. however, no significant trends are found with both datasets. One can note that the observed trends are assessed as representative for the whole period and region for AE, but not for AOD, which have nonetheless the same data availability. This means that the trends are smoother in space and time for AE than for AOD: the type of the particles is changing less than the quantity of these particles.
     \item All of the columnar properties are showing decreasing trends in South-America. All of them being significant, except for AOD>1µm. As shown in the regional time series in \ref{fig:ts_aod}, the decrease observed in AOD comes together with a diminution of the intensity of the seasonal peaks, happening around September. Same patterns are found with AOD<1µm. *Forest Fires? Why does it decrease?*
     \item In North-Africa, while significant decreases are found for all AODs, one observe an increase of AE (+1.1\%/yr), which reveals a greater proportion of fine particles in time. This is consistent when considering the fine and coarse modes, since we observe more important decrease of the coarse particles content.
@@ -411,20 +409,23 @@ The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_tr
  \label{fig:bars}
 \end{figure}
 
-In order to evaluate the model trends, the region time series have been computed with the model output by colocating the data to the available observations in space and time. The trends of both observation and models and their associate uncertainties are shown in Figure \ref{fig:bars}.
+In order to evaluate the model trends, the region time series have been computed with the models output by colocating the data to the available observations in space and time. The trends of both observations and models are shown in Figure \ref{fig:bars} with their associated uncertainties. The models performances for the reproduction the observed trends vary from one parameter to the other.
 
 \begin{itemize}
-    \item AOD: the trends are pretty well captured by all the models over all the regions except in Asia, where a small (not significant) decrease is found in the observations, while all the models show increasing trends. However, the associated uncertainties are in this case usually larger than the trends values.
-    *CAMS Rean*: 
-    *AP3*:
-    *CMIP6*: 
+    \item AOD: the trends are pretty well captured by all the models over all the regions except in Asia, where all the models show increasing trends while a small and not significant decrease is found in the observations. However, the associated uncertainties are, in this case, usually larger than the trends values. Some differences can be noticed in between the 3 categories of models:
+    \begin{itemize}
+        \item CAMS Rean: 
+        \item AP3: 
+        \item CMIP6: 
+    \end{itemize}
     
     \item AOD<1µm
     \item AOD>1µm
     \item AE
     \item PM
     \item $SO_{4}$
-    \item Scat. Coef. and Abs. Coef
+    \item Scat. Coef. and Abs. Coef. Remark: he observations trends have been computed using data until 2018. The two models providing output for these parameters are NorESM and SPRINTARS. The first model provides data until 2014, so the trends are computed for [2000-2014], while the second one provides data until 2018 and covers the whole observation period. The trends might differ in between these two periods.
+    
 \end{itemize}
 - AOD: 
 
