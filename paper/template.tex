@@ -318,11 +318,11 @@ Uncertainty on the slope: combination of the Theil-Sen slope error and the error
 The trend is provided as a relative trend (\%/yr) as respect to the first year of the time period (2000).
 
 \subsection{Representativity of the trends}
-The number of available points used to compute the regional time series is not constant in time. For a given observation station, the number of points available might vary with time due to the nature of the measurements itself. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD. The density of the different observation networks is also changing in time. The development of the different observation networks usually went together with an increase of the number of observation stations. *Henceforth, for sustainability reasons, some networks are considering reducing the number of stations.* These variations in the number of measurements available is rising the question of the time representativity of the measurements for the computation of trends.
+The number of available points used to compute the regional time series is not constant in time. For a given observation station, the number of points available might vary with time due to the nature of the measurements itself. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD when considering the number of observations. The density of the different observation networks is also changing in time. The early development of the different observation networks usually went together with an increase of the number of observation stations. *Henceforth, for sustainability reasons, some networks are considering to reduce the number of stations.* These variations in the number of measurements available is rising the question of the time representativity of the measurements for the computation of the trends.
 
-Associated with this time representativity issue comes the space representativity. The trends are provided for regions in which the data density is not homogeneous. Also within a single region, the observation stations might be located in different type of environments. Stations located in more urban, rural environments, or mostly affected by natural particles might have trends differing from the trend observed over the whole region.
+Associated with this time representativity issue comes the space representativity. The trends are provided for regions in which the data density is not homogeneous. Moreover, within a single region, the observation stations might be located in different types of environment. Stations located in more urban, rural environments, or mostly affected by natural particles might have trends differing from the trend associated with the whole region.
 
-In order to investigate both these sources of uncertainty, two studies are conducted using model data. A time and a space studies have been defined, for each of whom the trends, computed for one reference ($Ref$) and one experiment ($Exp$) dataset, are compared together.
+In order to investigate both these sources of uncertainty, two studies (time and space) are conducted using model data. For each of these studies, the trends are computed for one reference ($Ref$) and one experiment ($Exp$) dataset, are then compared together.
 \begin{itemize}
  \item Time representativity study
        \begin{itemize}
@@ -351,7 +351,7 @@ An example of representativity calculation is presented in Appendix \ref{sec:rep
 \section{Results}
 
 \subsection{Trends in observations}
-This sections presents the trends computed from the observations, for the different parameters and over the predefined regions. 
+This sections presents the trends computed with the observations for the different parameters and over the predefined regions. 
 
 \begin{table}
  \begin{tabular}{llllllll}
@@ -370,31 +370,39 @@ This sections presents the trends computed from the observations, for the differ
   \bottomhline
  \end{tabular}
 
- \caption{Observations means for the year 2000 (reference year used for computing the relative trends). The value is extracted as the interecept of the linear trend computed in the 2000-2014 period. Note: with the imposed constrains, no trend could be processed in the South-Africa region.}
+ \caption{Observations means for the year 2000 (reference year used for computing the relative trends). The value is extracted as the intercept of the linear trend computed in the 2000-2014 period. Note: with the imposed constrains, no trend could be processed in the South-Africa region.}
  \label{table:obs_2000mean}
 \end{table}
 
-In order to compare the trends observed for the set of nine parameters in a consistent manner, one focus on the relative trends, with the reference set to the year 2000, as the first year of the study period. The means for the year 2000 are reported in Table \ref{table:obs_2000mean} reveal a great inter region variability. 
+In order to compare the trends observed for the set of nine aerosol parameters in a consistent manner, one focus on the relative trends, with the reference set to the year 2000, as the first year of the study period. The means for the year 2000, reported in Table \ref{table:obs_2000mean}, reveal a great inter region variability. 
 
-The AOD is more than three times higher in Asia (0.35) than in North-America (0.10). Usually, the AOD is largely dominated by its fine fraction (AOD<1µm), but it is not the case in North-Africa, where the persistent presence of desert dust makes the coarse mode (AOD>1µm) contribution to total AOD as important as the fine mode contribution. This is also noticeable with the AE which is minimum in this region (0.72). 
+The AOD is more than three times higher in Asia (0.35) than in North-America (0.10). Intermediate values are found in Europe, North-America and Australia, while the second highest load is found in North-Africa (0.26). Usually, the AOD is largely dominated by its fine fraction (AOD<1µm), but it is not the case in North-Africa, where the persistent presence of desert dust makes the coarse mode (AOD>1µm) contribution to the total AOD equivalent to the fine mode contribution. This predominance of coarse particles is also noticeable with the AE which is minimum in this region (0.72). 
 
-The PM observations are mostly available in Europe and North-America. $PM_{10}$ are also available in North-Africa, but the stations are mostly located in the Northern part of the region which is less affected by the dust sources than the AERONET stations in this region, also located in desert areas. Both $PM{10}$ and $PM_{2.5}$ are larger in Europe than in North-America, with nevertheless different proportions. In Europe, PM2.5 represent 75\% of the PM10, as compared to 52\% in North-America.
+The PM observations are mostly available in Europe and North-America. $PM_{10}$ are also available in North-Africa, but the stations are mostly located in the Northern part of the region which is less affected by the dust sources as compared to the AERONET stations from this region, also located in desert areas. Both $PM{10}$ and $PM_{2.5}$ are larger in Europe than in North-America, with nevertheless different proportions. In Europe, PM2.5 represent 75\% of the PM10, as compared to 52\% in North-America.
 
-$SO_{4}$ means for the year 2000 ranges between 1.45 and 2.98 \unit{µg.m^{-3}} in North-America and Asia, respectively.
+$SO_{4}$ means for the year 2000 ranges between 1.45 and 2.98 \unit{µg.m^{-3}} in North-America and Asia, respectively. Similar means are found in Europe and Asia, around 2 \unit{µg.m^{-3}}.
 
-Similarly to the surface $PM_{10}$ measurements, Scat. Coef. is higher in Europe (29.6 \unit{µg.m^{-3}}) than in North-America (23.8 \unit{µg.m^{-3}}). A different pattern is found with Abs. Coef. which is slightly higher in the latter region.
+Analogously to the surface $PM_{10}$ measurements, Scat. Coef. is higher in Europe (29.6 \unit{µg.m^{-3}}) than in North-America (23.8 \unit{µg.m^{-3}}). However, a different pattern is found for Abs. Coef. which is slightly higher in the latter region.
 
 \begin{figure}[t]
  \includegraphics[width=12cm]{../scripts/figs/heatmaps/OBS.png}
- \caption{Regional trends of aerosol properties in the observation datasets. The colors of the circles correspond to the trend value, while the radius indicate the p-value. The largest circles reveal the trends significant with a confidence of 95\%. The circles bordered with a black line indicate the trends associated with a representativity larger than 50\%.}
+ \caption{Regional trends of aerosol properties in the observation datasets. The colors of the circles correspond to the slope, while the radius indicate the p-value. The largest circles reveal the trends significant with a confidence of 95\%. The circles bordered with a black line indicate the trends associated with a representativity larger than 50\%.}
  \label{fig:obs_trends}
 \end{figure}
 
-The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_trends}.
-Usually, the highest p-values are associated with the lowest uncertainties.
+The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_trends}. The heatmap is dominated by the blue color which indicates mostly negative trends. Usually, the lowest p-values (<0.05) are associated with the lowest uncertainties. The largest circles are then associated with certain decrease/increase while the value of the trend is greater than the uncertainty.
+
+\begin{itemize}
+    \item In Europe, both columnar and surface parameters reveal significant decreases, at the exception of Scat. Coef. which shows a non-significant decrease and Abs. Coef. which shows a strong increase. These two parameters are however associated with large error bars that exceed the trends themselves. One reason for this large uncertainty is that there is no measurements available prior to 2005. For the other parameters, the uncertainties are lower than the trends. The decrease in AOD (-5.8\%/yr) is 
+    
+\end{itemize}
+Paragraph on the trends
+
 In the text, comment values mentioning both p-value (significant or not) and errors.
 
 
+
+Paragraph on the representativity
 Give some main results on the representativity itself:
 - AE has a better representativity than AOD event though same number of observations.
 - Insitu measurements, has usually a good time representativity, since regular measurements in every season, but low space representativity (few stations).
@@ -412,7 +420,7 @@ Some variability in the model trends. Especially:
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/heatmaps/BARS.png}
- \caption{Regional trends of the aerosol properties in both observations and models. The error bars correspond to the uncertainty of the trend as computed using both the uncertainty on the Theil−Sen slope and the residuals. The models are ordered according to the number of output used in this study.}
+ \caption{Regional trends of the aerosol properties in both observations and models. The error bars correspond to the uncertainty of the trend as computed using both the uncertainty on the Theil−Sen slope and the residuals. The models are ordered according to the number of output used in this study. *for each subplot, calculate, offline the mean difference of the models - obs. then average lines and columns*}
  \label{bars}
 \end{figure}
 
@@ -446,7 +454,7 @@ Trends computed with model regridded at a 2x2 degree resolution.
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/trends_map2.png}
- \caption{Global trends of aerosol properties using NorESM2 data regridded at a 5x5 resolution. The blue and red dots dots indicate significant negative and positive trends.}
+ \caption{Global trends of aerosol properties using NorESM2 data regridded at a 5x5 resolution. The blue and red dots dots indicate respectively significant negative and positive trends, regardless the colorscale.}
  \label{mod_map_trends}
 \end{figure}
 
