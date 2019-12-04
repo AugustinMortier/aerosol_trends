@@ -77,7 +77,7 @@ def fill_params(params, var):
         params['vert'] = 'Column'
         params['unit'] = ''
         params['ymin'] = 0
-        params['ymax'] = 0.8
+        params['ymax'] = 0.2
         params['ylabel'] = 'AOD>1µm'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 

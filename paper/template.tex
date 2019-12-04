@@ -167,16 +167,16 @@ We use the highest quality level available, apply non-validity flags and an outl
 ** USED IN THIS STUDY AERONET: level2.0 (quality assured), version 3** + daily files
 
 \begin{itemize}
-    \item Sun Direct measurements
-    \begin{itemize}
-        \item AOD (Aerosol Optical Depth). 
+ \item Sun Direct measurements
+       \begin{itemize}
+        \item AOD (Aerosol Optical Depth).
         \item AE (Anstrom Exponent): calculated using 440 nm and 870 nm channels.
-    \end{itemize}
-    \item Spectral Deconvolution Algorithm (SDA, described in \cite{o2003spectral})
-    \begin{itemize}
-         \item AOD<1µm (AOD for the particles whose diameter is lower than 1 µm).
-         \item AOD>1µm (AOD for the particles whose diameter is greater than 1 µm).
-    \end{itemize}
+       \end{itemize}
+ \item Spectral Deconvolution Algorithm (SDA, described in \cite{o2003spectral})
+       \begin{itemize}
+        \item AOD<1µm (AOD for the particles whose diameter is lower than 1 µm).
+        \item AOD>1µm (AOD for the particles whose diameter is greater than 1 µm).
+       \end{itemize}
 \end{itemize}
 
 
@@ -237,17 +237,17 @@ required output: od550aer time series from xxxx to 2014.
   \tophline
   Model      & Group     & Emission & Meteorology & LatxLon resolution (degree) & References                                                          \\
   \middlehline
-  ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12            & -                                                                   \\
-  NorESM2    & AP3       & ?        & ?           & 1.89x2.50            & -                                                                   \\
-  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56            & \cite{takemura2000global,takemura2002single,takemura2005simulation} \\
-  ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88            & -                                                                   \\
-  GEOS       & AP3       & ?        & ?           & 1.00x1.00            & -                                                                   \\
-  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25            & \cite{lund2018concentrations,myhre2009modelled}                     \\
-  GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25            & -                                                                   \\
-  BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81            & -                                                                   \\
-  CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81            & \cite{gmd-12-4823-2019}                                             \\
-  CESM2      & CMIP6     & ?        & ?           & 0.94x1.25            & -                                                                   \\
-  IPSL-CM6A  & CMIP6     & ?        & ?           & 1.27x2.50            & -                                                                   \\
+  ECMWF-Rean & CAMS-Rean & ?        & ?           & 1.12x1.12                   & -                                                                   \\
+  NorESM2    & AP3       & ?        & ?           & 1.89x2.50                   & -                                                                   \\
+  SPRINTARS  & AP3       & ?        & ?           & 0.56x0.56                   & \cite{takemura2000global,takemura2002single,takemura2005simulation} \\
+  ECHAM-HAM  & AP3       & ?        & ?           & 1.85x1.88                   & -                                                                   \\
+  GEOS       & AP3       & ?        & ?           & 1.00x1.00                   & -                                                                   \\
+  OsloCTM3   & AP3       & ?        & ?           & 2.25x2.25                   & \cite{lund2018concentrations,myhre2009modelled}                     \\
+  GFDL-AM4   & AP3       & ?        & ?           & 1.00x1.25                   & -                                                                   \\
+  BCC-CUACE  & AP3       & ?        & ?           & 2.77x2.81                   & -                                                                   \\
+  CanESM5    & CMIP6     & ?        & ?           & 2.77x2.81                   & \cite{gmd-12-4823-2019}                                             \\
+  CESM2      & CMIP6     & ?        & ?           & 0.94x1.25                   & -                                                                   \\
+  IPSL-CM6A  & CMIP6     & ?        & ?           & 1.27x2.50                   & -                                                                   \\
   \bottomhline
  \end{tabularx}
  \caption{Information on models used in this study.}
@@ -318,12 +318,12 @@ Slope calculation with Theil-Sen estimator.
 The uncertainty on the trend is calculated by combining the uncertainty on the Theil-Sen slope estimation with the error on the residuals:
 
 \begin{equation}
-    Uncertainty = \sqrt{{\left (\frac{\Delta m}{y(2000)}\right )}^{2} + {\left ( \frac{m \cdot \Delta r}{y(2000)^2}\right )}^{2} }
+ Uncertainty = \sqrt{{\left (\frac{\Delta m}{y(2000)}\right )}^{2} + {\left ( \frac{m \cdot \Delta r}{y(2000)^2}\right )}^{2} }
 \end{equation}
 
 where $\Delta m$ is the error on the slope as given by the Theil-Sen estimator with an expectancy of 95\%, $y(2000)$ is the value of the regression line at the year 2000, $m$ is the value of the Theil-Sen slope and $\Delta r$ is the averaged error on the residuals.
 
-The trend is provided as a relative trend (\%/yr) as respect to the first year of the time period (2000). 
+The trend is provided as a relative trend (\%/yr) as respect to the first year of the time period (2000).
 
 \subsection{Representativity of the trends}
 The number of available points used to compute the regional time series is not constant in time. For a given observation station, the number of points available might vary with time due to the nature of the measurements itself. For instance, sun-photometers are performing measurements in the daytime. Due to seasonal daylight and clouds conditions variations, clear seasonal cycles are observed for AOD when considering the number of observations. The density of the different observation networks is also changing in time. The early development of the different observation networks usually went together with an increase of the number of observation stations. *Henceforth, for sustainability reasons, some networks are considering to reduce the number of stations.* These variations in the number of measurements available is rising the question of the time representativity of the measurements for the computation of the trends.
@@ -359,22 +359,22 @@ An example of representativity calculation is presented in Appendix \ref{sec:rep
 \section{Results}
 
 \subsection{Trends in observations}
-This sections presents the trends computed with the observations for the different parameters and over the predefined regions. 
+This sections presents the trends computed with the observations for the different parameters and over the predefined regions.
 
 \begin{table}
  \begin{tabular}{llllllll}
   \tophline
-                                & EUROPE & NAMERICA & SAMERICA  & NAFRICA & ASIA & AUSTRALIA \\
+                                & EUROPE & NAMERICA & SAMERICA & NAFRICA & ASIA & AUSTRALIA \\
   \middlehline
-  AOD                           & 0.17   & 0.10     & 0.15     & 0.26          & 0.35 & 0.10      \\
-  AOD<1µm                       & 0.14   & 0.08     & 0.12     & 0.11          & 0.18 & 0.05      \\
-  AOD>1µm                       & 0.03   & 0.02     & 0.03     & 0.10          & 0.11 & 0.03      \\
-  AE                            & 1.44   & 1.46     & 1.30     & 0.72         & 1.06 & 0.97      \\
-  $PM_{2.5}$ (\unit{µg.m^{-3}}) & 12.7   & 6.0      & -        & -             & -    & -         \\
-  $PM_{10}$ (\unit{µg.m^{-3}})  & 16.8   & 11.5     & -        & 19.6          & -    & -         \\
-  $SO_{4}$ (\unit{µg.m^{-3}})   & 2.01   & 1.45     & -        & 2.98         & 1.97 & -         \\
-  Scat. Coef. (\unit{Mm^{-1}})  & 29.6   & 23.8     & -        & -           & -    & -         \\
-  Abs. Coef. (\unit{Mm^{-1}})   & 2.0    & 2.3      & -        & -           & -    & -         \\
+  AOD                           & 0.17   & 0.10     & 0.15     & 0.26    & 0.35 & 0.10      \\
+  AOD<1µm                       & 0.14   & 0.08     & 0.12     & 0.11    & 0.18 & 0.05      \\
+  AOD>1µm                       & 0.03   & 0.02     & 0.03     & 0.10    & 0.11 & 0.03      \\
+  AE                            & 1.44   & 1.46     & 1.30     & 0.72    & 1.06 & 0.97      \\
+  $PM_{2.5}$ (\unit{µg.m^{-3}}) & 12.7   & 6.0      & -        & -       & -    & -         \\
+  $PM_{10}$ (\unit{µg.m^{-3}})  & 16.8   & 11.5     & -        & 19.6    & -    & -         \\
+  $SO_{4}$ (\unit{µg.m^{-3}})   & 2.01   & 1.45     & -        & 2.98    & 1.97 & -         \\
+  Scat. Coef. (\unit{Mm^{-1}})  & 29.6   & 23.8     & -        & -       & -    & -         \\
+  Abs. Coef. (\unit{Mm^{-1}})   & 2.0    & 2.3      & -        & -       & -    & -         \\
   \bottomhline
  \end{tabular}
 
@@ -382,9 +382,9 @@ This sections presents the trends computed with the observations for the differe
  \label{table:obs_2000mean}
 \end{table}
 
-In order to compare the trends observed for the set of nine aerosol parameters in a consistent manner, one focus on the relative trends, with the reference set to the year 2000, as the first year of the study period. The means for the year 2000, reported in Table \ref{table:obs_2000mean}, reveal a great inter region variability. 
+In order to compare the trends observed for the set of nine aerosol parameters in a consistent manner, one focus on the relative trends, with the reference set to the year 2000, as the first year of the study period. The means for the year 2000, reported in Table \ref{table:obs_2000mean}, reveal a great inter region variability.
 
-The AOD is more than three times higher in Asia (0.35) than in North-America (0.10). Intermediate values are found in Europe, North-America and Australia, while the second highest load is found in North-Africa (0.26). Usually, the AOD is largely dominated by its fine fraction (AOD<1µm), but it is not the case in North-Africa, where the persistent presence of desert dust makes the coarse mode (AOD>1µm) contribution to the total AOD equivalent to the fine mode contribution. This predominance of coarse particles is also noticeable with the AE which is minimum in this region (0.72). 
+The AOD is more than three times higher in Asia (0.35) than in North-America (0.10). Intermediate values are found in Europe, North-America and Australia, while the second highest load is found in North-Africa (0.26). Usually, the AOD is largely dominated by its fine fraction (AOD<1µm), but it is not the case in North-Africa, where the persistent presence of desert dust makes the coarse mode (AOD>1µm) contribution to the total AOD equivalent to the fine mode contribution. This predominance of coarse particles is also noticeable with the AE which is minimum in this region (0.72).
 
 The PM observations are mostly available in Europe and North-America. $PM_{10}$ are also available in North-Africa, but the stations are mostly located in the Northern part of the region which is less affected by the dust sources as compared to the AERONET stations from this region, also located in desert areas. Both $PM{10}$ and $PM_{2.5}$ are larger in Europe than in North-America, with nevertheless different proportions. In Europe, PM2.5 represent 75\% of the PM10, as compared to 52\% in North-America.
 
@@ -398,17 +398,17 @@ Analogously to the surface $PM_{10}$ measurements, Scat. Coef. is higher in Euro
  \label{fig:obs_trends}
 \end{figure}
 
-The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_trends}. The heatmap is dominated by the blue color which indicates mostly negative trends. Usually, the lowest p-values (<0.05) are associated with the lowest uncertainties. The largest circles are then associated with certain decrease/increase since the value of the trend is greater than the uncertainty. Remark: For data coverage reasons, the trends of Scat. Coef. and Abs. Coef., have been computed using data until 2018. 
+The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_trends}. The heatmap is dominated by the blue color which indicates mostly negative trends. Usually, the lowest p-values (<0.05) are associated with the lowest uncertainties. The largest circles are then associated with certain decrease/increase since the value of the trend is greater than the uncertainty. Remark: For data coverage reasons, the trends of Scat. Coef. and Abs. Coef., have been computed using data until 2018.
 
 *would need to add some comparisons with published values*
 \begin{itemize}
-    \item In Europe, both columnar and surface parameters reveal significant decreases, at the exception of Abs. Coef. for which the observed decrease is not significant. For this last parameter, the associated uncertainty on the trend exceed the trend itself. One reason for this large uncertainty is that there is no measurements available prior to 2005. For the other parameters, the uncertainties are lower than the trends. The decrease in AOD (-2.8\%/yr) is found in both fine and coarse modes. The fine mode is decreasing more than the coarse mode, which is consistent with the decrease observed for AE. The same pattern is found at the surface since $PM_{2.5}$ has decrease relatively twice more than $PM_{10}$. These trends could result from mitigation measures aiming for the reduction the anthropogenic aerosols emissions, which is more directly observed with the decrease of $SO_{4}$ (-1.5\%/yr). The representativity study reveals that the observed trends are actually representative for the whole period and region for all of the parameters, at the exception of Scat. Coef. and Abs. Coef. due to the lack of observations in the earliest period.
-    \item In North-America, similar trends are found for the columnar properties than in Europe. AOD is decreasing of 1.3\%/yr, so 55\% percent less than in Europe, but the reference value in 2000 is 40\% lower than the reference value in Europe. PM measurements are not available after 2006 within EBAS, which conducts to uncertain trends. $SO_{4}$ decreases about 3\%/yr, which is twice the decrease observed in Europe where the reference value is larger than in North-America. The regional time series are more complete for Scat. Coef. and Abs. Coef. than in Europe. however, no significant trends are found with both datasets. One can note that the observed trends are assessed as representative for the whole period and region for AE, but not for AOD, which have nonetheless the same data availability. This means that the trends are smoother in space and time for AE than for AOD: the type of the particles is changing less than the quantity of these particles.
-    \item All of the columnar properties are showing decreasing trends in South-America. All of them being significant, except for AOD>1µm. As shown in the regional time series in \ref{fig:ts_aod}, the decrease observed in AOD comes together with a diminution of the intensity of the seasonal peaks, happening around September. Same patterns are found with AOD<1µm. *Forest Fires? Why does it decrease?*
-    \item In North-Africa, while significant decreases are found for all AODs, one observe an increase of AE (+1.1\%/yr), which reveals a greater proportion of fine particles in time. This is consistent when considering the fine and coarse modes, since we observe more important decrease of the coarse particles content.
-    \item AE is also increasing in Asia, but seems to result in this case from the combination of a (not significant) increase of AOD<1µm and a significant increase of AOD>1µm. In the meantime, we observe an increase of $SO_{4}$ of 3.8\%/yr. The associated error is however of 4\%/yr. The reason is the presence, in the regional time series, of a few points standing out from the linear regression. These points are associated with a decrease in the number of stations available in the time interval (2010-2012). With a maximum of 12 stations, a few stations missing can affect the computation of the regional time series. This is reflected by the representativity study since the total score is lower than 40\% for this parameter
-    \item No significant trends could be found in Australia.
-    
+ \item In Europe, both columnar and surface parameters reveal significant decreases, at the exception of Abs. Coef. for which the observed decrease is not significant. For this last parameter, the associated uncertainty on the trend exceed the trend itself. One reason for this large uncertainty is that there is no measurements available prior to 2005. For the other parameters, the uncertainties are lower than the trends. The decrease in AOD (-2.8\%/yr) is found in both fine and coarse modes. The fine mode is decreasing more than the coarse mode, which is consistent with the decrease observed for AE. The same pattern is found at the surface since $PM_{2.5}$ has decrease relatively twice more than $PM_{10}$. These trends could result from mitigation measures aiming for the reduction the anthropogenic aerosols emissions, which is more directly observed with the decrease of $SO_{4}$ (-1.5\%/yr). The representativity study reveals that the observed trends are actually representative for the whole period and region for all of the parameters, at the exception of Scat. Coef. and Abs. Coef. due to the lack of observations in the earliest period.
+ \item In North-America, similar trends are found for the columnar properties than in Europe. AOD is decreasing of 1.3\%/yr, so 55\% percent less than in Europe, but the reference value in 2000 is 40\% lower than the reference value in Europe. PM measurements are not available after 2006 within EBAS, which conducts to uncertain trends. $SO_{4}$ decreases about 3\%/yr, which is twice the decrease observed in Europe where the reference value is larger than in North-America. The regional time series are more complete for Scat. Coef. and Abs. Coef. than in Europe. however, no significant trends are found with both datasets. One can note that the observed trends are assessed as representative for the whole period and region for AE, but not for AOD, which have nonetheless the same data availability. This means that the trends are smoother in space and time for AE than for AOD: the type of the particles is changing less than the quantity of these particles.
+ \item All of the columnar properties are showing decreasing trends in South-America. All of them being significant, except for AOD>1µm. As shown in the regional time series in \ref{fig:ts_aod}, the decrease observed in AOD comes together with a diminution of the intensity of the seasonal peaks, happening around September. Same patterns are found with AOD<1µm. *Forest Fires? Why does it decrease?*
+ \item In North-Africa, while significant decreases are found for all AODs, one observe an increase of AE (+1.1\%/yr), which reveals a greater proportion of fine particles in time. This is consistent when considering the fine and coarse modes, since we observe more important decrease of the coarse particles content.
+ \item AE is also increasing in Asia, but seems to result in this case from the combination of a (not significant) increase of AOD<1µm and a significant increase of AOD>1µm. In the meantime, we observe an increase of $SO_{4}$ of 3.8\%/yr. The associated error is however of 4\%/yr. The reason is the presence, in the regional time series, of a few points standing out from the linear regression. These points are associated with a decrease in the number of stations available in the time interval (2010-2012). With a maximum of 12 stations, a few stations missing can affect the computation of the regional time series. This is reflected by the representativity study since the total score is lower than 40\% for this parameter
+ \item No significant trends could be found in Australia.
+
 \end{itemize}
 
 \subsection{Evaluation of the models trends against observations}
@@ -422,43 +422,43 @@ The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_tr
 In order to evaluate the model trends, the regional time series have been computed with the models output colocated in space and time to the available observations at the stations level. The results are shown in Figure \ref{fig:bars}. The performances of the models, for the reproduction of the observed trends, are various depending on the parameters and the regions.
 
 \begin{itemize}
-    \item AOD: the models are showing trends in the same direction than the observation over all the regions except in Asia, where the associated uncertainties are however usually larger than the trends values. Some differences can be noticed in between the three groups of models when investigating the different regions:
-    \begin{itemize}
+ \item AOD: the models are showing trends in the same direction than the observation over all the regions except in Asia, where the associated uncertainties are however usually larger than the trends values. Some differences can be noticed in between the three groups of models when investigating the different regions:
+       \begin{itemize}
         \item EUROPE: all the groups underestimate the observed decrease. The highest underestimation is observed for the CMIP6 models, with an average decrease of -0.9\%/yr, while the best performance is obtained with CAMS-Rean (-2.0\%/yr). The AP3 models trends are ranging from -0.9\%/yr to -2.1\%/yr.
         \item NAMERICA: at the opposite of EUROPE, on average, all the groups overestimate the observed decrease even though one model of the AP3 group capture lower trends than in the observations. The trends are very close to each other within the CMIP6 group.
         \item SAMERICA: on average, the models perform well in this region. CAMS-Rean, AP3 and CMIP6 show decreases of -3.3\%/yr, -3.1\%/yr and -2.9\%/yr respectively, as compared to -3.1\%/yr for the observations.
         \item NAFRICA: all the models are greatly overestimating the observed decrease trend of -2.7\%/yr. On average, CAMS-Rean and AP3 are giving a decrease of -5.0\%/yr while the CMIP6 models are giving a decrease of -5.9 \%/yr. The regional time series (see website) reveal that most of the models have a large positive ibas prior to 2006, which is dramatically reduced after this year. This change in bias induces a large negative trend in most of the models.
         \item ASIA: All the model groups are showing increasing trends, ranging from +0.3\%/yr to 1.7\%/yr, most of them being significant, which is not visible in the observations due to the large uncertainties.
-    \end{itemize}
-    \item AOD<1µm: the trends are only available with models from the AP3 group for this parameter. Usually, the same patterns are found than with AOD. The models that were underestimating the AOD are underestimating AOD<1µm and vice versa. 
-    \begin{itemize}
+       \end{itemize}
+ \item AOD<1µm: the trends are only available with models from the AP3 group for this parameter. Usually, the same patterns are found than with AOD. The models that were underestimating the AOD are underestimating AOD<1µm and vice versa.
+       \begin{itemize}
         \item in EUROPE: the underestimation of the models happens in a larger extent than with AOD.
         \item SAMERICA: the inter model variability within AP3 is lower than for AOD and all of the models are well reproducing the observed trends.
         \item NAFRICA: at the opposite of AOD, one observe an averaged underestimation of the observed trend. The inter model variability is quite high over this region since the trends are ranging from -0.6\%/yr to -2.9\%/yr.
         \item ASIA: an increase, associated to large uncertainties is found in both models and observations.
-    \end{itemize}
-    \item AOD>1µm: the performances of the models are not as good as for AOD<1µm. The inter model variability is also higher since some models are capturing trends in opposite directions.
-    \begin{itemize}
-        \item EUROPE: while the observations are showing a significant decrease, CAMS-Rean and three of the AP3 models are showing increasing AOD>1µm. 
+       \end{itemize}
+ \item AOD>1µm: the performances of the models are not as good as for AOD<1µm. The inter model variability is also higher since some models are capturing trends in opposite directions.
+       \begin{itemize}
+        \item EUROPE: while the observations are showing a significant decrease, CAMS-Rean and three of the AP3 models are showing increasing AOD>1µm.
         \item SAMERICA: CAMS-Rean gives the highest positive significant trend. The regional time series shows that there is a large negative bias in 2003 (the first year available for this model) that has been reduced year after year since. This bias reduction leads to an important increasing trend.
         \item NAFRICA: CAMS-Rean capture well the observed trend. No significant trends are found with AP3 models, which is also visible through the large uncertainties.
         \item ASIA: all the models capture a decrease, however underestimated as compared to the significant decrease given by the observations.
-    \end{itemize}
-    \item AE: the trends are usually relatively lower than for AOD. This feature is also usually visible in the models.
-    \begin{itemize}
+       \end{itemize}
+ \item AE: the trends are usually relatively lower than for AOD. This feature is also usually visible in the models.
+       \begin{itemize}
         \item EUROPE and NAMERICA: one model of the AP3 group (ECHAM-HAM) is giving significant positive trends while negative values are obtained with other datasets.
         \item SAMERICA: all of the models are giving negative trends, consistently with the observations.
-        \item NAFRICA: GEOS is showing a large and significant increase (+16.5\%/yr). The analysis of the time series reveals an important negative bias before the year 2006 (-50\%) while the yearly averages tends to be very close to the observations after this year. 
+        \item NAFRICA: GEOS is showing a large and significant increase (+16.5\%/yr). The analysis of the time series reveals an important negative bias before the year 2006 (-50\%) while the yearly averages tends to be very close to the observations after this year.
         \item ASIA: significant positive trends are well captured by most of the AP3 models.
-    \end{itemize}
-    \item PM2.5: because PM observation are available after 2006 in North-America, the trends are associated with large uncertainties which makes the validation difficult in this region. However, regardless these uncertainties, the trends seem to be well captured by NorESM2, from the AP3 group, in this region. In Europe, CAMS-Rean is well capturing the trends in the observations.
-    \item PM10: CMAS-Rean is reproducing well the observed decrease in North-Africa, but overestimates the decrease in Europe. The variability is quite high with the AP3 group. In North-Africa, most of the models are showing an increase, at the opposite direction of the observed trends.
-    \item $SO_{4}$: *look at some values from \cite{aas2019global}*. The AP3 models perform pretty well for the SO4 surface concentration. The extent of the trends are however higher than the observed ones in all the regions at the exception of North-Africa.
-    \item Scat. Coef. and Abs. Coef.: as mentioned in the previous section, the observations trends have been computed for these two parameters using data until 2018. The two models providing output for these parameters are NorESM and SPRINTARS. The first model provides data until 2014, so the trends have been computed for [2000-2014], while the second one provides data until 2018 and then covers the whole observation period [2000-2018]. The trends might differ in between these two periods.
-    \begin{itemize}
+       \end{itemize}
+ \item PM2.5: because PM observation are available after 2006 in North-America, the trends are associated with large uncertainties which makes the validation difficult in this region. However, regardless these uncertainties, the trends seem to be well captured by NorESM2, from the AP3 group, in this region. In Europe, CAMS-Rean is well capturing the trends in the observations.
+ \item PM10: CMAS-Rean is reproducing well the observed decrease in North-Africa, but overestimates the decrease in Europe. The variability is quite high with the AP3 group. In North-Africa, most of the models are showing an increase, at the opposite direction of the observed trends.
+ \item $SO_{4}$: *look at some values from \cite{aas2019global}*. The AP3 models perform pretty well for the SO4 surface concentration. The extent of the trends are however higher than the observed ones in all the regions at the exception of North-Africa.
+ \item Scat. Coef. and Abs. Coef.: as mentioned in the previous section, the observations trends have been computed for these two parameters using data until 2018. The two models providing output for these parameters are NorESM and SPRINTARS. The first model provides data until 2014, so the trends have been computed for [2000-2014], while the second one provides data until 2018 and then covers the whole observation period [2000-2018]. The trends might differ in between these two periods.
+       \begin{itemize}
         \item EUROPE: a significant decrease is found in Scat. Coef. observations, which is not captured by NorESM2. For Abs. Coef., the uncertainties are larger than the trends values. Nevertheless, observations and models are capturing opposite trends.
         \item NAMERICA: A significant decrease is found with NorESM2 for Scat. Coef. which is not visible in the observations. For Abs. Coef, the two models are capturing opposite and uncertain trends.
-    \end{itemize}
+       \end{itemize}
 \end{itemize}
 
 *What is happening in Africa in the models before 2006?*
@@ -495,7 +495,7 @@ In order to evaluate the model trends, the regional time series have been comput
 
 As shown in Figure \ref{fig:obs_trends}, the regional trends presented previously are not always representative of the actual trends happening in the entire regions and over the whole study period. The reasons are the partial spacial and time coverage of the ground based observations. Moreover, the observation stations are obviously located over land, which does not permit to depict a global picture of the aerosol trends, while the sea salts represent one of the largest fraction (*reference*) of the aerosols on Earth.
 
-In order to provide a more complete picture of the aerosols at a global scale, we present, in this section, the trends computed with the NorESM2 data (AP3 group) at a global scale. The calculation of the global trends is made by averaging the absolute trends at each grid-point of the model, and scaling it down to the global average for the year 2000. The global trends are reported for the nine aerosol parameters in Table \ref{table:global_trends}. The global maps, shown in Figure \ref{fig:global_trends}, allow to investigate the spatial variability of these trends. 
+In order to provide a more complete picture of the aerosols at a global scale, we present, in this section, the trends computed with the NorESM2 data (AP3 group) at a global scale. The calculation of the global trends is made by averaging the absolute trends at each grid-point of the model, and scaling it down to the global average for the year 2000. The global trends are reported for the nine aerosol parameters in Table \ref{table:global_trends}. The global maps, shown in Figure \ref{fig:global_trends}, allow to investigate the spatial variability of these trends.
 
 While the observed trends in the three AODs are showing a decrease in most of the regions of the World, the global AOD trend is actually positive (+0.2\%/yr). The increase is the most important for the fine fraction, with and increase of about +0.6\%/yr as compared to +0.1\%/yr for AOD>1µm. As seen in Figure \ref{fig:global_trends}, similar patterns are found for the three AODs: increase in South-Africa and East-Asia. and decrease in Europe and in the US. The increasing AOD observed in Canada is dominated by an increase of AOD<1µm in this region. The important increase observed for AOD in Indonesia seem to be linked with a large increase of AOD>1µm. In the Pacific, an area is presenting significant positive trends, in both AOD and AOD<1µm. Almost no significant trend is found below 60\textdegree S of latitude.
 
@@ -510,7 +510,7 @@ The Scat. Coef. trends are almost identical to the PM maps. The global trend is 
 
 Abs. Coef. reveals increasing trends over most of the grid-points of the model. This explains the largest global obtained for this parameter, with a global increase of +1.5\%/yr.
 
-The Table \ref{table:global_trends} contains also the trends computed for the different aerosol parameters when combining only the grid-points where an observation station is located. The difference with the trends presented in the previous section is that the complete time series are used in this case, which might conduct to major differences for the resulting datasets, then leading to significantly different trends. This is particularly the case for $SO_{4}$ for which the observation stations are located mostly in Europe and North America, in the large decreasing area while only few stations are located in the regions associated with increasing values. This conducts to a global decrease of -1.1\%/yr when focusing only at the points where observations stations are located, while an increasing trend of +0.4\%/yr is actually obtained when considering all of the grid-points. 
+The Table \ref{table:global_trends} contains also the trends computed for the different aerosol parameters when combining only the grid-points where an observation station is located. The difference with the trends presented in the previous section is that the complete time series are used in this case, which might conduct to major differences for the resulting datasets, then leading to significantly different trends. This is particularly the case for $SO_{4}$ for which the observation stations are located mostly in Europe and North America, in the large decreasing area while only few stations are located in the regions associated with increasing values. This conducts to a global decrease of -1.1\%/yr when focusing only at the points where observations stations are located, while an increasing trend of +0.4\%/yr is actually obtained when considering all of the grid-points.
 
 
 \subsubsection{Can we explain the trends in AOD?}
@@ -530,20 +530,20 @@ The relative increase of +0.2\%/yr corresponds to an absolute increase of +3.1e-
 Link with emissions
 
 \begin{table}[]
-    \centering
-    \begin{tabular}{lllll}
-    \tophline
-    Species & OD (\%/yr) & Emissions (\%/yr) & Load (\%/yr) & OD/Emissions \\
-    \middlehline
-       Dust &      -0.13 &             -0.55 &        -0.18 &        +0.24 \\
-         SS &      +0.02 &             +0.01 &        -0.02 &        +1.28 \\
-         OA &      +1.09 &             +0.52 &        +0.67 &        +2.10 \\
-        SO4 &      +0.61 &             -0.17 &        +0.91 &        -3.61 \\
-         BC &      +2.28 &             +1.89 &        +2.21 &        +1.21 \\
-    \bottomhline
-    \end{tabular}
-    \caption{Relative trends of the major aerosol species computed with NorESM2.}
-    \label{tab:species}
+ \centering
+ \begin{tabular}{lllll}
+  \tophline
+  Species & OD (\%/yr) & Emissions (\%/yr) & Load (\%/yr) & OD/Emissions \\
+  \middlehline
+  Dust    & -0.13      & -0.55             & -0.18        & +0.24        \\
+  SS      & +0.02      & +0.01             & -0.02        & +1.28        \\
+  OA      & +1.09      & +0.52             & +0.67        & +2.10        \\
+  SO4     & +0.61      & -0.17             & +0.91        & -3.61        \\
+  BC      & +2.28      & +1.89             & +2.21        & +1.21        \\
+  \bottomhline
+ \end{tabular}
+ \caption{Relative trends of the major aerosol species computed with NorESM2.}
+ \label{tab:species}
 \end{table}
 
 
