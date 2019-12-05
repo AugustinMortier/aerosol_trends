@@ -12,8 +12,7 @@ filterwarnings('ignore')
 regions = get_regions()
 vars = ['ang4487aer', 'od550aer', 'od550gt1aer',
         'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
-vars = ['ang4487aer', 'od550aer', 'od550gt1aer',
-        'od550lt1aer', 'concpm10', 'concpm25', 'concso4']
+vars = ['scatc550dryaer', 'absc550aer']
 
 for var in vars:
     print('* * * * * * *')
@@ -22,6 +21,9 @@ for var in vars:
     
     # computation parameters
     params = get_params()
+    
+    if var in ['scatc550dryaer', 'absc550aer']:
+        params['period'] = '2000-2018'
 
     params['kind'] = 'obs'
     fill_params(params, var)

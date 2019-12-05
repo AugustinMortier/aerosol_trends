@@ -138,6 +138,7 @@ def fill_params(params, var):
         params['min_nstat'] = 2
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
+        params['exclude_stations'] = ['Granada', 'Ispra', 'Montseny']
     if var == 'absc550aer':
         params['source'] = 'EBASMC'
         params['vert'] = 'Surface'
@@ -149,7 +150,7 @@ def fill_params(params, var):
         params['min_nstat'] = 2
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST','MIROC-SPRINTARS_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
-        params['exclude_stations'] = ['Alert']
+        params['exclude_stations'] = ['Alert', 'Granada', 'Leipzig-Mitte']
     #==========================================
     if var == 'od550dust':
         params['source'] = 'AeronetSunV3Lev2.daily'
@@ -962,15 +963,16 @@ def process_trend(data, params, obs=None, colocate_time=True,
         
         
         #exclude stations
-        data_ok = []
-        if 'exclude_stations' in params:
-            print('excluding module')
-            for dat in data_all:
-                if dat['station_name'] not in params['exclude_stations']:
-                    data_ok.append(dat)
-                else:
-                    print('exclude ',dat['station_name'])
-            data_all = data_ok
+        if params['kind'] == 'obs':
+            data_ok = []
+            if 'exclude_stations' in params:
+                print('excluding module')
+                for dat in data_all:
+                    if dat['station_name'] not in params['exclude_stations']:
+                        data_ok.append(dat)
+                    else:
+                        print('exclude ',dat['station_name'])
+                data_all = data_ok
         
         obs_all = copy.copy(data_all)
 
@@ -1001,6 +1003,10 @@ def process_trend(data, params, obs=None, colocate_time=True,
                         longitude=stations['lon'], latitude=stations['lat'],
                         add_meta=dict(station_name=stations['name'])
                     )
+                    #bug with EBAS, not filling up the name
+                    for i, d in enumerate(data_all):
+                        if d['station_name'] == None:
+                            d['station_name'] = stations['name'][i]
                 else:
                     continue
                 npoints = len(data_all)
@@ -1009,7 +1015,8 @@ def process_trend(data, params, obs=None, colocate_time=True,
                 med_area = data_all.get_area_weighted_timeseries()
                 npoints = np.shape(data_all.cube.data)[1]*np.shape(data_all.cube.data)[2]
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
+    
+        
         # initialize pandas DataFrame
         df = pd.DataFrame()
 
@@ -1025,13 +1032,13 @@ def process_trend(data, params, obs=None, colocate_time=True,
             for i, station in enumerate(data_all):
                 #if params['kind'] == 'obs':
                 #    STATIONS[station.station_name] = region
-                    
+                #print(station)
                 stat_name = station.station_name
                 print('region: ', region, 'station: ', stat_name, end="\r")
                 ts_type = station.ts_type
                 # set individual time series as dataframe
 
-                # extract pandas series and convert it to datframe
+                    # extract pandas series and convert it to datframe
                 ts = data_all[i][var].to_frame()
                 # remove duplicated index keeping the first occuence
                 ts = ts.groupby(ts.index).first()
@@ -1042,7 +1049,7 @@ def process_trend(data, params, obs=None, colocate_time=True,
                 #    #get region of the station
                 #    regstat = STATIONS[stat_name]
                 #    ts['weight'+ '_' + stat_name] = 1 / MAP[regstat]['nmax']
-                
+
                 #print(ts_type)
                 if ts_type == 'hourly':
                     #make daily average
@@ -1058,7 +1065,7 @@ def process_trend(data, params, obs=None, colocate_time=True,
                 else:
                     # concatenates to main dataframe
                     df = pd.concat([df, ts], axis=1)
-
+                
                 stations.append({
                     'name': stat_name,
                     'lat': station.latitude,
