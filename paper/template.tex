@@ -350,14 +350,16 @@ It is then legitimate to wonder if the trends computed at the observation statio
 The difference between the relative trends are computed for each parameter and over each region. Those differences are then converted into a score (\unit{\%}) by using a normal distribution $f$ described by a mean $\mu=0$ and a standard deviation of $\sigma=0.5$. For a given parameter $p$ and a region $r$, the Representativity $Rep(p,r)$ is calculated as following
 
 \begin{equation}
- Rep_{space,time}(p, r) = {f\left(\left| trend_{Exp_{space,time}(p, r)}-trend_{Ref_{space,time}(p, r)} \right|\right)}
+ Rep_{space,time}(p, r) = {f\left(\left| \tilde{t}_{Exp_{space,time}(p, r)}-\tilde{t}_{Ref_{space,time}(p, r)} \right|\right)}
 \end{equation}
+where $\tilde{t}$ is the relative trend of the corresponding dataset.
 
 For a given representativity study, a difference of 0.0\%/yr as compared to its reference dataset leads to a representativity score of 100\%, and a difference of 0.5\%/yr leads to a score of 50\%.
 Finally, the total representativity is computed as the mean of the time and the space scores.
 
 An example of representativity calculation is presented in Appendix \ref{sec:representativity}.
 
+This study shows that partial coverage in time and space of the observations are conducting, in some cases, to artificial trends. This will be more discussed in the following section.
 
 \section{Results}
 
@@ -594,7 +596,7 @@ Some perspective:
 
 The Figure \ref{fig:representativity} shows an example of the repesentativity of the AOD measurements in Europe and North-America for the computation of the trends in 2000-2014.
 
-In both regions, the $Ref_{t}$ dataset reveals strong seasonal cycles for the number of points used to compute the regional time-series. This comes from the nature of the AOD measurements, which are obtained during daytime, while amount of daylight is minimum in wintertime in the Northern Hemisphere. Together with this seasonal cycle, one observe an increase in time of the number of points, which reflect the increasing number of stations within each region.
+In both regions, the $Ref_{t}$ dataset reveals strong seasonal cycles for the number of points used to compute the regional time-series. This comes from the nature of the AOD measurements, which are obtained during daytime, while amount of daylight is minimum in wintertime in the Northern Hemisphere. Together with this seasonal cycle, one observe an increase in time of the number of points, which reflects the increasing number of stations within each region.
 
 The ocean grid-points are not filtered out while computing the representativity of the different parameters in the different regions of the World. For this reason, the regions containing a greater proportion of ocean grid-points, where the trends are most likely to differ from the trends observed over land, will tend to have a lower spatial representativity.
 
@@ -614,7 +616,7 @@ The ocean grid-points are not filtered out while computing the representativity 
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/representativity-od550aer.png}
- \caption{Representativity of the regional AOD time series for the computation of trends. The upper figures correspond to the number of points used to compute the regional time series. The lower figures show the time series, the trends, and the resulting representativity.}
+ \caption{Representativity of the regional AOD time series for the computation of trends. The upper figures correspond to the number of points used to compute the regional time series. The lower figures show the time series, the trends, and the resulting representativity. $Ref_{time}$ corresponds to the model output colocated in space and time to the available observations. $Exp_{time}/Ref_{space}$} corresponds to the model output colocated in space top the stations providing measurements, using complete time series from 2000 to 2014. $Exp_{space}$ corresponds to the model output in the region without any colocation to the observations (using all gridpoints in the region).
  \label{fig:representativity}
 \end{figure}
 
