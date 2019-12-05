@@ -982,7 +982,7 @@ def process_trend(data, params, obs=None, colocate_time=True,
             
             #reduce data_all to list of filtered stations
             if region in OBS_DF:
-                okstats = [col.split('_')[1] for col in list(OBS_DF[region].keys())]
+                okstats = [col.split('_',1)[1] for col in list(OBS_DF[region].keys())]
                 data_all = [data for data in data_all if data['station_name'] in okstats]
             else:
                 data_all = []

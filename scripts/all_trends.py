@@ -12,8 +12,8 @@ filterwarnings('ignore')
 regions = get_regions()
 vars = ['ang4487aer', 'od550aer', 'od550gt1aer',
         'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
-vars = ['scatc550dryaer', 'absc550aer']
-vars = ['ang4487aer']
+vars = ['ang4487aer', 'od550aer', 'od550gt1aer',
+        'od550lt1aer', 'concpm10', 'concpm25', 'concso4']
 
 for var in vars:
     print('* * * * * * *')

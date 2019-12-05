@@ -14,7 +14,8 @@ def norm_dist(diff):
 # - - - - - - run observations - - - - - - - -
 # 'ang4487aer' 'od550aer' 'od550gt1aer' 'od550lt1aer' 'sconcpm10' 'sconcpm25' 'sconcso4'
 #vars = ['od550aer', 'ang4487aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
-vars = ['scatc550dryaer', 'absc550aer']
+vars = ['od550aer', 'ang4487aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4']
+#vars = ['scatc550dryaer', 'absc550aer']
 
 #vars = ['ang4487aer', 'od550gt1aer', 'od550lt1aer', 'sconcpm10', 'sconcpm25', 'sconcso4']
 for var in vars:
