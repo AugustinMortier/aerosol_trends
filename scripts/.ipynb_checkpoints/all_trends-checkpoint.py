@@ -102,7 +102,7 @@ for var in vars:
             uyears = np.unique(years)
             i2000 = np.argmin(abs(uyears-2000))
             dy = uyears[i2000+1]-uyears[i2000]
-            if dy>=1:
+            if dy>1:
                 params['min_ntrend'] = 4
             else:
                 params['min_ntrend'] = 7
