@@ -212,9 +212,12 @@ Urban sites are not included, neither sites where the surroundings have changed 
 When averaging monthly data with higher sampling frequency than daily, the sample is weighted in accordance to how many days it has been sampled in that month.
 
 \subsubsection{Optical in situ}
+Because fewer stations and only at ground level, the presence of non-representative stations in the regoinal sries, for instance stations locted nearby the roads, .... , can have large effects... Filtering out some of these stations: 
+
 \begin{itemize}
  \item Scattering coefficient (\unit{Mm^{-1}}): from nephelometer - dry -> RH<30\%? - Validity range: [-10,1000]
- \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [-1,100] - Removed Alert station (unit issue).
+ Removed Granada, Ispra and Monseny
+ \item Absorption coefficients (\unit{Mm^{-1}}): from aethalometer - validity range: [-1,100] - Removed Alert station (unit issue), Granada, Leipzig-Mitte.
 \end{itemize}
 
 \subsection{Models}
@@ -421,6 +424,8 @@ The relative trends for the 2000-2014 period are shown in Figure \ref{fig:obs_tr
 
 In order to evaluate the model trends, the regional time series have been computed with the models output colocated in space and time to the available observations at the stations level. The results are shown in Figure \ref{fig:bars}. The performances of the models, for the reproduction of the observed trends, are various depending on the parameters and the regions.
 
+*CORRECT THE AOD TRENDS ACCORDING TO NEW FIGURE*
+
 \begin{itemize}
  \item AOD: the models are showing trends in the same direction than the observation over all the regions except in Asia, where the associated uncertainties are however usually larger than the trends values. Some differences can be noticed in between the three groups of models when investigating the different regions:
        \begin{itemize}
@@ -608,7 +613,7 @@ The ocean grid-points are not filtered out while computing the representativity 
 
 
 \begin{figure}[t]
- \includegraphics[width=16cm]{../scripts/figs/representativity.png}
+ \includegraphics[width=16cm]{../scripts/figs/representativity-od550aer.png}
  \caption{Representativity of the regional AOD time series for the computation of trends. The upper figures correspond to the number of points used to compute the regional time series. The lower figures show the time series, the trends, and the resulting representativity.}
  \label{fig:representativity}
 \end{figure}
