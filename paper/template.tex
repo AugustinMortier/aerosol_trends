@@ -522,10 +522,10 @@ The Scat. Coef. trends are almost identical to the ones observed for both PM2.5 
 
 Abs. Coef. reveals increasing tendencies over most of the grid-boxes of the model which explains that the largest global trend is obtained for this parameter, with an average of +1.5\%/yr.
 
-The Table \ref{table:global_trends} contains also the trends computed for the different aerosol parameters when combining only the grid-points where an observation station is located. The difference with the trends presented in the previous section is that the complete time series are used in this case, which might conduct to major differences for the resulting datasets, then leading to significantly different trends. This is particularly the case for $SO_{4}$ for which the observation stations are located mostly in Europe and North America, in the large decreasing area while only few stations are located in the regions associated with increasing values. This conducts to a global decrease of -1.1\%/yr when focusing only at the points where observations stations are located, while an increasing trend of +0.4\%/yr is actually obtained when considering all of the grid-points.
+The Table \ref{table:global_trends} contains also the trends computed for the different aerosol parameters when combining only the grid-points where an observation station is located, whether measurements are available or not. The difference with the trends presented in the previous section is that the complete time series are used in this case, which might conduct to major differences for the resulting datasets, then leading to significantly different trends. This is particularly the case for $SO_{4}$ for which the observation stations are located mostly in Europe and North America, in the large decreasing area while only few stations are located in the regions associated with increasing values. This conducts to a global decrease of -1.1\%/yr when focusing only at the points where observations stations are located, while an increasing trend of +0.4\%/yr is actually obtained when considering all of the grid-boxes of the model.
 
 
-\subsubsection{Sources of AOD trends}
+\subsubsection{Can we explain the trends in AOD?}
 
 \begin{figure}[t]
  \includegraphics[width=16cm]{../scripts/figs/abs_species_trends.png}
@@ -533,32 +533,13 @@ The Table \ref{table:global_trends} contains also the trends computed for the di
  \label{fig:species}
 \end{figure}
 
-The averaged global trend computed by NorESM indicates an increase of AOD in the 2000-2014 period with a rate of about 0.2\%/yr. The trends in AE, AOD<1µm and AOD>1µm indicate that the fine particles are mostly responsible of this trend in the atmospheric column.
+The averaged global trend computed by NorESM indicates an increase of AOD in the 2000-2014 period with a rate of about 0.2\%/yr. The trends in AE, AOD<1µm and AOD>1µm indicate that the fine particles are mostly responsible of this increase in the atmospheric column.
 
-In this section, on investigates the trends of the different major aerosol species simulated by the models. In that purpose, the absolute trends have been compute for the contribution of these species to the AOD, as well as for their emissions. The results are shown in Figure \ref{fig:species}.
+In this section, on investigates the trends of the different major aerosol species simulated by NorESM. In that purpose, we compute the absolute trends of the individual contribution of these species to the AOD, as well as the trends in the loads and the emissions. The trends of OD and loads are shown in Figure \ref{fig:species}.
 
-The relative increase of +0.2\%/yr corresponds to an absolute increase of +3.1e-4/yr. This positive trend is dominated by the trends in Organic Aerosols (OA), SO4 and Black Carbon, which are responsible for increases of the OD of about +2.0e-4/yr, +0.7e-4/yr and +0.4e-4/yr. On average, the contribution of the dusts and sea salts is slightly negative (-0.1e-4/yr).
+The relative increase of AOD of +0.2\%/yr corresponds to an absolute increase of +3.1e-4/yr. This positive trend is dominated by an increase of the Organic Aerosols (OA), SO4 and Black Carbon, which are responsible for an increase of the OD of about +2.0e-4/yr, +0.7e-4/yr and +0.4e-4/yr. On average, the contribution of the dusts and sea salts is slightly negative (-0.1e-4/yr).
 
-Link with emissions
-
-\begin{table}[]
- \centering
-\begin{tabular}{llll}
-\tophline
-Species & OD (\%/yr) & Emissions (\%/yr) & Load (\%/yr) \\
-\middlehline
-   dust &      -0.13 &             -0.55 &        -0.18 \\
-     ss &      +0.02 &             +0.01 &        -0.02 \\
-     oa &      +1.09 &             +0.52 &        +0.67 \\
-    so4 &      +0.61 &             -0.17 &        +0.91 \\
-     bc &      +2.28 &             +1.89 &        +2.21 \\
-\bottomhline
-\end{tabular}
- \caption{Relative trends of the major aerosol species computed with NorESM2.}
- \label{tab:species}
-\end{table}
-
-
+The trends in OD do not represent exactly the trends in the aerosol loads, since the different species have different MEC (dust 1.8 m2.g-1, ss 4.3 m2.g-1, oa 5.6 m2.g-1, so4 5.3 m2.g-1, bc 7.6 m2.g-1). For sea salts, opposite trends are even observed between OD and the load. See website: the increase of the load in Indonesia and in the North Pole are giving relatively larger increase of OD in these areas. This effect results to the higher relative humidity in these latitude ranges which makes the sea salts more efficient for the extinction.
 
 
 \conclusions  %% \conclusions[modified heading if necessary]
