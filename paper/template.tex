@@ -259,10 +259,7 @@ required output: od550aer time series from 1850 to 2014.
 
 
 \begin{table}[]
- %\begin{tabularx}{\textwidth}{lllllX}
-% Please add the following required packages to your document preamble:
-% \usepackage{booktabs}
-\begin{tabular}{@{}lllllll@{}}
+ \begin{tabularx}{\textwidth}{llllllX}
 \toprule
 Model      & Group     & \begin{tabular}[c]{@{}l@{}}Natural \\ interactive emissions\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anthropogenic \\ emissions\end{tabular} & Meteorology & \begin{tabular}[c]{@{}l@{}}LatxLon resolution \\ (degree)\end{tabular} & References                                                         \\ \midrule
 ECMWF-Rean & CAMS-Rean & ?                             & ?                       & ?           & 1.12x1.12                   &                                                                      \\
@@ -276,7 +273,7 @@ BCC-CUACE  & AP3       & ?                             & ?                      
 CanESM5    & CMIP6     & ?                             &                         & ?           & 2.77x2.81                   & \cite{gmd-12-4823-2019}                                             \\
 CESM2      & CMIP6     & ?                             & ?                       & ?           & 0.94x1.25                   &                                                                      \\
 IPSL-CM6A  & CMIP6     & ?                             & ?                       & ?           & 1.27x2.50                   &                                                                      \\ \bottomrule
-\end{tabular}
+\end{tabularx}
  \caption{Information on models used in this study. 
   Anthropogenic emissions (C=CMIP6-CEDS, O=other, *=CMIP6 modified)
   Interactive natural emissions (D=dust, SS=sea salt, O=biogenic organic, V=volcanic, ...?)
