@@ -291,10 +291,6 @@ def get_all_mods():
             'name': 'ECMWF-Rean',
             'group': 'CAMS-Rean'
         },
-        'NorESM2-CPL-NEWTEST_HIST': {
-            'name': 'NorESM2',
-            'group': 'AP3'
-        },
         'MIROC-SPRINTARS_AP3-HIST':{
             'name': 'SPRINTARS',
             'group': 'AP3'
@@ -323,6 +319,10 @@ def get_all_mods():
         'BCC-CUACE_AP3-HIST': {
             'name': 'BCC-CUACE',
             'group': 'AP3'
+        },
+        'NorESM2-CPL-NEWTEST_HIST': {
+            'name': 'NorESM2',
+            'group': 'CMIP6'
         },
         'CanESM5_historical': {
             'name': 'CanESM5',

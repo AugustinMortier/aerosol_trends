@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -12,6 +12,10 @@
 Aas, W., Mortier, A., Bowersox, V., Cherian, R., Faluvegi, G., Fagerli, H.,
   Hand, J., Klimont, Z., Galy-Lacaux, C., Lehmann, C.~M., et~al.: Global and
   regional trends of atmospheric sulfur, Scientific reports, 9, 953, 2019.
+
+\bibitem[{Collaud~Coen()}]{collaudcoenprep}
+Collaud~Coen, .: Multidecadal trend analysis of aerosol radiative properties at
+  a global scale, in preparation.
 
 \bibitem[{Lund et~al.(2018)Lund, Myhre, Haslerud, Skeie, Griesfeller, Platt,
   Kumar, Myhre, and Schulz}]{lund2018concentrations}

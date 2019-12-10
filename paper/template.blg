@@ -5,47 +5,48 @@ The style file: copernicus.bst
 Database file #1: mybib.bib.bib
 Warning--entry type for "ebasweb" isn't style-file defined
 --line 82 of file mybib.bib.bib
+Warning--empty year in collaudcoenprep
 Warning--empty journal in lund2018concentrations
 Warning--empty year in ebasweb
-You've used 9 entries,
+You've used 10 entries,
             2811 wiz_defined-function locations,
-            1051 strings with 11252 characters,
-and the built_in function-call counts, 10239 in all, are:
-= -- 956
-> -- 696
-< -- 1
-+ -- 269
-- -- 225
-* -- 769
-:= -- 1208
-add.period$ -- 9
-call.type$ -- 9
-change.case$ -- 91
-chr.to.int$ -- 9
-cite$ -- 29
-duplicate$ -- 840
-empty$ -- 453
-format.name$ -- 250
-if$ -- 1977
+            1055 strings with 11375 characters,
+and the built_in function-call counts, 10555 in all, are:
+= -- 976
+> -- 706
+< -- 2
++ -- 273
+- -- 228
+* -- 789
+:= -- 1257
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 94
+chr.to.int$ -- 10
+cite$ -- 33
+duplicate$ -- 869
+empty$ -- 482
+format.name$ -- 254
+if$ -- 2037
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 131
-newline$ -- 36
-num.names$ -- 36
-pop$ -- 475
+missing$ -- 137
+newline$ -- 39
+num.names$ -- 40
+pop$ -- 493
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 94
 quote$ -- 0
-skip$ -- 450
+skip$ -- 460
 stack$ -- 0
-substring$ -- 305
-swap$ -- 692
+substring$ -- 308
+swap$ -- 700
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 81
-warning$ -- 2
-while$ -- 41
+type$ -- 90
+warning$ -- 3
+while$ -- 44
 width$ -- 0
-write$ -- 105
-(There were 3 warnings)
+write$ -- 114
+(There were 4 warnings)
