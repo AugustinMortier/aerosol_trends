@@ -8,45 +8,49 @@ Warning--entry type for "ebasweb" isn't style-file defined
 Warning--empty year in collaudcoenprep
 Warning--empty journal in lund2018concentrations
 Warning--empty year in ebasweb
-You've used 10 entries,
+Warning--empty title in olivieprep
+Warning--empty year in olivieprep
+Warning--empty title in selandprep
+Warning--empty year in selandprep
+You've used 17 entries,
             2811 wiz_defined-function locations,
-            1055 strings with 11375 characters,
-and the built_in function-call counts, 10555 in all, are:
-= -- 976
-> -- 706
-< -- 2
-+ -- 273
-- -- 228
-* -- 789
-:= -- 1257
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 94
-chr.to.int$ -- 10
-cite$ -- 33
-duplicate$ -- 869
-empty$ -- 482
-format.name$ -- 254
-if$ -- 2037
+            1088 strings with 12931 characters,
+and the built_in function-call counts, 17786 in all, are:
+= -- 1687
+> -- 1122
+< -- 5
++ -- 441
+- -- 363
+* -- 1287
+:= -- 2080
+add.period$ -- 17
+call.type$ -- 17
+change.case$ -- 150
+chr.to.int$ -- 17
+cite$ -- 58
+duplicate$ -- 1507
+empty$ -- 833
+format.name$ -- 406
+if$ -- 3451
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 137
-newline$ -- 39
-num.names$ -- 40
-pop$ -- 493
+missing$ -- 225
+newline$ -- 60
+num.names$ -- 68
+pop$ -- 807
 preamble$ -- 1
-purify$ -- 94
+purify$ -- 150
 quote$ -- 0
-skip$ -- 460
+skip$ -- 836
 stack$ -- 0
-substring$ -- 308
-swap$ -- 700
-text.length$ -- 0
+substring$ -- 558
+swap$ -- 1215
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 90
-warning$ -- 3
-while$ -- 44
+type$ -- 153
+warning$ -- 7
+while$ -- 78
 width$ -- 0
-write$ -- 114
-(There were 4 warnings)
+write$ -- 184
+(There were 8 warnings)

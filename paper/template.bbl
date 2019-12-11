@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{17}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -16,6 +16,31 @@ Aas, W., Mortier, A., Bowersox, V., Cherian, R., Faluvegi, G., Fagerli, H.,
 \bibitem[{Collaud~Coen()}]{collaudcoenprep}
 Collaud~Coen, .: Multidecadal trend analysis of aerosol radiative properties at
   a global scale, in preparation.
+
+\bibitem[{Giles et~al.(2019)Giles, Sinyuk, Sorokin, Schafer, Smirnov, Slutsker,
+  Eck, Holben, Lewis, Campbell et~al.}]{giles2019advancements}
+Giles, D.~M., Sinyuk, A., Sorokin, M.~G., Schafer, J.~S., Smirnov, A.,
+  Slutsker, I., Eck, T.~F., Holben, B.~N., Lewis, J.~R., Campbell, J.~R.,
+  et~al.: Advancements in the Aerosol Robotic Network (AERONET) Version 3
+  database--automated near-real-time quality control algorithm with improved
+  cloud screening for Sun photometer aerosol optical depth (AOD) measurements,
+  Atmospheric Measurement Techniques, 12, 169--209, 2019.
+
+\bibitem[{Holben et~al.(2001)Holben, Tanre, Smirnov, Eck, Slutsker, Abuhassan,
+  Newcomb, Schafer, Chatenet, Lavenu et~al.}]{holben2001emerging}
+Holben, B.~N., Tanre, D., Smirnov, A., Eck, T., Slutsker, I., Abuhassan, N.,
+  Newcomb, W., Schafer, J., Chatenet, B., Lavenu, F., et~al.: An emerging
+  ground-based aerosol climatology: Aerosol optical depth from AERONET, Journal
+  of Geophysical Research: Atmospheres, 106, 12\,067--12\,097, 2001.
+
+\bibitem[{Kirkev{\aa}g et~al.(2018)Kirkev{\aa}g, Grini, Olivi{\'e}, Seland,
+  Alterskj{\ae}r, Hummel, Karset, Lewinschal, Liu, Makkonen
+  et~al.}]{kirkevag2018production}
+Kirkev{\aa}g, A., Grini, A., Olivi{\'e}, D., Seland, O., Alterskj{\ae}r, K.,
+  Hummel, M., Karset, I.~H., Lewinschal, A., Liu, X., Makkonen, R., et~al.: A
+  production-tagged aerosol module for Earth system models, OsloAero5.
+  3-extensions and updates for CAM5. 3-Oslo, Geoscientific Model Development,
+  2018.
 
 \bibitem[{Lund et~al.(2018)Lund, Myhre, Haslerud, Skeie, Griesfeller, Platt,
   Kumar, Myhre, and Schulz}]{lund2018concentrations}
@@ -35,11 +60,29 @@ Myhre, G., Berglen, T.~F., Johnsrud, M., Hoyle, C., Berntsen, T.~K.,
 \bibitem[{NILU()}]{ebasweb}
 NILU: EBAS website, \urlprefix\url{http://ebas.nilu.no/}.
 
+\bibitem[{Olivie()}]{olivieprep}
+Olivie, D., .: in preparation.
+
 \bibitem[{O'neill et~al.(2003)O'neill, Eck, Smirnov, Holben, and
   Thulasiraman}]{o2003spectral}
 O'neill, N., Eck, T., Smirnov, A., Holben, B., and Thulasiraman, S.: Spectral
   discrimination of coarse and fine mode optical depth, Journal of Geophysical
   Research: Atmospheres, 108, 2003.
+
+\bibitem[{Seland()}]{selandprep}
+Seland, O., .: in preparation.
+
+\bibitem[{Smirnov et~al.(2000)Smirnov, Holben, Eck, Dubovik, and
+  Slutsker}]{smirnov2000cloud}
+Smirnov, A., Holben, B., Eck, T., Dubovik, O., and Slutsker, I.:
+  Cloud-screening and quality control algorithms for the AERONET database,
+  Remote sensing of environment, 73, 337--349, 2000.
+
+\bibitem[{Smirnov et~al.(2004)Smirnov, Holben, Lyapustin, Slutsker, and
+  Eck}]{smirnov2004aeronet}
+Smirnov, A., Holben, B., Lyapustin, A., Slutsker, I., and Eck, T.: AERONET
+  processing algorithms refinement, in: AERONET Workshop, El Arenosillo, Spain,
+  pp. 10--14, 2004.
 
 \bibitem[{Swart et~al.(2019)Swart, Cole, Kharin, Lazare, Scinocca, Gillett,
   Anstey, Arora, Christian, Hanna, Jiao, Lee, Majaess, Saenko, Seiler, Seinen,
