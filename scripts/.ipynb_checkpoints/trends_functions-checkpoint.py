@@ -763,7 +763,7 @@ def plotTS(mmed, mbottom, mtop, ymed, trend, region, params, show_plot, save_plo
     ax.set_facecolor('#F1F1F1')
     
     #set xaxis limit
-    ax.set_xlim(params['period'].split('-')[0]+'-01-01',str(int(params['period'].split('-')[1])+1)+'-01-01')
+    ax.set_xlim(params['period'].split('-')[0]+'-01-01',str(int(params['period'].split('-')[1])+1)+'-12-31')
 
     if save_plot:
         plt.savefig('figs/ts/OBS/' + params['source'] + '-' + params['var'] + '-' +
