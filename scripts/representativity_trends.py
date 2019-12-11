@@ -5,7 +5,7 @@ from trends_functions import *
 def norm_dist(diff):
     norm = 1
     mu = 0
-    stdv = 0.50
+    stdv = 0.5
     gauss = 100*norm*np.exp(-0.5*(((diff-mu)/stdv)**2))
 
     consistency = gauss
@@ -14,7 +14,7 @@ def norm_dist(diff):
 # - - - - - - run observations - - - - - - - -
 # 'ang4487aer' 'od550aer' 'od550gt1aer' 'od550lt1aer' 'sconcpm10' 'sconcpm25' 'sconcso4'
 #vars = ['od550aer', 'ang4487aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
-vars = ['od550aer', 'ang4487aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4']
+vars = ['od550aer', 'ang4487aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
 #vars = ['scatc550dryaer', 'absc550aer']
 
 #vars = ['ang4487aer', 'od550gt1aer', 'od550lt1aer', 'sconcpm10', 'sconcpm25', 'sconcso4']
@@ -164,6 +164,8 @@ for var in vars:
                 time_consist = norm_dist(time_diff)
                 space_consist = norm_dist(space_diff)
                 all_consist = np.mean([time_consist, space_consist])
+                #all_consist = np.min([time_consist, space_consist])
+                
 
             else:
                 time_diff = np.nan
