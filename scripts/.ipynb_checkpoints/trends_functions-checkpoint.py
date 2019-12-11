@@ -138,7 +138,7 @@ def fill_params(params, var):
         params['min_nstat'] = 2
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
-        params['exclude_stations'] = ['Granada', 'Ispra', 'Montseny']
+        params['exclude_stations'] = ['Granada', 'Ispra', 'Montseny', 'Phoenix', 'National Capitol - Central, Washington D.C', 'SIRTA Atmospheric Research Observatory']
     if var == 'absc550aer':
         params['source'] = 'EBASMC'
         params['vert'] = 'Surface'
