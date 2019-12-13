@@ -114,7 +114,7 @@ def fill_params(params, var):
         params['ymax'] = 30
         params['ylabel'] = 'PM2.5'
         params['min_dim'] = 4  # weekly measurements
-        params['models'] = ['ECMWF_CAMS_REAN', 'NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['ECMWF_CAMS_REAN', 'NorESM2-CPL-NEWTEST_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'ECMWF_CAMS_REAN'
     #==========================================
     if var == 'concso4':
