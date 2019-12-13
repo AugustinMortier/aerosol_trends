@@ -138,7 +138,7 @@ def fill_params(params, var):
         params['min_nstat'] = 2
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
-        params['exclude_stations'] = ['Granada', 'Ispra', 'Montseny', 'Phoenix', 'National Capitol - Central, Washington D.C', 'SIRTA Atmospheric Research Observatory']
+        params['exclude_stations'] = ['Granada', 'Montseny', 'Phoenix', 'National Capitol - Central, Washington D.C']
     if var == 'absc550aer':
         params['source'] = 'EBASMC'
         params['vert'] = 'Surface'
@@ -150,7 +150,7 @@ def fill_params(params, var):
         params['min_nstat'] = 2
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST','MIROC-SPRINTARS_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
-        params['exclude_stations'] = ['Alert', 'Granada', 'Leipzig-Mitte']
+        params['exclude_stations'] = ['Alert', 'Granada', 'Leipzig-Mitte', 'Ústí n.L.-mesto']
     #==========================================
     if var == 'od550dust':
         params['source'] = 'AeronetSunV3Lev2.daily'
