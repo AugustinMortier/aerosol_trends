@@ -272,7 +272,7 @@ In this study, we use the data of four CMIP6 models from the historical experime
  \begin{tabularx}{\textwidth}{llllllX}
   \toprule
   Model      & Group     & \begin{tabular}[c]{@{}l@{}}Natural \\ interactive emissions\end{tabular} & \begin{tabular}[c]{@{}l@{}}Anthropogenic \\ emissions\end{tabular} & Meteorology & \begin{tabular}[c]{@{}l@{}}Res \\ (degree)\end{tabular} & References                                                          \\ \midrule
-  ECMWF-Rean & CAMS-Rean & ?                          & ?                          & ?           & 1.12x1.12                  & \cite{inness2019cams}                                                                    \\
+  ECMWF-Rean & CAMS-Rean & D, SS                      & MACCity & RA & 0.7x0.7                  & \cite{inness2019cams,zhang2009asian}                                                                    \\
   SPRINTARS  & AP3       & D, SS, DMS, Oceanic VOC      & $SO_{2}$, BC, OC                & N           & 0.56x0.56                  & \cite{takemura2000global,takemura2002single,takemura2005simulation} \\
   ECHAM-HAM  & AP3       & D, SS, DMS                          & $SO_{2}$, BC, OC                          & fSST           & 1.875x1.875                  &  \cite{tegen2019global,neubauer2019global}                                       \\
   GEOS       & AP3       & ?                          & ?                          & ?           & 1.00x1.00                  &           ?                                                          \\
@@ -287,7 +287,7 @@ In this study, we use the data of four CMIP6 models from the historical experime
  \caption{Information on models used in this study.
   Anthropogenic emissions (C=CMIP6-CEDS, O=other, *=CMIP6 modified)
   Interactive natural emissions (D=dust, SS=sea salt, O=biogenic organic, V=volcanic, ...?)
-  Meteorology (N=nudged to analysed meteorology, S=prescribed varying meteorology, G=coupled GCM, F=Free, fSST=fixed SST/SIC monthly fields, not nudged)
+  Meteorology (N=nudged to analysed meteorology, S=prescribed varying meteorology, G=coupled GCM, F=Free, fSST=fixed SST/SIC monthly fields, not nudged, RA=combined reanalysis of meteorology and composition)
  }
  \label{table:models}
 \end{table}
@@ -333,7 +333,7 @@ The trends are computed based on the yearly averages of the regional time series
 \begin{itemize}
  \item at least 5 days per month (when daily observations are available).
  \item at least 1 month per season.
- \item at least 4 seasons per year.
+ \item 4 seasons per year.
 \end{itemize}
 These temporal constraints offer a reasonable compromise between the availability and the robustness of the yearly statistics.
 
