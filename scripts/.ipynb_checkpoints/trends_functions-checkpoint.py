@@ -1092,11 +1092,9 @@ def process_trend(data, params, obs=None, colocate_time=True,
                 if EBAS!=None:
                     name = station.station_name
                     if name!=None and name in EBAS.keys():
-                        #print(np.shape(ts))
-                        #print('extend data for',name)
                         #extend data
                         ts = ts.append(EBAS[name][var],verify_integrity=False)
-                        #replace complåetely the data
+                        #replace completely the data
                         #ts = EBAS[name][var]
                         ts = ts.sort_index()
                         #print(np.shape(ts))
@@ -1496,6 +1494,9 @@ def read_EBAS():
                     tbody.append([dt,pm10,pm25])
 
                 db = pd.DataFrame(tbody, columns=thead)
+                #set datetinme as proper index
+                db['datetime'] = pd.to_datetime(db['datetime'])
+                #set as index
                 db.set_index('datetime', inplace=True)
                 db.sort_index(inplace=True)
                 #resample
@@ -1505,7 +1506,6 @@ def read_EBAS():
                 else:
                     print('concatenate',station_name)
                     EBAS[station_name] = pd.append(db)
-                    EBAS[station_name].sort_index(inplace=True)
 
                 f.close()
     return EBAS

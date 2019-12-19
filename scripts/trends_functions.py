@@ -763,7 +763,7 @@ def plotTS(mmed, mbottom, mtop, ymed, trend, region, params, show_plot, save_plo
     ax.set_facecolor('#F1F1F1')
     
     #set xaxis limit
-    ax.set_xlim(params['period'].split('-')[0]+'-01-01',str(int(params['period'].split('-')[1])+1)+'-12-31')
+    ax.set_xlim(params['period'].split('-')[0]+'-01-01',str(int(params['period'].split('-')[1])+1)+'-01-01')
 
     if save_plot:
         plt.savefig('figs/ts/OBS/' + params['source'] + '-' + params['var'] + '-' +
@@ -942,7 +942,7 @@ def weighted_quantile(values, quantiles, sample_weight=None,
 
 def process_trend(data, params, obs=None, colocate_time=True,
                   colocate_space=True, OBS_DF=None, plot=True, write_json=False,
-                  show_plot=False, save_plot=False):
+                  show_plot=False, save_plot=False, EBAS=None):
     
     # by default, colocate model in space and time
     MAP, DF, ALL_TS = {}, {}, {}
@@ -1008,8 +1008,6 @@ def process_trend(data, params, obs=None, colocate_time=True,
         # for each subset, creates a dataframe containing all stations timeseries
         # first, get station data
         data_all = sub.to_station_data_all()['stats']
-        
-
         
         
         #exclude stations
@@ -1088,8 +1086,20 @@ def process_trend(data, params, obs=None, colocate_time=True,
                 ts_type = station.ts_type
                 # set individual time series as dataframe
 
-                    # extract pandas series and convert it to datframe
-                ts = data_all[i][var].to_frame()
+                # extract pandas series and convert it to datframe
+                ts = data_all[i][var]
+                #extend if EBAS
+                if EBAS!=None:
+                    name = station.station_name
+                    if name!=None and name in EBAS.keys():
+                        #extend data
+                        ts = ts.append(EBAS[name][var],verify_integrity=False)
+                        #replace completely the data
+                        #ts = EBAS[name][var]
+                        ts = ts.sort_index()
+                        #print(np.shape(ts))
+                        
+                ts = ts.to_frame()
                 # remove duplicated index keeping the first occuence
                 ts = ts.groupby(ts.index).first()
                 #name the columns
@@ -1410,3 +1420,92 @@ def subplotTS(ax, il, ic, mmed, mbottom, mtop, ymed, trend, region, params):
     y1 = int(params['period'].split('-')[0])
     y2 = int(params['period'].split('-')[1])
     ax.set_xlim([datetime.date(y1, 1, 1), datetime.date(y2+1, 1, 1)])
+    
+def read_EBAS():
+#read all the .nas year from IMPROVE directory
+    EBAS = {}
+    folder = os.path.join("IMPROVE-2019_partial/data/")
+    for root,dirs,files in os.walk(folder):
+        for file in files:
+            if file.endswith(".nas"):
+                f=open(folder+'/'+file, 'r')
+                ebas = []
+                for i, line in enumerate(f):
+                    #print(line.split(':')[0])
+                    if line.split(':')[0] == 'Station name':
+                        iname = i
+                    if line.split(':')[0] == 'Startdate':
+                        idate = i
+                    if line.split(':')[0].split(' ')[0] == 'starttime':
+                        idata = i+1
+                    ebas.append(repr(line))
+
+                #statname
+                station_name = ebas[iname].split(':',1)[1].split('\\n')[0].strip()
+                #date
+                strdate0 = ebas[idate].split(':',1)[1].split('\\n')[0].strip()
+                yyyy, mm, dd, hh, mn, ss = int(strdate0[0:4]), int(strdate0[4:6]), int(strdate0[6:8]), int(strdate0[8:10]), int(strdate0[10:12]), int(strdate0[12:14])
+                date0 = datetime.datetime(yyyy,mm,dd,hh,mn,ss)
+                #data
+                data = [d[1:-3].strip().replace("''","").split(' ') for d in ebas[idata:]]
+                datok = []
+                #check flags
+                header = ebas[idata-1][0:-3].split(' ')
+                if 'flag_PM10' in header and 'flag_PM2.5' in header:
+                    iflagpm10 = header.index('flag_PM10')
+                    iflagpm25 = header.index('flag_PM2.5')
+                else:
+                    #last columns: seame flag for both
+                    iflagpm10 = -1
+                    iflagpm25 = -1
+                #data
+                if 'PM10' in header:
+                    ipm10 = header.index('PM10')
+                else:
+                    ipm10 = -1
+                if 'PM2.5' in header:
+                    ipm25 = header.index('PM2.5')
+                else:
+                    ipm25 = -1
+
+
+                for dat in data:
+                    datok.append([float(d) for d in dat if d!=''])
+
+                #prepare db
+                thead = ['datetime','concpm10','concpm25']
+                tbody = []
+                for dat in datok:
+                    dt = date0+datetime.timedelta(days = dat[0])
+                    #get data
+                    if ipm10!=-1:
+                        pm10 = dat[ipm10]
+                    else:
+                        pm10 = np.nan
+                    if ipm25!=-1:
+                        pm25 = dat[ipm25]
+                    else:
+                        pm25 = np.nan
+                    #set flag
+                    if dat[iflagpm10]!=0 or pm10>=999:
+                        pm10 = np.nan
+                    if dat[iflagpm25]!=0 or pm25>=999:
+                        pm25 = np.nan
+                    tbody.append([dt,pm10,pm25])
+
+                db = pd.DataFrame(tbody, columns=thead)
+                #set datetinme as proper index
+                db['datetime'] = pd.to_datetime(db['datetime'])
+                #set as index
+                db.set_index('datetime', inplace=True)
+                db.sort_index(inplace=True)
+                #resample
+                db = db.resample('D').mean()
+                if station_name!=EBAS.keys():
+                    EBAS[station_name] = db
+                else:
+                    print('concatenate',station_name)
+                    EBAS[station_name] = pd.append(db)
+
+                f.close()
+    return EBAS
