@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  18 DEC 2019 09:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  19 DEC 2019 13:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3548,8 +3548,8 @@ Underfull \hbox (badness 3746) in paragraph at lines 42--42
 
 [2]
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...73); Cohutta; Columbia Gorge ##
-                                                  1(195); Columbia Gorge ##1...
+<inserted text> ...16); Cohutta; Columbia Gorge ##
+                                                  1(448); Columbia Gorge ##1...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3558,8 +3558,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rge ##1(195); Columbia Gorge ##
-                                                  1; Columbia River Gorge(22...
+<inserted text> ...rge ##1(448); Columbia Gorge ##
+                                                  1; Columbia River Gorge(78...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3568,8 +3568,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...); Viking Lake; Voyageurs NP ##
-                                                  2(203); Voyageurs NP ##2; ...
+<inserted text> ...K. Goddard; Makah Tribe Site ##
+                                                  2(207); Makah Tribe Site #...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3578,28 +3578,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rs NP ##2(203); Voyageurs NP ##
-                                                  2; Washington D.C.(203); W...
-l.58  \end{tabularx}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...73); Cohutta; Columbia Gorge ##
-                                                  1(195); Columbia Gorge ##1...
-l.58  \end{tabularx}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rge ##1(195); Columbia Gorge ##
-                                                  1; Columbia River Gorge(22...
+<inserted text> ...e ##2(207); Makah Tribe Site ##
+                                                  2; Mammoth Cave National P...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3609,7 +3589,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
 <inserted text> ...); Viking Lake; Voyageurs NP ##
-                                                  2(203); Voyageurs NP ##2; ...
+                                                  1(230); Voyageurs NP ##1; ...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3618,8 +3598,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rs NP ##2(203); Voyageurs NP ##
-                                                  2; Washington D.C.(203); W...
+<inserted text> ...rs NP ##1(230); Voyageurs NP ##
+                                                  1; Voyageurs NP ##2(605); ...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3628,8 +3608,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...73); Cohutta; Columbia Gorge ##
-                                                  1(195); Columbia Gorge ##1...
+<inserted text> ...yageurs NP ##1; Voyageurs NP ##
+                                                  2(605); Voyageurs NP ##2; ...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3638,8 +3618,48 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rge ##1(195); Columbia Gorge ##
-                                                  1; Columbia River Gorge(22...
+<inserted text> ...rs NP ##2(605); Voyageurs NP ##
+                                                  2; Washington D.C.(870); W...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...16); Cohutta; Columbia Gorge ##
+                                                  1(448); Columbia Gorge ##1...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rge ##1(448); Columbia Gorge ##
+                                                  1; Columbia River Gorge(78...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...K. Goddard; Makah Tribe Site ##
+                                                  2(207); Makah Tribe Site #...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...e ##2(207); Makah Tribe Site ##
+                                                  2; Mammoth Cave National P...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3649,7 +3669,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
 <inserted text> ...); Viking Lake; Voyageurs NP ##
-                                                  2(203); Voyageurs NP ##2; ...
+                                                  1(230); Voyageurs NP ##1; ...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3658,8 +3678,108 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rs NP ##2(203); Voyageurs NP ##
-                                                  2; Washington D.C.(203); W...
+<inserted text> ...rs NP ##1(230); Voyageurs NP ##
+                                                  1; Voyageurs NP ##2(605); ...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...yageurs NP ##1; Voyageurs NP ##
+                                                  2(605); Voyageurs NP ##2; ...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rs NP ##2(605); Voyageurs NP ##
+                                                  2; Washington D.C.(870); W...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...16); Cohutta; Columbia Gorge ##
+                                                  1(448); Columbia Gorge ##1...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rge ##1(448); Columbia Gorge ##
+                                                  1; Columbia River Gorge(78...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...K. Goddard; Makah Tribe Site ##
+                                                  2(207); Makah Tribe Site #...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...e ##2(207); Makah Tribe Site ##
+                                                  2; Mammoth Cave National P...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...); Viking Lake; Voyageurs NP ##
+                                                  1(230); Voyageurs NP ##1; ...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rs NP ##1(230); Voyageurs NP ##
+                                                  1; Voyageurs NP ##2(605); ...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...yageurs NP ##1; Voyageurs NP ##
+                                                  2(605); Voyageurs NP ##2; ...
+l.58  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:58: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rs NP ##2(605); Voyageurs NP ##
+                                                  2; Washington D.C.(870); W...
 l.58  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3669,8 +3789,8 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 [3]
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...74); Cohutta; Columbia Gorge ##
-                                                  1(195); Columbia Gorge ##1...
+<inserted text> ...07); Cohutta; Columbia Gorge ##
+                                                  1(386); Columbia Gorge ##1...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3679,8 +3799,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rge ##1(195); Columbia Gorge ##
-                                                  1; Columbia River Gorge(20...
+<inserted text> ...rge ##1(386); Columbia Gorge ##
+                                                  1; Columbia River Gorge(80...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3689,8 +3809,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...); Viking Lake; Voyageurs NP ##
-                                                  2(203); Voyageurs NP ##2; ...
+<inserted text> ...K. Goddard; Makah Tribe Site ##
+                                                  2(196); Makah Tribe Site #...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3699,28 +3819,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rs NP ##2(203); Voyageurs NP ##
-                                                  2; Washington D.C.(201); W...
-l.75  \end{tabularx}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...74); Cohutta; Columbia Gorge ##
-                                                  1(195); Columbia Gorge ##1...
-l.75  \end{tabularx}
-                    
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rge ##1(195); Columbia Gorge ##
-                                                  1; Columbia River Gorge(20...
+<inserted text> ...e ##2(196); Makah Tribe Site ##
+                                                  2; Mammoth Cave National P...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3730,7 +3830,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
 <inserted text> ...); Viking Lake; Voyageurs NP ##
-                                                  2(203); Voyageurs NP ##2; ...
+                                                  1(197); Voyageurs NP ##1; ...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3739,8 +3839,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rs NP ##2(203); Voyageurs NP ##
-                                                  2; Washington D.C.(201); W...
+<inserted text> ...rs NP ##1(197); Voyageurs NP ##
+                                                  1; Voyageurs NP ##2(605); ...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3749,8 +3849,8 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...74); Cohutta; Columbia Gorge ##
-                                                  1(195); Columbia Gorge ##1...
+<inserted text> ...yageurs NP ##1; Voyageurs NP ##
+                                                  2(605); Voyageurs NP ##2; ...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3759,8 +3859,48 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rge ##1(195); Columbia Gorge ##
-                                                  1; Columbia River Gorge(20...
+<inserted text> ...rs NP ##2(605); Voyageurs NP ##
+                                                  2; Washington D.C.(903); W...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...07); Cohutta; Columbia Gorge ##
+                                                  1(386); Columbia Gorge ##1...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rge ##1(386); Columbia Gorge ##
+                                                  1; Columbia River Gorge(80...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...K. Goddard; Makah Tribe Site ##
+                                                  2(196); Makah Tribe Site #...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...e ##2(196); Makah Tribe Site ##
+                                                  2; Mammoth Cave National P...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3770,7 +3910,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
 <inserted text> ...); Viking Lake; Voyageurs NP ##
-                                                  2(203); Voyageurs NP ##2; ...
+                                                  1(197); Voyageurs NP ##1; ...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -3779,8 +3919,108 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...rs NP ##2(203); Voyageurs NP ##
-                                                  2; Washington D.C.(201); W...
+<inserted text> ...rs NP ##1(197); Voyageurs NP ##
+                                                  1; Voyageurs NP ##2(605); ...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...yageurs NP ##1; Voyageurs NP ##
+                                                  2(605); Voyageurs NP ##2; ...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rs NP ##2(605); Voyageurs NP ##
+                                                  2; Washington D.C.(903); W...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...07); Cohutta; Columbia Gorge ##
+                                                  1(386); Columbia Gorge ##1...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rge ##1(386); Columbia Gorge ##
+                                                  1; Columbia River Gorge(80...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...K. Goddard; Makah Tribe Site ##
+                                                  2(196); Makah Tribe Site #...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...e ##2(196); Makah Tribe Site ##
+                                                  2; Mammoth Cave National P...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...); Viking Lake; Voyageurs NP ##
+                                                  1(197); Voyageurs NP ##1; ...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rs NP ##1(197); Voyageurs NP ##
+                                                  1; Voyageurs NP ##2(605); ...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...yageurs NP ##1; Voyageurs NP ##
+                                                  2(605); Voyageurs NP ##2; ...
+l.75  \end{tabularx}
+                    
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.tex:75: You can't use `macro parameter character #' in horizontal mode.
+<inserted text> ...rs NP ##2(605); Voyageurs NP ##
+                                                  2; Washington D.C.(903); W...
 l.75  \end{tabularx}
                     
 Sorry, but I'm not programmed to handle this case;
@@ -4244,13 +4484,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
 Here is how much of TeX's memory you used:
  12828 strings out of 492982
  163389 string characters out of 6134896
- 332870 words of memory out of 5000000
+ 333870 words of memory out of 5000000
  16184 multiletter control sequences out of 15000+600000
  21640 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,10n,40p,9571b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.pdf (7 pages, 67680 bytes).
+Output written on /home/augustinm/Dev/pyaerocom/trends/paper/supplementary.pdf (7 pages, 68335 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream

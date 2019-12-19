@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1576658767 "supplementary.tex" "/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.pdf" "supplementary" 1576658767
+["pdflatex"] 1576760102 "supplementary.tex" "/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.pdf" "supplementary" 1576760103
   "/etc/texmf/web2c/texmf.cnf" 1563181619 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.aux" 1576658767 2958 89ee7820332b5ae98cff725fc53f5fd5 ""
+  "/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.aux" 1576760103 2958 89ee7820332b5ae98cff725fc53f5fd5 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1480098689 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -116,11 +116,11 @@
   "copernicus.cfg" 1569994378 46153 f6b6b3cb1ddf83b9418ca1fdbf0aae81 ""
   "copernicus.cls" 1569994716 101501 036329d8d10a917514bfe2b93e3974f0 ""
   "natbib.sty" 1574597529 36061 f2675b2a662f3a410761b7189b6c066e ""
-  "supplementary.aux" 1576658767 2958 89ee7820332b5ae98cff725fc53f5fd5 ""
-  "supplementary.tex" 1576658762 134211 4d723b138d2041f3ea80ce9e72b4619a ""
+  "supplementary.aux" 1576760103 2958 89ee7820332b5ae98cff725fc53f5fd5 ""
+  "supplementary.tex" 1576760099 138425 3d7292acfce93682b9817e6b05e934bd ""
   (generated)
-  "supplementary.log"
+  "supplementary.aux"
   "/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.log"
   "/home/augustinm/Dev/pyaerocom/trends/paper/supplementary.pdf"
-  "supplementary.aux"
+  "supplementary.log"
   "supplementary.pdf"
