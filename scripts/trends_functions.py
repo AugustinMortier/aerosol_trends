@@ -54,6 +54,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'AOD'
+        params['latex'] = 'AOD'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
                  'GFDL-AM4-amip_HIST', 'CanESM5_historical', 
@@ -67,6 +68,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 2.5
         params['ylabel'] = 'AE'
+        params['latex'] = 'AE'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
                    'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
@@ -79,6 +81,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 0.2
         params['ylabel'] = 'AOD>1µm'
+        params['latex'] = 'AOD>1µm'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
                     'BCC-CUACE_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
@@ -91,6 +94,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 0.8
         params['ylabel'] = 'AOD<1µm'
+        params['latex'] = 'AOD<1µm'
         params['min_dim'] = 5
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST', 'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                            'MIROC-SPRINTARS_AP3-HIST']
@@ -103,6 +107,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 60
         params['ylabel'] = 'PM10'
+        params['latex'] = '$PM_{10}$'
         params['min_dim'] = 4  # weekly measurements
         params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','MIROC-SPRINTARS_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
@@ -113,6 +118,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 30
         params['ylabel'] = 'PM2.5'
+        params['latex'] = '$PM_{2.5}$'
         params['min_dim'] = 4  # weekly measurements
         params['models'] = ['ECMWF_CAMS_REAN', 'MIROC-SPRINTARS_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'GEOS-i33p2_HIST', 'NorESM2-CPL-NEWTEST_HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'ECMWF_CAMS_REAN'
@@ -123,6 +129,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 6
         params['ylabel'] = 'SO4'
+        params['latex'] = '$SO_{4}$'
         params['min_dim'] = 0  # monthly measurements
         params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                            'BCC-CUACE_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 'MIROC-SPRINTARS_AP3-HIST']
@@ -134,6 +141,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 100
         params['ylabel'] = 'Scat. Coef.'
+        params['latex'] = '$\sigma_{sp}$'
         params['min_dim'] = 5
         params['min_nstat'] = 2
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST']
@@ -146,6 +154,7 @@ def fill_params(params, var):
         params['ymin'] = 0
         params['ymax'] = 10
         params['ylabel'] = 'Abs. Coef.'
+        params['latex'] = '$\sigma_{ap}$'
         params['min_dim'] = 5
         params['min_nstat'] = 2
         params['models'] = ['NorESM2-CPL-NEWTEST_HIST','MIROC-SPRINTARS_AP3-HIST']
