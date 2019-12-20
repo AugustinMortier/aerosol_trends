@@ -243,10 +243,10 @@ The data has been screened to be regionally representative and of satisfactory q
 In \cite{aas2019global} the data  was averaged to monthly mean.  When the data have higher sampling frequency than daily, the sample is weighted in accordance with how many days it has been sampled in that month.
 
 \subsubsection{Optical in situ}
-Due to the scarcity of stations (only XXX), the presence of non-representative stations (e.g., stations located near roads), can have large effects on the computation of the regional time series. The urban stations have therefore been filtered out from this analysis. The level 2 data (quality controlled, hourly averaged, reported at STP) were used for two parameters measured by distinct instruments:
+Due to the scarcity of stations (only 28), the presence of non-representative stations (e.g., stations located near roads), can have large effects on the computation of the regional time series. The urban stations have therefore been filtered out from this analysis. The level 2 data (quality controlled, hourly averaged, reported at STP) were used for two parameters measured by distinct instruments:
 
 \begin{itemize}
- \item Scattering coefficient ($\sigma_{sp}$, in \unit{Mm^{-1}}), measured by integrating nephelometers. For bettery consistency in the models comparisons (model data is reported for RH=0\%), only the data with a relative humidity lower than 40\% were utilized \citep{pandolfi2018european}.
+ \item Scattering coefficient ($\sigma_{sp}$, in \unit{Mm^{-1}}), measured by integrating nephelometers. For better consistency in the models comparisons (model data is reported for RH=0\%), only the data with a relative humidity lower than 40\% were utilized \citep{pandolfi2018european}.
  \item Absorption coefficients ($\sigma_{ap}$, in \unit{Mm^{-1}}), from filter-based absorption photometers.
 \end{itemize}
 
@@ -278,7 +278,7 @@ In this study, we use the data of four CMIP6 models from the historical experime
   ECMWF-Rean & CAMS-Rean & D, SS                      & MACCity & RA & 0.7x0.7                  & \cite{inness2019cams,zhang2009asian}                                                                    \\
   SPRINTARS  & AP3       & D, SS, DMS, Oc VOC      & $SO_{2}$, BC, OC                & N           & 0.56x0.56                  & \cite{takemura2000global,takemura2002single,takemura2005simulation} \\
   ECHAM-HAM  & AP3       & D, SS, DMS                          & $SO_{2}$, BC, OC                          & fSST           & 1.875x1.875                  &  \cite{tegen2019global,neubauer2019global}                                       \\
-  GEOS       & AP3       & ?                          & ?                          & ?           & 1.00x1.00                  &           ?                                                          \\
+  GEOS       & AP3       & D, SS, DMS, Oc VOC    & SO2, SO4, BC, OC, NH3     & *           & 1.00x1.00                  &       \cite{bian2017investigation,chin2002tropospheric,colarco2010online}                   \\
   OsloCTM3   & AP3       & ?                          & ?                          & ?           & 2.25x2.25                  & \cite{lund2018concentrations,myhre2009modelled}                     \\
   GFDL-AM4   & AP3 & D, SS, DMS, Oc\&Veg OC, & \chem{SO_2}, \chem{SO_4}, BC, OC & fSST\&N  & 1.x1.25 &  \cite{zhao2018agfdl,zhao2018bgfdl}                 \\
   BCC-CUACE  & AP3       & D, SS, DMS                          & $SO_{2}$, BC, OC                         & F           & 2.8x2.8                  & \cite{zhang2012simulation,zhang2014application,wang2014improvement}                                                                    \\
@@ -306,7 +306,7 @@ Seven regions are considered in this study. The definition of these regions enab
  \item AERONET is the most important network in terms of number of instruments. More than 1000 observation points, with more or less long time series, are found across the globe. The highest density of instruments is in Europe and in the central part of North America (US). The lowest densities are found in southern Africa and Australia.
  \item Particulate Matter: 212 instruments are spread mostly over Europe and North America. 
  \item $SO_{4}$: 346 instruments are operating, mostly in North America and Europe. A few stations are also located in Asia and North Africa.
- \item $\sigma_{sp}$ and $\sigma_{ap}$: about 50 stations are spread over North America, Europe, North Africa and Asia. Due to time coverage issues, the data up to the year 2018 were used to compute the regional time series of these two parameters.
+ \item $\sigma_{sp}$ and $\sigma_{ap}$: about 50 stations are spread over North America, Europe, North Africa and Asia. Due to time coverage issues (2005 is the first year available in the European time series), the data up to the year 2018 were used to compute the regional time series of these two parameters.
 \end{itemize}
 
 In order to assemble the sites most affected by Saharan dust, the North Africa region has been extended in the North beyond the continent border. Stations located in the South of Spain, Cyprus and Greece contribute to the regional time series in the region we are calling North Africa.
