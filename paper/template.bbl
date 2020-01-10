@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{80}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
@@ -13,9 +13,122 @@ Aas, W., Mortier, A., Bowersox, V., Cherian, R., Faluvegi, G., Fagerli, H.,
   Hand, J., Klimont, Z., Galy-Lacaux, C., Lehmann, C.~M., et~al.: Global and
   regional trends of atmospheric sulfur, Scientific reports, 9, 953, 2019.
 
+\bibitem[{Arag{\~a}o et~al.(2018)Arag{\~a}o, Anderson, Fonseca, Rosan,
+  Vedovato, Wagner, Silva, Junior, Arai, Aguiar et~al.}]{aragao201821st}
+Arag{\~a}o, L.~E., Anderson, L.~O., Fonseca, M.~G., Rosan, T.~M., Vedovato,
+  L.~B., Wagner, F.~H., Silva, C.~V., Junior, C. H.~S., Arai, E., Aguiar,
+  A.~P., et~al.: 21st Century drought-related fires counteract the decline of
+  Amazon deforestation carbon emissions, Nature communications, 9, 536, 2018.
+
+\bibitem[{Barreto et~al.(2016)Barreto, Cuevas~Agull{\'o}, Granados-Mu{\~n}oz,
+  Alados-Arboledas, Romero~Campos, Gr{\"o}bner, Kouremeti,
+  Almansa~Rodr{\'\i}guez, Stone, Toledano et~al.}]{barreto2016new}
+Barreto, {\'A}., Cuevas~Agull{\'o}, E., Granados-Mu{\~n}oz, M.~J.,
+  Alados-Arboledas, L., Romero~Campos, P.~M., Gr{\"o}bner, J., Kouremeti, N.,
+  Almansa~Rodr{\'\i}guez, A.~F., Stone, T., Toledano, C., et~al.: The new
+  sun-sky-lunar Cimel CE318-T multiband photometer-a comprehensive performance
+  evaluation, 2016.
+
+\bibitem[{Bauer and Koch(2005)}]{bauer2005impact}
+Bauer, S. and Koch, D.: Impact of heterogeneous sulfate formation at mineral
+  dust surfaces on aerosol loads and radiative forcing in the Goddard Institute
+  for Space Studies general circulation model, Journal of Geophysical Research:
+  Atmospheres, 110, 2005.
+
+\bibitem[{Bauer et~al.(2007)Bauer, Mishchenko, Lacis, Zhang, Perlwitz, and
+  Metzger}]{bauer2007sulfate}
+Bauer, S., Mishchenko, M., Lacis, A., Zhang, S., Perlwitz, J., and Metzger, S.:
+  Do sulfate and nitrate coatings on mineral dust have important effects on
+  radiative properties and climate modeling?, Journal of Geophysical Research:
+  Atmospheres, 112, 2007.
+
+\bibitem[{Bell et~al.(2004)Bell, Davis, and Fletcher}]{bell2004retrospective}
+Bell, M.~L., Davis, D.~L., and Fletcher, T.: A retrospective assessment of
+  mortality from the London smog episode of 1952: the role of influenza and
+  pollution., Environmental health perspectives, 112, 6--8, 2004.
+
+\bibitem[{Betts et~al.(2008)Betts, Sanderson, and Woodward}]{betts2008effects}
+Betts, R., Sanderson, M., and Woodward, S.: Effects of large-scale Amazon
+  forest degradation on climate and air quality through fluxes of carbon
+  dioxide, water, energy, mineral dust and isoprene, Philosophical Transactions
+  of the Royal Society B: Biological Sciences, 363, 1873--1880, 2008.
+
+\bibitem[{Bian et~al.(2017)Bian, Chin, Hauglustaine, Schulz, Myhre, Bauer,
+  Lund, Karydis, Kucsera, Pan et~al.}]{bian2017investigation}
+Bian, H., Chin, M., Hauglustaine, D.~A., Schulz, M., Myhre, G., Bauer, S.~E.,
+  Lund, M.~T., Karydis, V.~A., Kucsera, T.~L., Pan, X., et~al.: Investigation
+  of global particulate nitrate from the AeroCom phase III experiment,
+  Atmospheric Chemistry and Physics, 17, 12\,911, 2017.
+
+\bibitem[{Bryner(1995)}]{bryner1995blue}
+Bryner, G.~C.: Blue skies, green politics: The clean air act of 1990, 1995.
+
+\bibitem[{Burnett et~al.(2014)Burnett, Pope~III, Ezzati, Olives, Lim, Mehta,
+  Shin, Singh, Hubbell, Brauer et~al.}]{burnett2014integrated}
+Burnett, R.~T., Pope~III, C.~A., Ezzati, M., Olives, C., Lim, S.~S., Mehta, S.,
+  Shin, H.~H., Singh, G., Hubbell, B., Brauer, M., et~al.: An integrated risk
+  function for estimating the global burden of disease attributable to ambient
+  fine particulate matter exposure, Environmental health perspectives, 122,
+  397--403, 2014.
+
+\bibitem[{Che et~al.(2019)Che, Gui, Xia, Wang, Holben, Goloub,
+  Cuevas-Agull{\'o}, Wang, Zheng, Zhao et~al.}]{che2019large}
+Che, H., Gui, K., Xia, X., Wang, Y., Holben, B.~N., Goloub, P.,
+  Cuevas-Agull{\'o}, E., Wang, H., Zheng, Y., Zhao, H., et~al.: Large
+  contribution of meteorological factors to inter-decadal changes in regional
+  aerosol optical depth, Atmospheric Chemistry and Physics, 19,
+  10\,497--10\,523, 2019.
+
+\bibitem[{Chin et~al.(2002)Chin, Ginoux, Kinne, Torres, Holben, Duncan, Martin,
+  Logan, Higurashi, and Nakajima}]{chin2002tropospheric}
+Chin, M., Ginoux, P., Kinne, S., Torres, O., Holben, B.~N., Duncan, B.~N.,
+  Martin, R.~V., Logan, J.~A., Higurashi, A., and Nakajima, T.: Tropospheric
+  aerosol optical thickness from the GOCART model and comparisons with
+  satellite and Sun photometer measurements, Journal of the atmospheric
+  sciences, 59, 461--483, 2002.
+
+\bibitem[{Chin et~al.(2014)Chin, Diehl, Tan, Prospero, Kahn, Remer, Yu, Sayer,
+  Bian, Geogdzhayev et~al.}]{chin2014multi}
+Chin, M., Diehl, T., Tan, Q., Prospero, J., Kahn, R., Remer, L., Yu, H., Sayer,
+  A., Bian, H., Geogdzhayev, I., et~al.: Multi-decadal aerosol variations from
+  1980 to 2009: a perspective from observations and a global model, 2014.
+
+\bibitem[{Colarco et~al.(2010)Colarco, da~Silva, Chin, and
+  Diehl}]{colarco2010online}
+Colarco, P., da~Silva, A., Chin, M., and Diehl, T.: Online simulations of
+  global aerosol distributions in the NASA GEOS-4 model and comparisons to
+  satellite and ground-based aerosol optical depth, Journal of Geophysical
+  Research: Atmospheres, 115, 2010.
+
 \bibitem[{Collaud~Coen()}]{collaudcoenprep}
 Collaud~Coen, .: Multidecadal trend analysis of aerosol radiative properties at
   a global scale, in preparation.
+
+\bibitem[{Danabasoglu et~al.(submitted)Danabasoglu, Lamarque, Bailey, DuVivier,
+  and et~al.}]{Danabasoglu2019}
+Danabasoglu, G., Lamarque, J.-F., B.~J., Bailey, D.~A., DuVivier, A.~K., and
+  et~al.: The Community Earth System Model version 2 (CESM2), Journal of
+  Advances in Modeling Earth Systems, submitted.
+
+\bibitem[{de~Meij et~al.(2012)de~Meij, Pozzer, and Lelieveld}]{DEMEIJ201275}
+de~Meij, A., Pozzer, A., and Lelieveld, J.: Trend analysis in aerosol optical
+  depths and pollutant emission estimates between 2000 and 2009, Atmospheric
+  Environment, 51, 75 -- 85,
+  \doi{https://doi.org/10.1016/j.atmosenv.2012.01.059},
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S1352231012000805},
+  2012.
+
+\bibitem[{Eyring et~al.(2016)Eyring, Bony, Meehl, Senior, Stevens, Stouffer,
+  and Taylor}]{eyring2016overview}
+Eyring, V., Bony, S., Meehl, G.~A., Senior, C.~A., Stevens, B., Stouffer,
+  R.~J., and Taylor, K.~E.: Overview of the Coupled Model Intercomparison
+  Project Phase 6 (CMIP6) experimental design and organization, Geoscientific
+  Model Development (Online), 9, 2016.
+
+\bibitem[{Fan et~al.(2004)Fan, Horowitz, Levy, and Moxim}]{fan2004impact}
+Fan, S.-M., Horowitz, L.~W., Levy, H., and Moxim, W.~J.: Impact of air
+  pollution on wet deposition of mineral dust aerosols, Geophysical research
+  letters, 31, 2004.
 
 \bibitem[{Giles et~al.(2019)Giles, Sinyuk, Sorokin, Schafer, Smirnov, Slutsker,
   Eck, Holben, Lewis, Campbell et~al.}]{giles2019advancements}
@@ -26,12 +139,69 @@ Giles, D.~M., Sinyuk, A., Sorokin, M.~G., Schafer, J.~S., Smirnov, A.,
   cloud screening for Sun photometer aerosol optical depth (AOD) measurements,
   Atmospheric Measurement Techniques, 12, 169--209, 2019.
 
+\bibitem[{Glantz et~al.(2019)Glantz, Freud, Johansson, Noone, and
+  Tesche}]{glantz2019}
+Glantz, P., Freud, E., Johansson, C., Noone, K.~J., and Tesche, M.: Trends in
+  MODIS and AERONET derived aerosol optical thickness over Northern Europe,
+  Tellus B: Chemical and Physical Meteorology, 71, 1--20,
+  \doi{10.1080/16000889.2018.1554414},
+  \urlprefix\url{https://doi.org/10.1080/16000889.2018.1554414}, 2019.
+
+\bibitem[{Gli\ss et~al.(in preparation)}]{jonaseval}
+Gli\ss, J. et~al.: Multi-model evaluation of modelled aerosol optical
+  properties in the AeroCom Phase III Control experiment using ground and space
+  based columnar observations from AERONET, MODIS, and AATSR and surface
+  in-situ observations from GAW sites, Atmospheric Chemistry in Physics, in
+  preparation.
+
+\bibitem[{Hand et~al.(2019)Hand, Prenni, Schichtel, Malm, and Chow}]{Hand2019}
+Hand, J., Prenni, A., Schichtel, B., Malm, W., and Chow, J.: Trends in remote
+  PM2.5 residual mass across the United States: Implications for aerosol mass
+  reconstruction in the IMPROVE network, Atmospheric Environment, 203, 141 --
+  152, \doi{https://doi.org/10.1016/j.atmosenv.2019.01.049}, 2019.
+
+\bibitem[{Haywood and Boucher(2000)}]{haywood2000estimates}
+Haywood, J. and Boucher, O.: Estimates of the direct and indirect radiative
+  forcing due to tropospheric aerosols: A review, Reviews of geophysics, 38,
+  513--543, 2000.
+
 \bibitem[{Holben et~al.(2001)Holben, Tanre, Smirnov, Eck, Slutsker, Abuhassan,
   Newcomb, Schafer, Chatenet, Lavenu et~al.}]{holben2001emerging}
 Holben, B.~N., Tanre, D., Smirnov, A., Eck, T., Slutsker, I., Abuhassan, N.,
   Newcomb, W., Schafer, J., Chatenet, B., Lavenu, F., et~al.: An emerging
   ground-based aerosol climatology: Aerosol optical depth from AERONET, Journal
   of Geophysical Research: Atmospheres, 106, 12\,067--12\,097, 2001.
+
+\bibitem[{Hsu et~al.(2012)Hsu, Gautam, Sayer, Bettenhausen, Li, Jeong, Tsay,
+  and Holben}]{hsu2012global}
+Hsu, N., Gautam, R., Sayer, A., Bettenhausen, C., Li, C., Jeong, M., Tsay, S.,
+  and Holben, B.: Global and regional trends of aerosol optical depth over land
+  and ocean using SeaWiFS measurements from 1997 to 2010, 2012.
+
+\bibitem[{Inness et~al.(2019)Inness, Ades, Agusti-Panareda, Barr{\'e},
+  Benedictow, Blechschmidt, Dominguez, Engelen, Eskes, Flemming
+  et~al.}]{inness2019cams}
+Inness, A., Ades, M., Agusti-Panareda, A., Barr{\'e}, J., Benedictow, A.,
+  Blechschmidt, A.-M., Dominguez, J.~J., Engelen, R., Eskes, H., Flemming, J.,
+  et~al.: The CAMS reanalysis of atmospheric composition, Atmospheric Chemistry
+  and Physics, 19, 3515--3556, 2019.
+
+\bibitem[{Johnson et~al.(2004)Johnson, Shine, and Forster}]{johnson2004semi}
+Johnson, B., Shine, K., and Forster, P.: The semi-direct aerosol effect: Impact
+  of absorbing aerosols on marine stratocumulus, Quarterly Journal of the Royal
+  Meteorological Society, 130, 1407--1422, 2004.
+
+\bibitem[{Kaufman et~al.(2002)Kaufman, Tanr{\'e}, and
+  Boucher}]{kaufman2002satellite}
+Kaufman, Y.~J., Tanr{\'e}, D., and Boucher, O.: A satellite view of aerosols in
+  the climate system, Nature, 419, 215, 2002.
+
+\bibitem[{Kinne et~al.(2013)Kinne, O'Donnel, Stier, Kloster, Zhang, Schmidt,
+  Rast, Giorgetta, Eck, and Stevens}]{kinne2013mac}
+Kinne, S., O'Donnel, D., Stier, P., Kloster, S., Zhang, K., Schmidt, H., Rast,
+  S., Giorgetta, M., Eck, T.~F., and Stevens, B.: MAC-v1: A new global aerosol
+  climatology for climate studies, Journal of Advances in Modeling Earth
+  Systems, 5, 704--740, 2013.
 
 \bibitem[{Kirkev{\aa}g et~al.(2018)Kirkev{\aa}g, Grini, Olivi{\'e}, Seland,
   Alterskj{\ae}r, Hummel, Karset, Lewinschal, Liu, Makkonen
@@ -42,12 +212,48 @@ Kirkev{\aa}g, A., Grini, A., Olivi{\'e}, D., Seland, O., Alterskj{\ae}r, K.,
   3-extensions and updates for CAM5. 3-Oslo, Geoscientific Model Development,
   2018.
 
+\bibitem[{Labordena et~al.(2018)Labordena, Neubauer, Folini, Patt, and
+  Lilliestam}]{labordena2018blue}
+Labordena, M., Neubauer, D., Folini, D., Patt, A., and Lilliestam, J.: Blue
+  skies over China: The effect of pollution-control on solar power generation
+  and revenues, PloS one, 13, e0207\,028, 2018.
+
+\bibitem[{Li et~al.(2017)Li, Wagner, Peng, Yang, and Mauzerall}]{Li11867}
+Li, X., Wagner, F., Peng, W., Yang, J., and Mauzerall, D.~L.: Reduction of
+  solar photovoltaic resources due to air pollution in China, Proceedings of
+  the National Academy of Sciences, 114, 11\,867--11\,872,
+  \doi{10.1073/pnas.1711462114},
+  \urlprefix\url{https://www.pnas.org/content/114/45/11867}, 2017.
+
+\bibitem[{Likens et~al.(2001)Likens, Butler, and Buso}]{likens2001long}
+Likens, G.~E., Butler, T.~J., and Buso, D.~C.: Long-and short-term changes in
+  sulfate deposition: effects of the 1990 Clean Air Act Amendments,
+  Biogeochemistry, 52, 1--11, 2001.
+
+\bibitem[{Lohmann and Feichter(2005)}]{lohmann2005global}
+Lohmann, U. and Feichter, J.: Global indirect aerosol effects: a review,
+  Atmospheric Chemistry and Physics, 5, 715--737, 2005.
+
 \bibitem[{Lund et~al.(2018)Lund, Myhre, Haslerud, Skeie, Griesfeller, Platt,
   Kumar, Myhre, and Schulz}]{lund2018concentrations}
 Lund, M.~T., Myhre, G., Haslerud, A.~S., Skeie, R.~B., Griesfeller, J., Platt,
   S.~M., Kumar, R., Myhre, C.~L., and Schulz, M.: Concentrations and radiative
   forcing of anthropogenic aerosols from 1750 to 2014 simulated with the Oslo
   CTM3 and CEDS emission inventory, 2018.
+
+\bibitem[{Lurton et~al.(2019)}]{lurton2019}
+Lurton, T. et~al.: Implementation of the CMIP6 forcing data in the IPSL-CM6A-LR
+  model, Journal of Advances in Modeling Earth Systems, 2019.
+
+\bibitem[{Mortier et~al.(2016)Mortier, Goloub, Derimian, Tanré, Podvin,
+  Blarel, Deroo, Marticorena, Diallo, and Ndiaye}]{mortier2016}
+Mortier, A., Goloub, P., Derimian, Y., Tanré, D., Podvin, T., Blarel, L.,
+  Deroo, C., Marticorena, B., Diallo, A., and Ndiaye, T.: Climatology of
+  aerosol properties and clear-sky shortwave radiative effects using Lidar and
+  Sun photometer observations in the Dakar site, Journal of Geophysical
+  Research: Atmospheres, 121, 6489--6510, \doi{10.1002/2015JD024588},
+  \urlprefix\url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2015JD024588},
+  2016.
 
 \bibitem[{Myhre et~al.(2009)Myhre, Berglen, Johnsrud, Hoyle, Berntsen,
   Christopher, Fahey, Isaksen, Jones, Kahn et~al.}]{myhre2009modelled}
@@ -57,11 +263,27 @@ Myhre, G., Berglen, T.~F., Johnsrud, M., Hoyle, C., Berntsen, T.~K.,
   multi-observation evaluation, Atmospheric Chemistry and Physics, 9,
   1365--1392, 2009.
 
-\bibitem[{NILU()}]{ebasweb}
-NILU: EBAS website, \urlprefix\url{http://ebas.nilu.no/}.
+\bibitem[{Neubauer et~al.(2019)Neubauer, Ferrachat, Drian, Stier, Partridge,
+  Tegen, Bey, Stanelle, Kokkola, Lohmann et~al.}]{neubauer2019global}
+Neubauer, D., Ferrachat, S., Drian, S.-L., Stier, P., Partridge, D.~G., Tegen,
+  I., Bey, I., Stanelle, T., Kokkola, H., Lohmann, U., et~al.: The global
+  aerosol-climate model ECHAM6. 3-HAM2. 3--Part 2: Cloud evaluation, aerosol
+  radiative forcing and climate sensitivity, Geoscientific Model Development
+  Discussions, 2019.
 
-\bibitem[{Olivie()}]{olivieprep}
-Olivie, D., .: in preparation.
+\bibitem[{Norris and Wild(2007)}]{norris2007trends}
+Norris, J.~R. and Wild, M.: Trends in aerosol radiative effects over Europe
+  inferred from observed cloud cover, solar “dimming,” and solar
+  “brightening”, Journal of Geophysical Research: Atmospheres, 112, 2007.
+
+\bibitem[{Ogunjobi et~al.(2008)Ogunjobi, Ajayi, Balogun, Omotosho, and
+  He}]{ogunjobi2008synoptic}
+Ogunjobi, K., Ajayi, V., Balogun, I., Omotosho, J., and He, Z.: The synoptic
+  and optical characteristics of the harmattan dust spells over Nigeria,
+  Theoretical and Applied Climatology, 93, 91--105, 2008.
+
+\bibitem[{Olivié et~al.(in preparation)}]{olivieprep}
+Olivié, D. et~al.: in preparation.
 
 \bibitem[{O'neill et~al.(2003)O'neill, Eck, Smirnov, Holben, and
   Thulasiraman}]{o2003spectral}
@@ -69,8 +291,61 @@ O'neill, N., Eck, T., Smirnov, A., Holben, B., and Thulasiraman, S.: Spectral
   discrimination of coarse and fine mode optical depth, Journal of Geophysical
   Research: Atmospheres, 108, 2003.
 
-\bibitem[{Seland()}]{selandprep}
-Seland, O., .: in preparation.
+\bibitem[{Pandolfi et~al.(2018)Pandolfi, Alados-Arboledas, Alastuey, Andrade,
+  Angelov, Arti{\~n}ano, Backman, Baltensperger, Bonasoni, Bukowiecki
+  et~al.}]{pandolfi2018european}
+Pandolfi, M., Alados-Arboledas, L., Alastuey, A., Andrade, M., Angelov, C.,
+  Arti{\~n}ano, B., Backman, J., Baltensperger, U., Bonasoni, P., Bukowiecki,
+  N., et~al.: A European aerosol phenomenology--6: scattering properties of
+  atmospheric aerosol particles from 28 ACTRIS sites, Atmospheric Chemistry and
+  Physics, 18, 7877--7911, 2018.
+
+\bibitem[{Pe{\~n}uelas and Staudt(2010)}]{penuelas2010bvocs}
+Pe{\~n}uelas, J. and Staudt, M.: BVOCs and global change, Trends in plant
+  science, 15, 133--144, 2010.
+
+\bibitem[{P{\"o}schl(2005)}]{poschl2005atmospheric}
+P{\"o}schl, U.: Atmospheric aerosols: composition, transformation, climate and
+  health effects, Angewandte Chemie International Edition, 44, 7520--7540,
+  2005.
+
+\bibitem[{Ramachandran et~al.(2012)Ramachandran, Kedia, and
+  Srivastava}]{ramachandran2012aerosol}
+Ramachandran, S., Kedia, S., and Srivastava, R.: Aerosol optical depth trends
+  over different regions of India, Atmospheric Environment, 49, 338--347, 2012.
+
+\bibitem[{Rap et~al.(2013)Rap, Scott, Spracklen, Bellouin, Forster, Carslaw,
+  Schmidt, and Mann}]{rap2013natural}
+Rap, A., Scott, C.~E., Spracklen, D.~V., Bellouin, N., Forster, P.~M., Carslaw,
+  K.~S., Schmidt, A., and Mann, G.: Natural aerosol direct and indirect
+  radiative effects, Geophysical Research Letters, 40, 3297--3301, 2013.
+
+\bibitem[{Schulz et~al.(2004)Schulz, de~Leeuw, and Balkanski}]{schulz2004sea}
+Schulz, M., de~Leeuw, G., and Balkanski, Y.: Sea-salt aerosol source functions
+  and emissions, in: Emissions of Atmospheric Trace Compounds, pp. 333--359,
+  Springer, 2004.
+
+\bibitem[{Schulz et~al.(2006)Schulz, Textor, Kinne, Balkanski, Bauer, Berntsen,
+  Berglen, Boucher, Dentener, Guibert et~al.}]{schulz2006radiative}
+Schulz, M., Textor, C., Kinne, S., Balkanski, Y., Bauer, S., Berntsen, T.,
+  Berglen, T., Boucher, O., Dentener, F., Guibert, S., et~al.: Radiative
+  forcing by aerosols as derived from the AeroCom present-day and
+  pre-industrial simulations, Atmospheric Chemistry and Physics, 6, 5225--5246,
+  2006.
+
+\bibitem[{Schutgens et~al.(2017)Schutgens, Tsyro, Gryspeerdt, Goto, Weigum,
+  Schulz, and Stier}]{schutgens2017spatio}
+Schutgens, N., Tsyro, S., Gryspeerdt, E., Goto, D., Weigum, N., Schulz, M., and
+  Stier, P.: On the spatio-temporal representativeness of observations,
+  Atmospheric Chemistry and Physics Discussions, 2017.
+
+\bibitem[{Schutgens(2019)}]{schutgens2019site}
+Schutgens, N.~A.: Site representativity of AERONET and GAW remotely sensed AOT
+  and AAOT observations, Atmos. Chem. Phys. Discuss., https://doi.
+  org/10.5194/acp-2019-767, in review, 2019.
+
+\bibitem[{Seland et~al.(in preparation)}]{selandprep}
+Seland, O. et~al.: in preparation.
 
 \bibitem[{Smirnov et~al.(2000)Smirnov, Holben, Eck, Dubovik, and
   Slutsker}]{smirnov2000cloud}
@@ -83,6 +358,29 @@ Smirnov, A., Holben, B., Eck, T., Dubovik, O., and Slutsker, I.:
 Smirnov, A., Holben, B., Lyapustin, A., Slutsker, I., and Eck, T.: AERONET
   processing algorithms refinement, in: AERONET Workshop, El Arenosillo, Spain,
   pp. 10--14, 2004.
+
+\bibitem[{Stocker(2014)}]{stocker2014climate}
+Stocker, T.: Climate change 2013: the physical science basis: Working Group I
+  contribution to the Fifth assessment report of the Intergovernmental Panel on
+  Climate Change, Cambridge University Press, 2014.
+
+\bibitem[{Streets et~al.(2006)Streets, Wu, and Chin}]{streets2006two}
+Streets, D.~G., Wu, Y., and Chin, M.: Two-decadal aerosol trends as a likely
+  explanation of the global dimming/brightening transition, Geophysical
+  Research Letters, 33, 2006.
+
+\bibitem[{Streets et~al.(2008)Streets, Yu, Wu, Chin, Zhao, Hayasaka, and
+  Shi}]{streets2008aerosol}
+Streets, D.~G., Yu, C., Wu, Y., Chin, M., Zhao, Z., Hayasaka, T., and Shi, G.:
+  Aerosol trends over China, 1980--2000, Atmospheric Research, 88, 174--182,
+  2008.
+
+\bibitem[{Streets et~al.(2009)Streets, Yan, Chin, Diehl, Mahowald, Schultz,
+  Wild, Wu, and Yu}]{streets2009anthropogenic}
+Streets, D.~G., Yan, F., Chin, M., Diehl, T., Mahowald, N., Schultz, M., Wild,
+  M., Wu, Y., and Yu, C.: Anthropogenic and natural contributions to regional
+  trends in aerosol optical depth, 1980--2006, Journal of Geophysical Research:
+  Atmospheres, 114, 2009.
 
 \bibitem[{Swart et~al.(2019)Swart, Cole, Kharin, Lazare, Scinocca, Gillett,
   Anstey, Arora, Christian, Hanna, Jiao, Lee, Majaess, Saenko, Seiler, Seinen,
@@ -115,5 +413,120 @@ Takemura, T., Nozawa, T., Emori, S., Nakajima, T.~Y., and Nakajima, T.:
   Simulation of climate response to aerosol direct and indirect effects with
   aerosol transport-radiation model, Journal of Geophysical Research:
   Atmospheres, 110, 2005.
+
+\bibitem[{Tegen et~al.(2019)Tegen, Neubauer, Ferrachat, Drian, Bey, Schutgens,
+  Stier, Watson-Parris, Stanelle, Schmidt et~al.}]{tegen2019global}
+Tegen, I., Neubauer, D., Ferrachat, S., Drian, S.-L., Bey, I., Schutgens, N.,
+  Stier, P., Watson-Parris, D., Stanelle, T., Schmidt, H., et~al.: The global
+  aerosol-climate model ECHAM6. 3-HAM2. 3-Part 1: Aerosol evaluation,
+  Geoscientific Model Development, 12, 1643--1677, 2019.
+
+\bibitem[{Tilmes et~al.(2019)Tilmes, Hodzic, Emmons, Mills, and
+  Gettelman}]{Tilmes2019}
+Tilmes, S., Hodzic, A., Emmons, L.~K., Mills, M.~J., and Gettelman,
+  A.and~Kinnison, D.~E. P. M. L. J.-F. V. F. S. M. J. P.~C. J. J. L.~X.:
+  Climate forcing and trends of organic aerosols in the Community Earth System
+  Model (CESM2), Journal of Advances in Modeling Earth Systems, 2019.
+
+\bibitem[{T{\o}rseth et~al.(2012)T{\o}rseth, Aas, Breivik, Fj{\ae}raa, Fiebig,
+  Hjellbrekke, Lund~Myhre, Solberg, and Yttri}]{torseth2012}
+T{\o}rseth, K., Aas, W., Breivik, K., Fj{\ae}raa, A.~M., Fiebig, M.,
+  Hjellbrekke, A.~G., Lund~Myhre, C., Solberg, S., and Yttri, K.~E.:
+  Introduction to the European Monitoring and Evaluation Programme (EMEP) and
+  observed atmospheric composition change during 1972&ndash;2009, Atmospheric
+  Chemistry and Physics, 12, 5447--5481, \doi{10.5194/acp-12-5447-2012}, 2012.
+
+\bibitem[{Turnock et~al.(2016)Turnock, Butt, Richardson, Mann, Reddington,
+  Forster, Haywood, Crippa, Janssens-Maenhout, Johnson
+  et~al.}]{turnock2016impact}
+Turnock, S., Butt, E., Richardson, T., Mann, G., Reddington, C., Forster, P.,
+  Haywood, J., Crippa, M., Janssens-Maenhout, G., Johnson, C., et~al.: The
+  impact of European legislative and technology measures to reduce air
+  pollutants on air quality, human health and climate, Environmental Research
+  Letters, 11, 024\,010, 2016.
+
+\bibitem[{Wang et~al.(2018)Wang, Andrews, Balkanski, Boucher, Myhre, Samset,
+  Schulz, Schuster, Valari, and Tao}]{wang2017}
+Wang, R., Andrews, E., Balkanski, Y., Boucher, O., Myhre, G., Samset, B.~H.,
+  Schulz, M., Schuster, G.~L., Valari, M., and Tao, S.: Spatial
+  Representativeness Error in the Ground-Level Observation Networks for Black
+  Carbon Radiation Absorption, Geophysical Research Letters, 45, 2106--2114,
+  \doi{10.1002/2017GL076817},
+  \urlprefix\url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2017GL076817},
+  2018.
+
+\bibitem[{Wang et~al.(2014)Wang, Zhang, and Lu}]{wang2014improvement}
+Wang, Z., Zhang, H., and Lu, P.: Improvement of cloud microphysics in the
+  aerosol-climate model BCC\_AGCM2. 0.1 \_CUACE/Aero, evaluation against
+  observations, and updated aerosol indirect effect, Journal of Geophysical
+  Research: Atmospheres, 119, 8400--8417, 2014.
+
+\bibitem[{Werth and Avissar(2002)}]{werth2002local}
+Werth, D. and Avissar, R.: The local and global effects of Amazon
+  deforestation, Journal of Geophysical Research: Atmospheres, 107, LBA--55,
+  2002.
+
+\bibitem[{White et~al.(2016)White, Trzepla, Hyslop, and Schichtel}]{Warren2016}
+White, W.~H., Trzepla, K., Hyslop, N.~P., and Schichtel, B.~A.: A critical
+  review of filter transmittance measurements for aerosol light absorption, and
+  de novo calibration for a decade of monitoring on PTFE membranes, Aerosol
+  Science and Technology, 50, 984--1002, \doi{10.1080/02786826.2016.1211615},
+  2016.
+
+\bibitem[{Yoon et~al.(2012)Yoon, von Hoyningen-Huene, Kokhanovsky, Vountas, and
+  Burrows}]{yoon2012trend}
+Yoon, J., von Hoyningen-Huene, W., Kokhanovsky, A., Vountas, M., and Burrows,
+  J.: Trend analysis of aerosol optical thickness and {\AA}ngstr{\"o}m exponent
+  derived from the global AERONET spectral observations, Atmos. Meas. Tech, 5,
+  1271--1299, 2012.
+
+\bibitem[{Yu et~al.(2015)Yu, Chin, Yuan, Bian, Remer, Prospero, Omar, Winker,
+  Yang, Zhang et~al.}]{yu2015fertilizing}
+Yu, H., Chin, M., Yuan, T., Bian, H., Remer, L.~A., Prospero, J.~M., Omar, A.,
+  Winker, D., Yang, Y., Zhang, Y., et~al.: The fertilizing role of African dust
+  in the Amazon rainforest: A first multiyear assessment based on data from
+  Cloud-Aerosol Lidar and Infrared Pathfinder Satellite Observations,
+  Geophysical Research Letters, 42, 1984--1991, 2015.
+
+\bibitem[{Zhang et~al.(2012)Zhang, Wang, Wang, Liu, Gong, Zhang, Shen, Lu, Wei,
+  Che et~al.}]{zhang2012simulation}
+Zhang, H., Wang, Z., Wang, Z., Liu, Q., Gong, S., Zhang, X., Shen, Z., Lu, P.,
+  Wei, X., Che, H., et~al.: Simulation of direct radiative forcing of aerosols
+  and their effects on East Asian climate using an interactive AGCM-aerosol
+  coupled system, Climate Dynamics, 38, 1675--1693, 2012.
+
+\bibitem[{Zhang et~al.(2014)Zhang, Jing, and Li}]{zhang2014application}
+Zhang, H., Jing, X., and Li, J.: Application and evaluation of a new radiation
+  code under McICA scheme in BCC\_AGCM2. 0.1, Geoscientific Model Development,
+  7, 737, 2014.
+
+\bibitem[{Zhang and Reid(2010)}]{zhang2010decadal}
+Zhang, J. and Reid, J.: A decadal regional and global trend analysis of the
+  aerosol optical depth using a data-assimilation grade over-water MODIS and
+  Level 2 MISR aerosol products, Atmospheric Chemistry and Physics, 10,
+  10\,949--10\,963, 2010.
+
+\bibitem[{Zhang et~al.(2009)Zhang, Streets, Carmichael, He, Huo, Kannari,
+  Klimont, Park, Reddy, Fu et~al.}]{zhang2009asian}
+Zhang, Q., Streets, D.~G., Carmichael, G.~R., He, K., Huo, H., Kannari, A.,
+  Klimont, Z., Park, I., Reddy, S., Fu, J., et~al.: Asian emissions in 2006 for
+  the NASA INTEX-B mission, Atmospheric Chemistry and Physics, 9, 5131--5153,
+  2009.
+
+\bibitem[{Zhao et~al.(2018{\natexlab{a}})Zhao, Golaz, Held, Guo, Balaji,
+  Benson, Chen, Chen, Donner, Dunne et~al.}]{zhao2018agfdl}
+Zhao, M., Golaz, J.-C., Held, I.~M., Guo, H., Balaji, V., Benson, R., Chen,
+  J.-H., Chen, X., Donner, L., Dunne, J., et~al.: The GFDL global atmosphere
+  and land model AM4. 0/LM4. 0: 2. Model description, sensitivity studies, and
+  tuning strategies, Journal of Advances in Modeling Earth Systems, 10,
+  735--769, 2018{\natexlab{a}}.
+
+\bibitem[{Zhao et~al.(2018{\natexlab{b}})Zhao, Golaz, Held, Guo, Balaji,
+  Benson, Chen, Chen, Donner, Dunne et~al.}]{zhao2018bgfdl}
+Zhao, M., Golaz, J.-C., Held, I.~M., Guo, H., Balaji, V., Benson, R., Chen,
+  J.-H., Chen, X., Donner, L., Dunne, J., et~al.: The GFDL global atmosphere
+  and land model AM4. 0/LM4. 0: 1. Simulation characteristics with prescribed
+  SSTs, Journal of Advances in Modeling Earth Systems, 10, 691--734,
+  2018{\natexlab{b}}.
 
 \end{thebibliography}

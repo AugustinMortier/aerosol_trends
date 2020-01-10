@@ -3,54 +3,176 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: template.aux
 The style file: copernicus.bst
 Database file #1: mybib.bib.bib
-Warning--entry type for "ebasweb" isn't style-file defined
---line 82 of file mybib.bib.bib
+Repeated entry---line 224 of file mybib.bib.bib
+ : @article{holben2001emerging
+ :                            ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 318 of file mybib.bib.bib
+ : 
+ : %sunphoto-moon
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 796 of file mybib.bib.bib
+ : @article{neubauer2019global
+ :                            ,
+I'm skipping whatever remains of this entry
+Name 1 in "Gli\ss, Jonas, and others" has a comma at the end for entry jonaseval
+while executing---line 1596 of file copernicus.bst
+Name 1 in "Gli\ss, Jonas, and others" has a comma at the end for entry jonaseval
+while executing---line 1596 of file copernicus.bst
+Name 1 in "Olivié, D., and others" has a comma at the end for entry olivieprep
+while executing---line 1596 of file copernicus.bst
+Name 1 in "Olivié, D., and others" has a comma at the end for entry olivieprep
+while executing---line 1596 of file copernicus.bst
+Name 1 in "Seland, O., and others" has a comma at the end for entry selandprep
+while executing---line 1596 of file copernicus.bst
+Name 1 in "Seland, O., and others" has a comma at the end for entry selandprep
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 2 of "Danabasoglu, G. and Lamarque, J.-F., Bachmeister, J. and Bailey, D.~A. and DuVivier, A.~K. and et~al." for entry Danabasoglu2019
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1596 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1596 of file copernicus.bst
+Name 1 in "Lurton, T., and others" has a comma at the end for entry lurton2019
+while executing---line 1596 of file copernicus.bst
+Name 1 in "Lurton, T., and others" has a comma at the end for entry lurton2019
+while executing---line 1596 of file copernicus.bst
+Warning--empty journal in barreto2016new
+Warning--empty journal in bryner1995blue
+Warning--empty journal in chin2014multi
 Warning--empty year in collaudcoenprep
+Too many commas in name 2 of "Danabasoglu, G. and Lamarque, J.-F., Bachmeister, J. and Bailey, D.~A. and DuVivier, A.~K. and et~al." for entry Danabasoglu2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 2 of "Danabasoglu, G. and Lamarque, J.-F., Bachmeister, J. and Bailey, D.~A. and DuVivier, A.~K. and et~al." for entry Danabasoglu2019
+while executing---line 1672 of file copernicus.bst
+Name 1 in "Gli\ss, Jonas, and others" has a comma at the end for entry jonaseval
+while executing---line 1672 of file copernicus.bst
+Name 1 in "Gli\ss, Jonas, and others" has a comma at the end for entry jonaseval
+while executing---line 1672 of file copernicus.bst
+Warning--empty journal in hsu2012global
 Warning--empty journal in lund2018concentrations
-Warning--empty year in ebasweb
+Name 1 in "Lurton, T., and others" has a comma at the end for entry lurton2019
+while executing---line 1672 of file copernicus.bst
+Name 1 in "Lurton, T., and others" has a comma at the end for entry lurton2019
+while executing---line 1672 of file copernicus.bst
+Name 1 in "Olivié, D., and others" has a comma at the end for entry olivieprep
+while executing---line 1672 of file copernicus.bst
+Name 1 in "Olivié, D., and others" has a comma at the end for entry olivieprep
+while executing---line 1672 of file copernicus.bst
 Warning--empty title in olivieprep
-Warning--empty year in olivieprep
+Warning--empty journal in olivieprep
+Name 1 in "Seland, O., and others" has a comma at the end for entry selandprep
+while executing---line 1672 of file copernicus.bst
+Name 1 in "Seland, O., and others" has a comma at the end for entry selandprep
+while executing---line 1672 of file copernicus.bst
 Warning--empty title in selandprep
-Warning--empty year in selandprep
-You've used 17 entries,
+Warning--empty journal in selandprep
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+Too many commas in name 5 of "Tilmes, S. and Hodzic, A. and Emmons, L.~K. and Mills, M.~J. and Gettelman, A.and Kinnison, D.~E.and Park, M.and Lamarque, J.-F.and Vitt, F.and Shrivastava, M.and Jost, P.~C.and Jimenez, J.and Liu, X." for entry Tilmes2019
+while executing---line 1672 of file copernicus.bst
+You've used 80 entries,
             2811 wiz_defined-function locations,
-            1088 strings with 12931 characters,
-and the built_in function-call counts, 17786 in all, are:
-= -- 1687
-> -- 1122
-< -- 5
-+ -- 441
-- -- 363
-* -- 1287
-:= -- 2080
-add.period$ -- 17
-call.type$ -- 17
-change.case$ -- 150
-chr.to.int$ -- 17
-cite$ -- 58
-duplicate$ -- 1507
-empty$ -- 833
-format.name$ -- 406
-if$ -- 3451
-int.to.chr$ -- 1
+            1437 strings with 29573 characters,
+and the built_in function-call counts, 86330 in all, are:
+= -- 8771
+> -- 4831
+< -- 18
++ -- 1976
+- -- 1551
+* -- 5961
+:= -- 9575
+add.period$ -- 80
+call.type$ -- 80
+change.case$ -- 651
+chr.to.int$ -- 79
+cite$ -- 250
+duplicate$ -- 7762
+empty$ -- 4083
+format.name$ -- 1799
+if$ -- 16892
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 225
-newline$ -- 60
-num.names$ -- 68
-pop$ -- 807
+missing$ -- 1034
+newline$ -- 249
+num.names$ -- 320
+pop$ -- 3723
 preamble$ -- 1
-purify$ -- 150
+purify$ -- 651
 quote$ -- 0
-skip$ -- 836
+skip$ -- 4502
 stack$ -- 0
-substring$ -- 558
-swap$ -- 1215
-text.length$ -- 1
+substring$ -- 3024
+swap$ -- 6470
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 153
-warning$ -- 7
-while$ -- 78
+type$ -- 717
+warning$ -- 10
+while$ -- 388
 width$ -- 0
-write$ -- 184
-(There were 8 warnings)
+write$ -- 877
+(There were 57 error messages)

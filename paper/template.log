@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  12 DEC 2019 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.15)  10 JAN 2020 10:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3291,6 +3291,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \c@reaction=\count142
 \tabularwidth=\dimen157
+Package color Info: Redefining color bgcol on input line 2557.
 Package color Info: Redefining color textcol on input line 2561.
 Package color Info: Redefining color bgcol on input line 2562.
 Package color Info: Redefining color barcol on input line 2563.
@@ -3315,35 +3316,30 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count145
 \@lastruleclass=\count146
 \@thisrulewidth=\dimen170
-)
-
-LaTeX Warning: Unused global option(s):
-    [journalabbreviation].
-
-(/home/augustinm/Dev/pyaerocom/trends/paper/template.aux)
+) (/home/augustinm/Dev/pyaerocom/trends/paper/template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 79.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -3376,7 +3372,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring OFF on input line 79.
+Package hyperref Info: Link coloring OFF on input line 78.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -3384,623 +3380,186 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count153
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+LaTeX Info: Redefining \nameref on input line 78.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
-LaTeX Font Info:    Try loading font information for U+msa on input line 132.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 151.
+LaTeX Font Info:    Try loading font information for U+msa on input line 151.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+LaTeX Font Info:    Try loading font information for U+msb on input line 151.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 138.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 151.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 158.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 138.
+(Font)              scaled to size 8.54997pt on input line 158.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<../scripts/figs/hist_runs.png, id=18, 536.2434pt x 197.7789pt>
-File: ../scripts/figs/hist_runs.png Graphic file (type png)
-<use ../scripts/figs/hist_runs.png>
-Package pdftex.def Info: ../scripts/figs/hist_runs.png  used on input line 159.
-(pdftex.def)             Requested size: 341.43306pt x 125.93224pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 160.
- [2 <../scripts/figs/hist_runs.png>] [3]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 218.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 195.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [4] [5]
+) [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
+Overfull \hbox (5.6521pt too wide) in paragraph at lines 381--382
+[]\T1/ptm/m/n/10 NAFRICA: CAMS-Rean does an ex-cel-lent job of re-pro-duc-ing the ob-served AE in-crease (+1.3%/yr ver-sus +1.1%/yr).
+ []
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 283.
-
-
-Underfull \hbox (badness 4120) in paragraph at lines 298--298
-[]|[]\T1/ptm/m/n/9 Lund et al.[] ([]2018[]);
+[14] [15] [16] [17] [18] (/home/augustinm/Dev/pyaerocom/trends/paper/template.bbl [19] [20]
+Underfull \hbox (badness 3333) in paragraph at lines 158--162
+[]\T1/ptm/m/n/9 Hand, J., Prenni, A., Schich-tel, B., Malm, W., and Chow, J.: Trends in re-mote PM2.5 resid-ual mass across the United
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--298
-[]|[]\T1/ptm/m/n/9 Olivie[]; []Se-land[];
+Underfull \hbox (badness 1565) in paragraph at lines 158--162
+\T1/ptm/m/n/9 States: Im-pli-ca-tions for aerosol mass re-con-struc-tion in the IM-PROVE net-work, At-mo-spheric En-vi-ron-ment, 203, 141 -- 152,
  []
 
-[6] [7]
-<../scripts/figs/maps/av_obs.png, id=141, 597.6729pt x 306.4248pt>
-File: ../scripts/figs/maps/av_obs.png Graphic file (type png)
-<use ../scripts/figs/maps/av_obs.png>
-Package pdftex.def Info: ../scripts/figs/maps/av_obs.png  used on input line 324.
-(pdftex.def)             Requested size: 341.43306pt x 175.05202pt.
-<../scripts/figs/ts/panel-od550aer.png, id=142, 965.0454pt x 533.3526pt>
-File: ../scripts/figs/ts/panel-od550aer.png Graphic file (type png)
-<use ../scripts/figs/ts/panel-od550aer.png>
-Package pdftex.def Info: ../scripts/figs/ts/panel-od550aer.png  used on input line 333.
-(pdftex.def)             Requested size: 455.24408pt x 251.59538pt.
- [8 <../scripts/figs/maps/av_obs.png>] [9 <../scripts/figs/ts/panel-od550aer.png>] [10]
-<../scripts/figs/representativity-od550aer.png, id=171, 963.1182pt x 460.119pt>
-File: ../scripts/figs/representativity-od550aer.png Graphic file (type png)
-<use ../scripts/figs/representativity-od550aer.png>
-Package pdftex.def Info: ../scripts/figs/representativity-od550aer.png  used on input line 396.
-(pdftex.def)             Requested size: 455.24408pt x 217.49162pt.
- [11] [12 <../scripts/figs/representativity-od550aer.png>]
-<../scripts/figs/heatmaps/OBS.png, id=190, 592.3731pt x 461.0826pt>
-File: ../scripts/figs/heatmaps/OBS.png Graphic file (type png)
-<use ../scripts/figs/heatmaps/OBS.png>
-Package pdftex.def Info: ../scripts/figs/heatmaps/OBS.png  used on input line 442.
-(pdftex.def)             Requested size: 341.43306pt x 265.7677pt.
- [13] [14 <../scripts/figs/heatmaps/OBS.png>]
-<../scripts/figs/heatmaps/BARS.png, id=209, 989.3763pt x 909.3975pt>
-File: ../scripts/figs/heatmaps/BARS.png Graphic file (type png)
-<use ../scripts/figs/heatmaps/BARS.png>
-Package pdftex.def Info: ../scripts/figs/heatmaps/BARS.png  used on input line 465.
-(pdftex.def)             Requested size: 455.24408pt x 418.45282pt.
- [15] [16 <../scripts/figs/heatmaps/BARS.png>] [17] [18]
-<../scripts/figs/trends_map2.png, id=232, 910.602pt x 581.7735pt>
-File: ../scripts/figs/trends_map2.png Graphic file (type png)
-<use ../scripts/figs/trends_map2.png>
-Package pdftex.def Info: ../scripts/figs/trends_map2.png  used on input line 541.
-(pdftex.def)             Requested size: 455.24408pt x 290.85052pt.
- [19] [20 <../scripts/figs/trends_map2.png>]
-<../scripts/figs/abs_species_trends.png, id=253, 914.2155pt x 325.215pt>
-File: ../scripts/figs/abs_species_trends.png Graphic file (type png)
-<use ../scripts/figs/abs_species_trends.png>
-Package pdftex.def Info: ../scripts/figs/abs_species_trends.png  used on input line 569.
-(pdftex.def)             Requested size: 455.24408pt x 161.9471pt.
- [21 <../scripts/figs/abs_species_trends.png>] [22]
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:657: Undefined control sequence.
-<inserted text> ...iv\_of\_Lethbridge; Walker\tex 
-                                                  ... \\ SAMERICA & Abracos\...
-l.657  \end{tabularx}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[21] [22] [23]
+/home/augustinm/Dev/pyaerocom/trends/paper/template.bbl:436: Misplaced alignment tab character &.
+l.436 ...mospheric composition change during 1972&
+                                                  ndash;2009, Atmospheric
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:657: Undefined control sequence.
-<inserted text> ...iv\_of\_Lethbridge; Walker\tex 
-                                                  ... \\ SAMERICA & Abracos\...
-l.657  \end{tabularx}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[24]) [25]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 553.
 
-
-Underfull \hbox (badness 2635) in paragraph at lines 657--657
-[]|\T1/ptm/m/n/7 Andenes; Ar-ca-chon; Aubiere_LAMP; Au-tilla; Avi-gnon; BOR-DEAUX; Barcelona; Bari_University; Bay-ford-bury; Belsk; Berlin_FUB; Birkenes;
+Underfull \hbox (badness 1117) in paragraph at lines 570--570
+[]|\T1/ptm/m/n/8 ECMWF-Rean; NorESM2; SPRINT-ARS; ECHAM-
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 657--657
-\T1/ptm/m/n/7 OHP_OBSERVATOIRE; Oos-t-ende; Ox-ford; Palaiseau; Pa-len-cia; Paris; Poprad-Ganovce; Por-querolles; Raci-borz; Rame_Head; Rome_La_Sapienza;
+Underfull \hbox (badness 10000) in paragraph at lines 570--570
+\T1/ptm/m/n/8 HAM; GEOS; OsloCTM3; GFDL-AM4; BCC-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--657
-[]|\T1/ptm/m/n/7 Anmyon; Bac_Giang; Bac_Lieu; Baengnyeong; Bahrain; Bei-jing; Beijing-CAMS; Bhola; Chen-Kung_Univ; Chi-ang_Mai_Met_Sta; Chi-ayi;
+Underfull \hbox (badness 6825) in paragraph at lines 570--570
+[]|\T1/ptm/m/n/8 NorESM2; SPRINT-ARS; ECHAM-HAM; GEOS;
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 657--657
-\T1/ptm/m/n/7 Gual_Pahari; Gwangju_GIST; Hamim; Han-kuk_UFS; Hokkaido_University; Hong_Kong_PolyU; Hong_Kong_Sheung; Irkutsk; Jaipur; Kaashid-hoo;
- []
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:657: Undefined control sequence.
-<inserted text> ...iv\_of\_Lethbridge; Walker\tex 
-                                                  ... \\ SAMERICA & Abracos\...
-l.657  \end{tabularx}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 2707) in paragraph at lines 657--657
-[]|\T1/ptm/m/n/7 ARM_Oliktok_AK; Ames; Ap-ple-dore_Island; BONDVILLE; Bak-ers-field; Bermuda; Bil-ler-ica; Bo-nanza_Creek; Bratts_Lake; Brookhaven; CAR-
+Underfull \hbox (badness 1117) in paragraph at lines 570--570
+[]|\T1/ptm/m/n/8 ECMWF-Rean; NorESM2; SPRINT-ARS; ECHAM-
  []
 
 
-Underfull \hbox (badness 4699) in paragraph at lines 657--657
-\T1/ptm/m/n/7 MDE; Eas-ton_Airport; Eg-bert; El_Segundo; Fort_McKay; Fort_McMurray; French-man_Flat; Fresno; Fresno_2; GISS; GSFC; Geor-gia_Tech;
+Underfull \hbox (badness 1117) in paragraph at lines 570--570
+[]|\T1/ptm/m/n/8 ECMWF-Rean; NorESM2; SPRINT-ARS; ECHAM-
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 657--657
-\T1/ptm/m/n/7 terey; NASA_KSC; NASA_LaRC; NEON-Disney; NEON_CLBJ; NEON_GRSM; NEON_HEAL; NEON_Harvard; NEON_KONZ; NEON_OAES;
+Underfull \hbox (badness 1117) in paragraph at lines 570--570
+[]|\T1/ptm/m/n/8 ECMWF-Rean; NorESM2; SPRINT-ARS; ECHAM-
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 657--657
-[]|\T1/ptm/m/n/7 Abracos_Hill; Alta_Floresta; Ama-zon_ATTO_Tower; Ar-ica; Bal-bina; Bar-ba-dos; Bel-terra; CEILAP-BA; CEILAP-Bariloche; CEILAP-Comodoro;
- []
-
-[23pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.662 \clearpage
-                pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.662 \clearpage
-                ] [24]
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:678: Undefined control sequence.
-<inserted text> ...s; Waskesiu; WaveCIS\textunder 
-                                                  ... \\ SAMERICA & Abracos\...
-l.678  \end{tabularx}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:678: Undefined control sequence.
-<inserted text> ...s; Waskesiu; WaveCIS\textunder 
-                                                  ... \\ SAMERICA & Abracos\...
-l.678  \end{tabularx}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 678--678
-\T1/ptm/m/n/7 OHP_OBSERVATOIRE; Oos-t-ende; Ox-ford; Palaiseau; Pa-len-cia; Pal-grun-den; Paris; Poprad-Ganovce; Raci-borz; Rame_Head; Rome_La_Sapienza;
+Underfull \hbox (badness 1117) in paragraph at lines 570--570
+[]|\T1/ptm/m/n/8 ECMWF-Rean; NorESM2; SPRINT-ARS; ECHAM-
  []
 
 
-Underfull \hbox (badness 1014) in paragraph at lines 678--678
-\T1/ptm/m/n/7 Chi-ayi; Chiba_University; Dhabi; Dhad-nah; Dhaka_University; Dong-sha_Island; Dushanbe; EPA-NCU; Fukuoka; GOT_Seaprism; Gandhi_College;
+Underfull \hbox (badness 1117) in paragraph at lines 570--570
+[]|\T1/ptm/m/n/8 ECMWF-Rean; NorESM2; SPRINT-ARS; ECHAM-
  []
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:678: Undefined control sequence.
-<inserted text> ...s; Waskesiu; WaveCIS\textunder 
-                                                  ... \\ SAMERICA & Abracos\...
-l.678  \end{tabularx}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 2707) in paragraph at lines 678--678
-[]|\T1/ptm/m/n/7 ARM_Oliktok_AK; Ames; Ap-ple-dore_Island; BONDVILLE; Bak-ers-field; Bermuda; Bil-ler-ica; Bo-nanza_Creek; Bratts_Lake; Brookhaven; CAR-
- []
-
-
-Underfull \hbox (badness 1783) in paragraph at lines 678--678
-\T1/ptm/m/n/7 TEL; CCNY; COVE; COVE_SEAPRISM; Cal-Tech; Ca-m-aguey; Cha-pais; Chequamegon; Churchill; Columbia_SC; Day-ton; Dry_Tortugas; EPA-
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 678--678
-\T1/ptm/m/n/7 PNNL; Pickle_Lake; Res-o-lute_Bay; Rim-rock; Rogers_Dry_Lake; SDSU_IPLab; SEARCH-Centreville; SEARCH-OLF; SEARCH-Yorkville; SERC;
- []
-
-
-Underfull \hbox (badness 3668) in paragraph at lines 678--678
-[]|\T1/ptm/m/n/7 Abracos_Hill; Alta_Floresta; Ama-zon_ATTO_Tower; Ar-ica; Bal-bina; Bel-terra; CEILAP-BA; CEILAP-Bariloche; CEILAP-Comodoro; CEILAP-
- []
-
-
-Underfull \hbox (badness 7907) in paragraph at lines 678--678
-\T1/ptm/m/n/7 Neuquen; CEILAP-RG; CUIABA-MIRANDA; Campo_Grande_SONDA; Cape_San_Juan; Cordoba-CETT; Guade-loup; Ita-juba; Ji_Parana_SE;
- []
-
-
-Underfull \hbox (badness 2903) in paragraph at lines 678--678
-\T1/ptm/m/n/7 SANTA_CRUZ_UTEPSA; San_Cristobal_USFQ; San-ti-ago_Beauchef; Sao_Martinho_SONDA; Sao_Paulo; Trelew; Tuxtla_Gutierrez; UPC-GEAB-
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 678--678
-[]|\T1/ptm/m/n/7 ARM_Darwin; Birdsville; Brisbane-Uni_of_QLD; Can-berra; Dar-win; Fowlers_Gap; Jabiru; Lake_Argyle; Lake_Lefroy; Lu-cinda; Rot-tnest_Island;
- []
-
-[25]
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:694: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...ago; Cohutta; Columbia Gorge ##
-                                                  1; Columbia River Gorge; C...
-l.694  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:694: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...s; Viking Lake; Voyageurs NP ##
-                                                  2; Washington D.C.; Wichit...
-l.694  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:694: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...ago; Cohutta; Columbia Gorge ##
-                                                  1; Columbia River Gorge; C...
-l.694  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:694: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...s; Viking Lake; Voyageurs NP ##
-                                                  2; Washington D.C.; Wichit...
-l.694  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:694: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...ago; Cohutta; Columbia Gorge ##
-                                                  1; Columbia River Gorge; C...
-l.694  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:694: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...s; Viking Lake; Voyageurs NP ##
-                                                  2; Washington D.C.; Wichit...
-l.694  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
 [26]
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:711: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...ago; Cohutta; Columbia Gorge ##
-                                                  1; Columbia River Gorge; C...
-l.711  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:711: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...s; Viking Lake; Voyageurs NP ##
-                                                  2; Washington D.C.; Wichit...
-l.711  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:711: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...ago; Cohutta; Columbia Gorge ##
-                                                  1; Columbia River Gorge; C...
-l.711  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:711: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...s; Viking Lake; Voyageurs NP ##
-                                                  2; Washington D.C.; Wichit...
-l.711  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:711: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...ago; Cohutta; Columbia Gorge ##
-                                                  1; Columbia River Gorge; C...
-l.711  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:711: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...s; Viking Lake; Voyageurs NP ##
-                                                  2; Washington D.C.; Wichit...
-l.711  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+LaTeX Warning: Float too large for page by 5.69054pt on input line 611.
 
 [27]
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...e; Cohutta; Columbia\_Gorge\_##
-                                                  1; Columbia\_River\_Gorge;...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...llside; Hoover; Hopi\_Point\_##
-                                                  1; Horton Station; Howland...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...\_Tribe; Makah\_Tribe\_Site\_##
-                                                  2; Mammoth\_Cave\_NP; Mart...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...Voyageurs NP; Voyageurs\_NP\_##
-                                                  1; Voyageurs\_NP\_##2; WY;...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...urs\_NP\_##1; Voyageurs\_NP\_##
-                                                  2; WY; Walker\_River\_Paiu...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...e; Cohutta; Columbia\_Gorge\_##
-                                                  1; Columbia\_River\_Gorge;...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...llside; Hoover; Hopi\_Point\_##
-                                                  1; Horton Station; Howland...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...\_Tribe; Makah\_Tribe\_Site\_##
-                                                  2; Mammoth\_Cave\_NP; Mart...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...Voyageurs NP; Voyageurs\_NP\_##
-                                                  1; Voyageurs\_NP\_##2; WY;...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...urs\_NP\_##1; Voyageurs\_NP\_##
-                                                  2; WY; Walker\_River\_Paiu...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...e; Cohutta; Columbia\_Gorge\_##
-                                                  1; Columbia\_River\_Gorge;...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...llside; Hoover; Hopi\_Point\_##
-                                                  1; Horton Station; Howland...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...\_Tribe; Makah\_Tribe\_Site\_##
-                                                  2; Mammoth\_Cave\_NP; Mart...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...Voyageurs NP; Voyageurs\_NP\_##
-                                                  1; Voyageurs\_NP\_##2; WY;...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:729: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...urs\_NP\_##1; Voyageurs\_NP\_##
-                                                  2; WY; Walker\_River\_Paiu...
-l.729  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-Underfull \hbox (badness 1442) in paragraph at lines 729--729
-\T1/ptm/m/n/7 Ban-de-lier_NM; Bar-rier_Lake; Beau-fort; Beltsville; Big Bend NP; Big_Bend_NP; Black-wa-ter NWR; Bliss_SP_(TRPA); Blue_Mounds; Bondville;
- []
-
-
-Underfull \hbox (badness 2343) in paragraph at lines 729--729
-\T1/ptm/m/n/7 lyn_Lake; Bryce_Canyon_NP; Cab-i-net_Mountains; Caddo Val-ley; Cadiz; Can-dor; Caney_Creek; Canyon-lands NP; Canyon-lands_NP; Cape_Cod;
- []
-
-
-Underfull \hbox (badness 1205) in paragraph at lines 729--729
-\T1/ptm/m/n/7 Cape_Romain_NWR; Capi-tol_Reef_NP; Casco_Bay; Cedar Creek; Cedar_Bluff; Cen-ten-nial; Chalk River; Cha-pais; Chas-sa-how-itzka_NWR; Chero-
- []
-
-
-Underfull \hbox (badness 7203) in paragraph at lines 729--729
-\T1/ptm/m/n/7 Jar-bidge_Wilderness; Jef-fer-son_NF; Joshua Tree NP; Joshua_Tree_NP; Kaiser; Kalmiop-sis; Kane Exp. For-est; Ke-jimku-jik; Lake_Sugema;
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 729--729
-\T1/ptm/m/n/7 Lake_Tahoe_Community_College; Lassen Vol-canic NP; Lassen_Volcanic_NP; Lau-rel Hill; Lava_Beds_NM; Linville_Gorge; Livo-nia; Lon-don-derry;
- []
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 729--729
-\T1/ptm/m/n/7 Sikes; Sipsey_Wilderness; Sno-qualmie_Pass; South_Lake_Tahoe; Speed-well; Spokane_Res.; St._Marks; Starkey; Stil-well; Stock-ton; Storm_Peak;
- []
+/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:634: Undefined control sequence.
+l.634 \cleapage
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [28]
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:745: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...Saguaro NM - Tucson Mountain ##
-                                                  1; Southern Great Plains E...
-l.745  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:745: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...Saguaro NM - Tucson Mountain ##
-                                                  1; Southern Great Plains E...
-l.745  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-/home/augustinm/Dev/pyaerocom/trends/paper/template.tex:745: You can't use `macro parameter character #' in horizontal mode.
-<inserted text> ...Saguaro NM - Tucson Mountain ##
-                                                  1; Southern Great Plains E...
-l.745  \end{tabularx}
-                     
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-[29] (/home/augustinm/Dev/pyaerocom/trends/paper/template.bbl [30
-
-
-
-
-
-
-] [31]) [32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 966.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 966.
+<../scripts/figs/hist_runs.png, id=608, 536.2434pt x 197.7789pt>
+File: ../scripts/figs/hist_runs.png Graphic file (type png)
+<use ../scripts/figs/hist_runs.png>
+Package pdftex.def Info: ../scripts/figs/hist_runs.png  used on input line 661.
+(pdftex.def)             Requested size: 341.43306pt x 125.93224pt.
+ [29 <../scripts/figs/hist_runs.png>]
+<../scripts/figs/maps/av_obs.png, id=615, 597.6729pt x 306.4248pt>
+File: ../scripts/figs/maps/av_obs.png Graphic file (type png)
+<use ../scripts/figs/maps/av_obs.png>
+Package pdftex.def Info: ../scripts/figs/maps/av_obs.png  used on input line 668.
+(pdftex.def)             Requested size: 341.43306pt x 175.05202pt.
+ [30 <../scripts/figs/maps/av_obs.png>]
+<../scripts/figs/ts/panel-od550aer.png, id=621, 965.0454pt x 533.3526pt>
+File: ../scripts/figs/ts/panel-od550aer.png Graphic file (type png)
+<use ../scripts/figs/ts/panel-od550aer.png>
+Package pdftex.def Info: ../scripts/figs/ts/panel-od550aer.png  used on input line 675.
+(pdftex.def)             Requested size: 455.24408pt x 251.59538pt.
+ [31 <../scripts/figs/ts/panel-od550aer.png>]
+<../scripts/figs/representativity-od550aer.png, id=628, 963.1182pt x 460.119pt>
+File: ../scripts/figs/representativity-od550aer.png Graphic file (type png)
+<use ../scripts/figs/representativity-od550aer.png>
+Package pdftex.def Info: ../scripts/figs/representativity-od550aer.png  used on input line 682.
+(pdftex.def)             Requested size: 455.24408pt x 217.49162pt.
+ [32 <../scripts/figs/representativity-od550aer.png>]
+<../scripts/figs/heatmaps/OBS.png, id=635, 576.9555pt x 461.0826pt>
+File: ../scripts/figs/heatmaps/OBS.png Graphic file (type png)
+<use ../scripts/figs/heatmaps/OBS.png>
+Package pdftex.def Info: ../scripts/figs/heatmaps/OBS.png  used on input line 689.
+(pdftex.def)             Requested size: 341.43306pt x 272.86656pt.
+ [33 <../scripts/figs/heatmaps/OBS.png>]
+<../scripts/figs/heatmaps/BARS.png, id=641, 989.3763pt x 909.3975pt>
+File: ../scripts/figs/heatmaps/BARS.png Graphic file (type png)
+<use ../scripts/figs/heatmaps/BARS.png>
+Package pdftex.def Info: ../scripts/figs/heatmaps/BARS.png  used on input line 696.
+(pdftex.def)             Requested size: 455.24408pt x 418.45282pt.
+ [34 <../scripts/figs/heatmaps/BARS.png>]
+<../scripts/figs/trends_map2.png, id=647, 910.602pt x 581.7735pt>
+File: ../scripts/figs/trends_map2.png Graphic file (type png)
+<use ../scripts/figs/trends_map2.png>
+Package pdftex.def Info: ../scripts/figs/trends_map2.png  used on input line 703.
+(pdftex.def)             Requested size: 455.24408pt x 290.85052pt.
+ [35 <../scripts/figs/trends_map2.png>]
+<../scripts/figs/abs_species_trends.png, id=653, 914.2155pt x 321.1197pt>
+File: ../scripts/figs/abs_species_trends.png Graphic file (type png)
+<use ../scripts/figs/abs_species_trends.png>
+Package pdftex.def Info: ../scripts/figs/abs_species_trends.png  used on input line 710.
+(pdftex.def)             Requested size: 455.24408pt x 159.90776pt.
+ [36 <../scripts/figs/abs_species_trends.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 864.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 864.
  (/home/augustinm/Dev/pyaerocom/trends/paper/template.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 966.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 966.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 966.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 864.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 864.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 864.
  ) 
 Here is how much of TeX's memory you used:
- 13153 strings out of 492982
- 168711 string characters out of 6134896
- 315190 words of memory out of 5000000
- 16365 multiletter control sequences out of 15000+600000
- 50104 words of font info for 87 fonts, out of 8000000 for 9000
+ 13317 strings out of 492982
+ 171221 string characters out of 6134896
+ 319417 words of memory out of 5000000
+ 16474 multiletter control sequences out of 15000+600000
+ 52260 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,15n,40p,4161b,522s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (32 pages, 5007797 bytes).
+ 43i,16n,40p,2480b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /home/augustinm/Dev/pyaerocom/trends/paper/template.pdf (36 pages, 5019214 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
- 112 named destinations out of 1000 (max. 500000)
+ 765 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 165 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
