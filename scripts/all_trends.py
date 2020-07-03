@@ -10,9 +10,9 @@ filterwarnings('ignore')
 # - - - - run observations - - - - - -
 # 'ang4487aer' 'od550aer' 'od550gt1aer' 'od550lt1aer' 'concpm10' 'concpm25' 'sconcso4'
 regions = get_regions()
-vars = ['ang4487aer', 'od550aer', 'od550gt1aer',
-        'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
-vars = ['concpm25', 'concpm10']
+vars = ['ang4487aer', 'od550aer', 'od550gt1aer', 'od550lt1aer', 'concpm10', 'concpm25', 'concso4', 'scatc550dryaer', 'absc550aer']
+vars = ['concso4', 'scatc550dryaer', 'absc550aer']
+#vars = ['concpm25', 'concpm10']
 
 for var in vars:
     print('* * * * * * *')

@@ -55,8 +55,13 @@ def fill_params(params, var):
         params['ymax'] = 0.8
         params['ylabel'] = 'AOD'
         params['latex'] = 'AOD'
+        #params['min_dobs'] = 2700,
         params['min_dim'] = 5
-        params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
+        #params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
+        #         'GFDL-AM4-amip_HIST', 'CanESM5_historical', 
+        #         'CESM2_historical', 'IPSL-CM6A-LR_historical', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
+        #         'BCC-CUACE_AP3-HIST', 'MIROC-SPRINTARS_AP3-HIST']
+        params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
                  'GFDL-AM4-amip_HIST', 'CanESM5_historical', 
                  'CESM2_historical', 'IPSL-CM6A-LR_historical', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                  'BCC-CUACE_AP3-HIST', 'MIROC-SPRINTARS_AP3-HIST']
@@ -70,7 +75,7 @@ def fill_params(params, var):
         params['ylabel'] = 'AE'
         params['latex'] = 'AE'
         params['min_dim'] = 5
-        params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
+        params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
                    'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                     'MIROC-SPRINTARS_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GFDL-AM4-amip_HIST'
@@ -83,8 +88,8 @@ def fill_params(params, var):
         params['ylabel'] = 'AOD>1µm'
         params['latex'] = 'AOD>1µm'
         params['min_dim'] = 5
-        params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
-                    'BCC-CUACE_AP3-HIST', 'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
+        params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
+                    'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                            'MIROC-SPRINTARS_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GFDL-AM4-amip_HIST'
     if var == 'od550lt1aer':
@@ -96,7 +101,7 @@ def fill_params(params, var):
         params['ylabel'] = 'AOD<1µm'
         params['latex'] = 'AOD<1µm'
         params['min_dim'] = 5
-        params['models'] = ['NorESM2-CPL-NEWTEST_HIST', 'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
+        params['models'] = ['OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                            'MIROC-SPRINTARS_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GFDL-AM4-amip_HIST'
     #==========================================
@@ -111,6 +116,17 @@ def fill_params(params, var):
         params['min_dim'] = 4  # weekly measurements
         params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST','MIROC-SPRINTARS_AP3-HIST','NorESM2-CPL-NEWTEST_HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
+    #if var == 'concpm25':
+    #    params['source'] = 'EBASMC'
+    #    params['vert'] = 'Surface'
+    #    params['unit'] = 'µg.m-3'
+    #    params['ymin'] = 0
+    #    params['ymax'] = 30
+    #    params['ylabel'] = 'PM2.5'
+    #    params['latex'] = '$PM_{2.5}$'
+    #    params['min_dim'] = 4  # weekly measurements
+    #    params['models'] = ['ECMWF_CAMS_REAN', 'MIROC-SPRINTARS_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST', 'GEOS-i33p2_HIST', 'NorESM2-CPL-NEWTEST_HIST']
+    #    params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'ECMWF_CAMS_REAN'
     if var == 'concpm25':
         params['source'] = 'EBASMC'
         params['vert'] = 'Surface'
@@ -131,7 +147,7 @@ def fill_params(params, var):
         params['ylabel'] = 'SO4'
         params['latex'] = '$SO_{4}$'
         params['min_dim'] = 0  # monthly measurements
-        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01-met2010_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
+        params['models'] = ['ECMWF_CAMS_REAN', 'GEOS-i33p2_HIST', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                            'BCC-CUACE_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 'MIROC-SPRINTARS_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST' #'GEOS-i33p2_HIST'
     if var == 'scatc550dryaer':
@@ -144,7 +160,7 @@ def fill_params(params, var):
         params['latex'] = '$\sigma_{sp}$'
         params['min_dim'] = 5
         params['min_nstat'] = 2
-        params['models'] = ['NorESM2-CPL-NEWTEST_HIST']
+        params['models'] = ['NorESM2-CPL-NEWTEST_HIST', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
         params['exclude_stations'] = ['Granada', 'Montseny', 'Phoenix', 'National Capitol - Central, Washington D.C']
     if var == 'absc550aer':
@@ -157,7 +173,8 @@ def fill_params(params, var):
         params['latex'] = '$\sigma_{ap}$'
         params['min_dim'] = 5
         params['min_nstat'] = 2
-        params['models'] = ['NorESM2-CPL-NEWTEST_HIST','MIROC-SPRINTARS_AP3-HIST']
+        #params['models'] = ['NorESM2-CPL-NEWTEST_HIST', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'MIROC-SPRINTARS_AP3-HIST']
+        params['models'] = ['NorESM2-CPL-NEWTEST_HIST', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST']
         params['ref_model'] = 'NorESM2-CPL-NEWTEST_HIST'
         params['exclude_stations'] = ['Granada', 'Leipzig-Mitte', 'Ústí n.L.-mesto']
     #==========================================
@@ -312,11 +329,14 @@ def get_all_mods():
             'name': 'GEOS',
             'group': 'AP3'
         },
-        'OsloCTM3v1.01-met2010_AP3-HIST': {
+        #'OsloCTM3v1.01-met2010_AP3-HIST': {
+        #    'name': 'OsloCTM3',
+        #    'group': 'AP3'
+        #},
+        'OsloCTM3v1.01b-met1990-2017_AP3-HIST': {
             'name': 'OsloCTM3',
             'group': 'AP3'
         },
-
         #'CAM5-ATRAS_AP3-HIST': { #CAM5 does not have 2014!
         #    'name': 'CAM5-ATRAS',
         #    'group': 'AP3'
