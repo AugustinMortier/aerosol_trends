@@ -57,10 +57,6 @@ def fill_params(params, var):
         params['latex'] = 'AOD'
         #params['min_dobs'] = 2700,
         params['min_dim'] = 5
-        #params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01-met2010_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
-        #         'GFDL-AM4-amip_HIST', 'CanESM5_historical', 
-        #         'CESM2_historical', 'IPSL-CM6A-LR_historical', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
-        #         'BCC-CUACE_AP3-HIST', 'MIROC-SPRINTARS_AP3-HIST']
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
                  'GFDL-AM4-amip_HIST', 'CanESM5_historical', 
                  'CESM2_historical', 'IPSL-CM6A-LR_historical', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
