@@ -81,8 +81,10 @@ def fill_params(params, var):
         params['unit'] = ''
         params['ymin'] = 0
         params['ymax'] = 0.2
-        params['ylabel'] = 'AOD>1µm'
-        params['latex'] = 'AOD>1µm'
+        #params['ylabel'] = 'AOD>1µm'
+        #params['latex'] = 'AOD>1µm'
+        params['ylabel'] = 'AODc'
+        params['latex'] = '$AOD_{c}$'
         params['min_dim'] = 5
         params['models'] = ['ECMWF_CAMS_REAN', 'OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 
                     'GFDL-AM4-amip_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
@@ -94,8 +96,10 @@ def fill_params(params, var):
         params['unit'] = ''
         params['ymin'] = 0
         params['ymax'] = 0.8
-        params['ylabel'] = 'AOD<1µm'
-        params['latex'] = 'AOD<1µm'
+        #params['ylabel'] = 'AOD<1µm'
+        #params['latex'] = 'AOD<1µm'
+        params['ylabel'] = 'AODf'
+        params['latex'] = '$AOD_{f}$'
         params['min_dim'] = 5
         params['models'] = ['OsloCTM3v1.01b-met1990-2017_AP3-HIST', 'NorESM2-CPL-NEWTEST_HIST', 'GFDL-AM4-amip_HIST', 'GEOS-i33p2_HIST', 'ECHAM6.3-HAM2.3-fSST_HIST',
                            'MIROC-SPRINTARS_AP3-HIST']
